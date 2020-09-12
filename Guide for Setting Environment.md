@@ -55,3 +55,4 @@ python --version
 (venv) python manage.py runserver
 ```
 After running the server in your localhost, check whether everything's good in to click [here](http://127.0.0.1:8000/)
+![Test Image](https://i.imgur.com/8hdzLHM.png)
