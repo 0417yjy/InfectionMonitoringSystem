@@ -1,0 +1,14 @@
+# virtual environment files
+venv/
+
+# vscode cache files
+.vscode/
+
+# python cache files
+__pycache__/
+
+# migrations file
+migrations/
+
+# database file
+db.sqlite3
