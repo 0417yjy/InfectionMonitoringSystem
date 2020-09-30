@@ -1,0 +1,224 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href={% static 'assets/css/material-dashboard.css' %} rel="stylesheet" />
+  {% comment %} <link href="django_monitoring/static-main/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" /> {% endcomment %}
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cef0c647cfe8c88cf78563dab9b303bd&libraries=services,clusterer,drawing"></script>
+</head>
+
+<body>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="azure" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        <a href="https://github.com/0417yjy/InfectionMonitoringSystem" class="simple-text logo-large">
+          EDPS
+        </a>
+        <p class="simple-text logo-mini">
+          Epidemic Diffusion <br>Prevention System
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="/">
+              <i class="material-icons">analytics</i>
+              <p>MainPage</p>
+            </a>
+            <a class="nav-link" href="/mainpage/map" >
+              <i class="material-icons">map</i>
+              <p>Map</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                  <i class="material-icons">notifications</i> Notifications
+                </a>
+              </li>
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content" style="background-color: ivory">
+        <div class="container-fluid">
+          <!-- your content here -->
+          <h1>Map
+          <div id="map" style="width:1000px;height:600px;"></div>
+          <p id="result" style="font-size:11pt;"></p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://github.com/0417yjy/InfectionMonitoringSystem">
+                  Team LuMos
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a href="https://github.com/0417yjy/InfectionMonitoringSystem" target="_blank">Team LuMos</a>
+          </div>
+          <!-- your footer here -->
+        </div>
+      </footer>
+    </div>
+  </div>
+
+{% comment %} Map Script {% endcomment %}
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+var mapTypeControl = new kakao.maps.MapTypeControl();
+
+// 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+// kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+//Click Event
+kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
+    
+    // 클릭한 위도, 경도 정보를 가져옵니다 
+    var latlng = mouseEvent.latLng;
+    
+    var message = '클릭한 위치의 위도는 ' + latlng.getLat() + ' 이고, ';
+    message += '경도는 ' + latlng.getLng() + ' 입니다';
+    
+    var resultDiv = document.getElementById('result'); 
+    resultDiv.innerHTML = message;
+});
+//Marker
+// 도형 스타일을 변수로 설정합니다
+var strokeColor = '#39f',
+	fillColor = '#cce6ff',
+	fillOpacity = 0.5,
+	hintStrokeStyle = 'dash';
+
+var options = { // Drawing Manager를 생성할 때 사용할 옵션입니다
+    map: map, // Drawing Manager로 그리기 요소를 그릴 map 객체입니다
+    drawingMode: [
+        kakao.maps.Drawing.OverlayType.MARKER,
+        kakao.maps.Drawing.OverlayType.ARROW,
+        kakao.maps.Drawing.OverlayType.POLYLINE,
+        kakao.maps.Drawing.OverlayType.RECTANGLE,
+        kakao.maps.Drawing.OverlayType.CIRCLE,
+        kakao.maps.Drawing.OverlayType.ELLIPSE,
+        kakao.maps.Drawing.OverlayType.POLYGON
+    ],
+    // 사용자에게 제공할 그리기 가이드 툴팁입니다
+    // 사용자에게 도형을 그릴때, 드래그할때, 수정할때 가이드 툴팁을 표시하도록 설정합니다
+    guideTooltip: ['draw', 'drag', 'edit'], 
+    markerOptions: {
+        draggable: true,
+        removable: true
+    },
+    arrowOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        hintStrokeStyle: hintStrokeStyle
+    },
+    polylineOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        hintStrokeStyle: hintStrokeStyle
+    },
+    rectangleOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        fillColor: fillColor,
+        fillOpacity: fillOpacity
+    },
+    circleOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        fillColor: fillColor,
+        fillOpacity: fillOpacity
+    },
+    ellipseOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        fillColor: fillColor,
+        fillOpacity: fillOpacity
+    },
+    polygonOptions: {
+        draggable: true,
+        removable: true,
+        strokeColor: strokeColor,
+        fillColor: fillColor,
+        fillOpacity: fillOpacity
+    }
+};
+
+// 위에 작성한 옵션으로 Drawing Manager를 생성합니다
+var manager = new kakao.maps.Drawing.DrawingManager(options);
+
+// Toolbox를 생성합니다. 
+// Toolbox 생성 시 위에서 생성한 DrawingManager 객체를 설정합니다.
+// DrawingManager 객체를 꼭 설정해야만 그리기 모드와 매니저의 상태를 툴박스에 설정할 수 있습니다.
+var toolbox = new kakao.maps.Drawing.Toolbox({drawingManager: manager});
+
+// 지도 위에 Toolbox를 표시합니다
+// kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOP은 위 가운데를 의미합니다.
+map.addControl(toolbox.getElement(), kakao.maps.ControlPosition.TOP);
+
+</script>
+</body>
+
+
+</html>
