@@ -1,25 +1,42 @@
-<div style="margin-top: 88px;">
-    <canvas id="daily-histogram" height="60vw"></canvas>
-    <canvas id="regional-statistics" height="60vw"></canvas>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-primary active">
-            <input type="radio" name="options" id="opt-all" autocomplete="off" checked> 전체
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="opt-recent-7days" autocomplete="off"> 최근7일
-        </label>
+<style>
+    .chart-container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+    }
+</style>
+<div>
+    <div class="chart-container">
+        <canvas id="daily-histogram"></canvas>
+        <canvas id="regional-statistics"></canvas>
     </div>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-primary active">
-            <input type="radio" name="options" id="infected"" autocomplete=" off" checked> 확진자
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="deceased" autocomplete="off"> 사망자
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="off-isolated" autocomplete="off"> 격리해제
-        </label>
+    <div class="text-center">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="opt-all" autocomplete="off" checked> 전체
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="opt-recent-7days" autocomplete="off"> 최근7일
+            </label>
+        </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-left: 10px;">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="infected"" autocomplete=" off" checked> 확진자
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="deceased" autocomplete="off"> 사망자
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="off-isolated" autocomplete="off"> 격리해제
+            </label>
+        </div>
     </div>
+    
+
+
+    
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
