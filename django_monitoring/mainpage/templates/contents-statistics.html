@@ -1,3 +1,67 @@
 <div style="margin-top: 88px;">
-    <h2>Statistics</h2>
+    <canvas id="daily-histogram" height="60vw"></canvas>
+    <canvas id="regional-statistics" height="60vw"></canvas>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="opt-all" autocomplete="off" checked> 전체
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="opt-recent-7days" autocomplete="off"> 최근7일
+        </label>
+    </div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="infected"" autocomplete=" off" checked> 확진자
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="deceased" autocomplete="off"> 사망자
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="off-isolated" autocomplete="off"> 격리해제
+        </label>
+    </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+<script src="/static/js/statistics.js"></script>
+<script>
+    var ctx = document.getElementById('daily-histogram').getContext('2d');
+    var hdata = new HistogramData();
+    var daily_chart = new Chart(ctx, {
+        type: 'bar',
+        data: hdata,
+        options: {
+            legend: { // 범례
+                position: 'bottom'
+            },
+            title: { // 차트 제목
+                display: true,
+                text: ['대한민국 코로나19(COVID-19) 추이', '총 확진자 i명, 사망: j명, 격리해제: k명', '질병관리청 yyyy-mm-dd hh:MM 집계 기준']
+            },
+            tooltips: { // 툴팁
+                mode: 'index',
+                intersect: false
+            },
+            hover: {
+                mode: 'index',
+                intersect: false
+            }
+        }
+    });
+
+    ctx = document.getElementById('regional-statistics').getContext('2d');
+    var hb_data = new HorizonBarData();
+    var regional_chart = new Chart(ctx, {
+        type: 'horizontalBar',
+        data: hb_data,
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: ['대한민국 지역별 확진자 현황', '총 확진자: n명', '질병관리청 yyyy-mm-dd hh:MM 집계 기준']
+            }
+        }
+    });
+</script>
