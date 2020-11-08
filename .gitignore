@@ -13,3 +13,6 @@ migrations/
 
 # database file
 db.sqlite3
+
+# static root directory
+static-main/
