@@ -40,6 +40,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+<script src="/static/js/Plugin.Subtitle.min.js"></script>
 <script src="/static/js/statistics.js"></script>
 <script>
     var ctx = document.getElementById('daily-histogram').getContext('2d');
@@ -53,7 +54,8 @@
             },
             title: { // 차트 제목
                 display: true,
-                text: ['대한민국 코로나19(COVID-19) 추이', '총 확진자 i명, 사망: j명, 격리해제: k명', '질병관리청 yyyy-mm-dd hh:MM 집계 기준']
+                fontSize: 15,
+                text: ['대한민국 코로나19(COVID-19) 추이','총 확진자 i명, 사망: j명, 격리해제: k명']
             },
             tooltips: { // 툴팁
                 mode: 'index',
@@ -62,6 +64,13 @@
             hover: {
                 mode: 'index',
                 intersect: false
+            },
+            plugins: {
+                chartJsPluginSubtitle: {
+                    display: true,
+                    fontSize: 12,
+                    text: '질병관리청 yyyy-mm-dd hh:MM 집계 기준'
+                }
             }
         }
     });
@@ -77,7 +86,15 @@
             },
             title: {
                 display: true,
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: n명', '질병관리청 yyyy-mm-dd hh:MM 집계 기준']
+                fontSize: 15,
+                text: ['대한민국 지역별 확진자 현황', '총 확진자: n명']
+            },
+            plugins: {
+                chartJsPluginSubtitle: {
+                    display: true,
+                    fontSize: 12,
+                    text: '질병관리청 yyyy-mm-dd hh:MM 집계 기준'
+                }
             }
         }
     });
