@@ -8,9 +8,6 @@ venv/
 # python cache files
 __pycache__/
 
-# migrations file
-migrations/
-
 # database file
 db.sqlite3
 
