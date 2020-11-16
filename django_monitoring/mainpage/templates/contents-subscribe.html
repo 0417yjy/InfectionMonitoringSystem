@@ -7,12 +7,40 @@
       <div style="position:relative; margin-bottom: 20px;"> 그렇다면 구독하세요! </div>
     </h3>
     <div style="position:relative; margin-top: 40px;backgroundcolor=" black";">
-      <a href="#">
+      <a class="emailsubscribe" data-toggle="modal" data-target="#subscribeModal" href="#">
         <img src="/static/assets/img/subscribe_mail.png" style="width:275px; height:275px"> </a>
       <img src="/static/assets/img/subscribe.png"
         style="margin-left : 100px; margin-top : 50px; width:250px; height:300px">
-      <a href="#">
+      <a class="kakaosubscribe" data-toggle="modal" data-target="#subscribeModal" href="#">
         <img src="/static/assets/img/subscribe_kakao.png" style="margin-left : 100px; width:300px; height:300px"> </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+      </div>
+      <div class="modal-body">
+        <script type="text/javascript" src="/static/assets/js/kakaomodal.js"></script>
+        <select name="sido1" id="sido1"></select>
+        <select name="gugun1" id="gugun1"></select>
+        <br><br>
+
+        <select name="sido2" id="sido2"></select>
+        <select name="gugun2" id="gugun2"></select>
+        <br><br>
+        <form id="login" action="" method="post"> <!-- 필요한 action 지정 -->
+          <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
+          <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
+                 placeholder="e-mail주소를 입력해주세요">
+          <br><br>
+          <button type="submit" class="btn btn-primary submit_button"> 이메일로 구독하기 </button>
+
+      </div>
     </div>
   </div>
 </div>
