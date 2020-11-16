@@ -10269,7 +10269,10 @@ body {
 .about-section p {
   margin-bottom: 5rem;
 }
-
+.maps-section {
+  margin: 7rem 0;
+  padding: 3rem 0;
+}
 .projects-section {
   padding: 10rem 0;
 }
