@@ -33,4 +33,7 @@ Load database from dumped file: 데이터베이스를 덤프한 파일에서 데
 [charjs-plugin-datalabels](https://chartjs-plugin-datalabels.netlify.app/guide/)
 
 # Demo
+## 메인 페이지
 ![demo](res/site_screenshot.jpg)
+## 이메일 구독 창
+![email_demo](res/subscribe_email_screenshot.jpg)
