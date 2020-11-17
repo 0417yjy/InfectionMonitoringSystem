@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from . import keyword 
 from .models import StatisticValues, Subscriber
 from datetime import datetime
+from . import LocationInfo
+
 
 def index(request):
     #통계 받아오는 API로 가져옴
@@ -11,7 +13,6 @@ def index(request):
      #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
      #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
      #index.html에서 result, result2, result3 변수를 html 태그나 javascript코드 등에서 사용 가능하다.
-    
     '''
     statisticDB = StatisticValues.objects.all() # 테이블 데이타를 전부 가져오기 위한 메소드
     statisticDBValues = list(StatisticValues.objects.all().values())
@@ -51,9 +52,13 @@ def index(request):
 
     statisticDB = StatisticValues.objects.all() # 테이블 데이타를 전부 가져오기 위한 메소드
     statisticDBValues = list(StatisticValues.objects.all().values())
+    locationset = LocationInfo.get_location(result)
+    seoul_gu_results = LocationInfo.scraping_data()
     context ={
         'result' : result,
         'statisticDBValues' : statisticDBValues,
+        'locationset' : locationset,
+        'seoul_gu_result' : seoul_gu_results,
     }
     print(statisticDBValues)
     print(statisticValue)
