@@ -84,3 +84,13 @@ def mapview(request):
 '''
 # Create your views here.
 
+<<<<<<< refs/remotes/origin/master
+=======
+def statisticsView(self,request):
+    template_name = 'contents-statistics.html'
+    result = keyword.keywordFindAPI() #여기!
+    context ={
+        'result' : list(result)
+    }
+    return render(request, template_name, context)
+>>>>>>> add list format
