@@ -2,9 +2,10 @@
 from urllib.parse import urlencode, quote_plus
 from urllib.request import urlopen , Request
 from . import * #if using on django , should using .apikey instead apikey 
-import json 
+import json
 
-# import requests
+
+import requests
 import re #계산을 위한 특수문자 제거
 
 def keywordFindAPI():

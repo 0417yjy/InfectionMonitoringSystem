@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import keyword 
+<<<<<<< refs/remotes/origin/master
 from .models import StatisticValues, Subscriber
 from datetime import datetime
 from . import LocationInfo
@@ -62,6 +63,28 @@ def index(request):
     }
     print(statisticDBValues)
     print(statisticValue)
+=======
+
+def index(request):
+    #통계 받아오는 API로 가져옴
+    result = keyword.keywordFindAPI() #여기!
+   
+    """
+    print(result)
+    =={'resultCode':, 'TotalCase':, 'TotalRecovered':, 'TotalDeath': , 'NowCase': , 
+    'city1n': , 'city2n':, 'city3n':, 'city4n':, 'city5n':, 
+    'city1p':, 'city2p':, 'city3p': , 'city4p': , 'city5p': , 
+    'recoveredPercentage': , 'deathPercentage':, 'checkingCounter': , 'checkingPercentage': , 
+    'caseCount': , 'casePercentage':, 'notcaseCount': , 'notcasePercentage':, 'TotalChecking': ,
+     'TodayRecovered':, 'TodayDeath':, 'TotalCaseBefore': , 'updateTime': , 'resultMessage':}
+    """
+     #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
+     #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
+     #index.html에서 result, result2, result3 변수를 html 태그나 javascript코드 등에서 사용 가능하다.
+    context ={
+        'result' : result
+    }
+>>>>>>> Add Showing TotalCase at stastistics
     return render(request, 'index.html', context)
 
 def mapview(request):
@@ -81,6 +104,7 @@ def mapview(request):
         Subscribedatas  = None
     return render(request, 'contents-subscribe.html', context) # render는 view에서 템플릿에 전달할 데이타를 Dictionary로 전달한다
 
+<<<<<<< refs/remotes/origin/master
 '''
 # Create your views here.
 
@@ -94,3 +118,11 @@ def statisticsView(self,request):
     }
     return render(request, template_name, context)
 >>>>>>> add list format
+=======
+
+# `
+# def statisticsView(self,request):
+#     template_name = 'contents-statistics.html'
+    
+#     return render(request, template_name, context)`
+>>>>>>> Add Showing TotalCase at stastistics

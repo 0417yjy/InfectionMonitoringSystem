@@ -42,7 +42,12 @@
 
 
     var hdata = new HistogramData();
+<<<<<<< refs/remotes/origin/master
     var coronaAPIData = {{ result | safe }};
+=======
+    var coronaAPIData = {{ result | safe }}; //views.py의 index 메서드에서 context로 전달된 변수 중 result 를 가져와서 씀
+    //{{}} 문법은 장고에서 쓰이는 문법입니다.
+>>>>>>> Add Showing TotalCase at stastistics
 
     var daily_chart = new Chart(ctx, {
         type: 'bar',
@@ -86,7 +91,11 @@
             title: {
                 display: true,
                 fontSize: 15,
+<<<<<<< refs/remotes/origin/master
                 text: ['대한민국 지역별 확진자 현황', '총 확진자: '+ coronaAPIData['TotalCase']+ '명']
+=======
+                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+coronaAPIData['TotalCase']+'명',] //CoronaAPI데이터에서 TotalCase를 가져와서 씀.
+>>>>>>> Add Showing TotalCase at stastistics
             },
             plugins: {
                 chartJsPluginSubtitle: {
@@ -97,6 +106,7 @@
             }
         }
     });
+<<<<<<< refs/remotes/origin/master
 </script>
 
 <<<<<<< refs/remotes/origin/master
@@ -114,3 +124,9 @@
     document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>");
 </script>
 >>>>>>> add javascript src
+=======
+        
+    
+    // document.write("TotalCase : " +coronaAPIData["TotalCase"]+"<br>") 
+</script>
+>>>>>>> Add Showing TotalCase at stastistics
