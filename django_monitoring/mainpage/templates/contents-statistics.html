@@ -19,7 +19,7 @@
             <label class="btn btn-primary">
                 <input type="radio" name="options" id="opt-recent-7days" autocomplete="off"> 최근7일
             </label>
-        </div>
+        </div> 
         <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-left: 10px;">
             <label class="btn btn-primary active">
                 <input type="radio" name="options" id="infected" autocomplete="off" checked> 확진자
@@ -39,7 +39,11 @@
 <script src="/static/js/statistics.js"></script>
 <script>
     var ctx = document.getElementById('daily-histogram').getContext('2d');
+
+
     var hdata = new HistogramData();
+    var coronaAPIData = {{ result | safe }};
+
     var daily_chart = new Chart(ctx, {
         type: 'bar',
         data: hdata,
@@ -50,7 +54,7 @@
             title: { // 차트 제목
                 display: true,
                 fontSize: 15,
-                text: ['대한민국 코로나19(COVID-19) 추이','총 확진자 i명, 사망: j명, 격리해제: k명']
+                text: ['대한민국 코로나19(COVID-19) 추이','총 확진자 '+ coronaAPIData['TotalCase']+'명  사망: '+coronaAPIData['TotalDeath']+ '명  완치자: '+coronaAPIData['TotalRecovered']+'명']
             },
             tooltips: { // 툴팁
                 mode: 'index',
@@ -64,7 +68,7 @@
                 chartJsPluginSubtitle: {
                     display: true,
                     fontSize: 12,
-                    text: '질병관리청 yyyy-mm-dd hh:MM 집계 기준'
+                    text: coronaAPIData['updateTime']
                 }
             }
         }
@@ -82,21 +86,16 @@
             title: {
                 display: true,
                 fontSize: 15,
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: n명']
+                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+ coronaAPIData['TotalCase']+ '명']
             },
             plugins: {
                 chartJsPluginSubtitle: {
                     display: true,
                     fontSize: 12,
-                    text: '질병관리청 yyyy-mm-dd hh:MM 집계 기준'
+                    text: [coronaAPIData['updateTime']]
                 }
             }
         }
     });
 </script>
 
-
-<script>
-    var coronaAPIData=new statisticsView();
-    document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>") 
-</script>
