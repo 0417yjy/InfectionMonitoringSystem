@@ -28,7 +28,8 @@ def keywordFindAPI():
     code = response.status_code
     code2 = response2.status_code
 
-    #data.update(data2)
+    print(data)
+    data.update(data2)
     return data #list로 바꿔서
 
 
