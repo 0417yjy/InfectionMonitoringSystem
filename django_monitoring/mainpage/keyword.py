@@ -11,6 +11,7 @@ def keywordFindAPI():
     #####
     korea = "http://api.corona-19.kr/korea?serviceKey="
     country = "http://api.corona-19.kr/korea/country?serviceKey="
+    countryNew='https://api.corona-19.kr/korea/country/new/?serviceKey='
 
     key = 'f14954c4a0b04d9a53b1603e20d40e1b8' #API 키(https://api.corona-19.kr/ 에서 무료 발급 가능)
     ###
@@ -24,13 +25,18 @@ def keywordFindAPI():
     text2 = response2.text
     data2 = json.loads(text2)
 
+    responseNew = requests.get(countryNew + key)
+    textNew = responseNew.text
+    dataNew = json.loads(textNew)
+
     #####
     code = response.status_code
     code2 = response2.status_code
 
     #print(data)
     data.update(data2)
-    return data #list로 바꿔서
+    data.update(dataNew)
+    return data 
 
 
 
