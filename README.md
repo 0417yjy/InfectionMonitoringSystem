@@ -9,7 +9,7 @@
 * 송승민
 
 # Useful Commands
-Checkout bracnh from other's repository
+Checkout branch from other's repository
 ```
 git remote add [coworker] git://path/to/coworkers/repo.git
 git fetch [coworker]
@@ -27,6 +27,15 @@ Load database from dumped file: 데이터베이스를 덤프한 파일에서 데
 (venv) python manage.py loaddata dbdump.json
 ```
 ***
+
+# Korea Corona API
+국내 코로나 API <br>
+https://github.com/dhlife09/Corona-19-API 
+```
+API 키: f14954c4a0b04d9a53b1603e20d40e1b8
+국내 카운터 요청 예제: https://api.corona-19.kr/korea/?serviceKey=f14954c4a0b04d9a53b1603e20d40e1b8
+시도별 발생동향 요청 예제: https://api.corona-19.kr/korea/country/new/?serviceKey=f14954c4a0b04d9a53b1603e20d40e1b8
+```
 
 # References
 [chartjs](https://www.chartjs.org/docs/latest/)  
