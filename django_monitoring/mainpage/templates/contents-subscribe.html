@@ -1,3 +1,34 @@
+
+<!DOCTYPE HTML>
+<<script type="text/javascript" src="/js/jquery-1.3.2.js"></script>
+
+<script type="text/javascript" src="/static/js/subscribemodal.js">
+   //추가 버튼
+   var rowIndex=1;
+   function addregion(form){
+     if(rowIndex > 4) return false;
+     rowIndex++;
+     var getTable = document.getElementById("Inserttable");
+     var oCurrentRow = getTable.insertRow(getTable.rows.length);
+     var oCurrentCell = oCurrentRow.insertCell(0);
+     oCurrentCell.innerHTML = "<tr><td colspan=2>
+     <select name="sido1" id="sido1"></select>
+     <select name="gugun1" id="gugun1"></select></td></tr>";
+   }
+   function delregion(form){
+     if(rowIndex < 0) {
+     return false;
+   }
+   else{
+     rowIndex--;
+     var getTable = document.getElementById("insertTable");
+     getTable.deleteRow(rowIndex);
+   }
+ }
+
+</script>
+
+<body>
 <div style="margin-top: 88px;">
   <div class="text-center">
     <h1 style="font-size: 60px; color:rgb(26, 86, 175); font-weight: bold">
@@ -7,40 +38,84 @@
       <div style="position:relative; margin-bottom: 20px;"> 그렇다면 구독하세요! </div>
     </h3>
     <div style="position:relative; margin-top: 40px;backgroundcolor=" black";">
-      <a class="emailsubscribe" data-toggle="modal" data-target="#subscribeModal" href="#">
+      <a class="emailsubscribe" data-toggle="modal" data-target="#emailsubscribeModal" href="#">
         <img src="/static/assets/img/subscribe_mail.png" style="width:275px; height:275px"> </a>
       <img src="/static/assets/img/subscribe.png"
         style="margin-left : 100px; margin-top : 50px; width:250px; height:300px">
-      <a class="kakaosubscribe" data-toggle="modal" data-target="#subscribeModal" href="#">
+      <a class="kakaosubscribe" data-toggle="modal" data-target="#kakaosubscribeModal" href="#">
         <img src="/static/assets/img/subscribe_kakao.png" style="margin-left : 100px; width:300px; height:300px"> </a>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="emailsubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header"> EMail로 구독하기
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 
       </div>
       <div class="modal-body">
-        <script type="text/javascript" src="/static/js/kakaomodal.js"></script>
-        <select name="sido1" id="sido1"></select>
-        <select name="gugun1" id="gugun1"></select>
-        <br><br>
-
-        <select name="sido2" id="sido2"></select>
-        <select name="gugun2" id="gugun2"></select>
-        <br><br>
         <form id="login" action="" method="post"> <!-- 필요한 action 지정 -->
+        <script type="text/javascript" src="/static/js/subscribe.js"></script>
+
+        <div>
+    <select id="sido">
+      <option value="">선택</option>
+    </select>
+    <select id="sigugun">
+      <option value="">선택</option>
+    </select>
+    <select id="dong">
+      <option value="">선택</option>
+    </select>
+  </div>
+
           <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
           <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
                  placeholder="e-mail주소를 입력해주세요">
           <br><br>
-          <button type="submit" class="btn btn-primary submit_button"> 이메일로 구독하기 </button>
+          <button type="submit" class="btn btn-primary submit_button" id="emailsubscribe" name="emailsubscribe"> 이메일로 구독하기 </button>
 
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="kakaosubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"> KaKaoID로 구독하기
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+      </div>
+      <div class="modal-body">
+        <tr>
+
+
+
+        <script type="text/javascript" src="/static/js/subscribemodal.js"></script>
+        <td>
+
+        <select name="sido1" id="sido1"></select>
+        <select name="gugun1" id="gugun1"></select>
+      
+      </td>
+        <br><br>
+      </tr>
+        <select name="sido2" id="sido2"></select>
+        <select name="gugun2" id="gugun2"></select>
+        <br><br>
+        <tr>
+        <form id="login" action="" method="post"> <!-- 필요한 action 지정 -->
+          <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
+          <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
+                 placeholder="kakaoTalk ID를 입력해주세요">
+          <br><br>
+          <button type="submit" class="btn btn-primary submit_button" id="kakaosubscribe" name="kakaosubscribe"> 카카오로 구독하기 </button>
+        </tr>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
