@@ -42,4 +42,7 @@ API 키: f14954c4a0b04d9a53b1603e20d40e1b8
 [charjs-plugin-datalabels](https://chartjs-plugin-datalabels.netlify.app/guide/)
 
 # Demo
+## 메인 페이지
 ![demo](res/site_screenshot.jpg)
+## 이메일 구독 창
+![email_demo](res/subscribe_email_screenshot.jpg)
