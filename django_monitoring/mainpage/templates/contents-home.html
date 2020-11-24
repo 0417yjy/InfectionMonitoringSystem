@@ -4,13 +4,13 @@
     </h1>
     <center>
     <table width="60%" height="200px" style="font-weight: bolder; text-align: center;" margin="auto" text-align="center">
-        <th style="font-size: 20px">확진자</th><th style="font-size: 20px">사망자</th><th style="font-size: 20px">격리자</th><th style="font-size: 20px">검사완료</th><th style="font-size: 20px">검사중</th><th style="font-size: 20px">결과 음성</th>
-        <tr><td>2000<br><p style="color:tomato">(+7)</p></td><td>2000<br><p style="color:tomato">(+7)</p></td><td>2000<br><p style="color:teal">(+7)</p></td><td>2000<br><p style="color:teal">(+7)</p></td><td>2000<br><p style="color:tomato">(+7)</p></td><td>2000<br><p style="color:violet">(+7)</p></td></tr>
-        <tr><td row span="3">화살표 이미지<br>이미지<br>이미지</td><td row span="3">화살표 이미지<br>이미지<br>이미지</td><td row span="3">화살표 이미지<br>이미지<br>이미지</td><td row span="3">화살표 이미지<br>이미지<br>이미지</td><td row span="3">화살표 이미지<br>이미지<br>이미지</td><td row span="3">화살표 이미지<br>이미지<br>이미지</td></tr>
+        <th style="font-size: 20px">확진자</th><th style="font-size: 20px">완치자</th><th style="font-size: 20px">사망자</th><th style="font-size: 20px">치료중</th><th style="font-size: 20px">검사 완료</th>
+        <tr><td id='TotalCase'>2000</td><td id='TotalRecovered'>2000</td><td id='TotalDeath'>2000</td><td id='NowCase'>2000<br></td><td id='TotalChecking'>2000</td>
+        <tr><td id='data0_1' style="color:tomato">(+7)</td><td id='TodayRecovered' style="color:tomato">(+7)</td><td id='TodayDeath' style="color:teal">(+7)</td><td id='checkingPercentage' style="color:teal">(+7)</td><td style="color:tomato">(+7)</td></tr>
     </table>
 
-    <div style="margin-top: 10px; background-color:rgb(247, 183, 66); width: 1000px; height: 50px; text-align: center; color: white; vertical-align: middle"><b>신규 확진자<br>해외 유입: <span style="color:orangered">+11</span>명/ 지역 발생: <span style="color:orangered">+62</span>명</b></div>
-    <div style="margin-top: 10px; width: 1200px; text-align: center"><b><span style="color:rgb(26, 86, 175)">오늘 서울의 거리두기 단계: </span><span style="color:orange">1단계(단계에 따라서 색 달라짐)</span></b></div>
+    <div style="margin-top: 10px; background-color:rgb(247, 183, 66); width: 1000px; height: 50px; text-align: center; color: white; vertical-align: middle"><b>신규 확진자<br>해외 유입: <span id='TotalNewFcase' style="color:orangered">+11</span>명/ 지역 발생: <span id='TotalNewCcase' style="color:orangered">+62</span>명</b></div>
+    <div style="margin-top: 10px; width: 1200px; text-align: center"><b><span style="color:rgb(26, 86, 175)">오늘 서울의 거리두기 단계: </span><span style="color:orange">1단계</span></b></div>
 
     <table width="40%" style="text-align: center; margin-top: 15px" cellpadding: 5px>
         <th colspan="2" style="font-size: 18px">생활 방역 수칙</th>
@@ -19,3 +19,24 @@
     </table>
     </center>
 </div>
+<script>
+    var coronaAPIData={{ result | safe }};
+    var statisticDBData={{statisticDBValues | safe}};
+    
+    // 통계값
+    document.getElementById('TotalCase').innerText=statisticDBData[0]['TotalCase']; //총 확진자
+    document.getElementById('TotalDeath').innerText=statisticDBData[0]['TotalDeath']; //총 사망자
+    document.getElementById('TotalRecovered').innerText=statisticDBData[0]['TotalRecovered']; //총 완치자
+    document.getElementById('NowCase').innerText=statisticDBData[0]['NowCase']; //치료중인 사람
+    document.getElementById('TotalChecking').innerText=statisticDBData[0]['TotalChecking']; // 검사완료 
+    // document.getElementById('notcaseCount').innerText=statisticDBData[0]['notcaseCount']; // 결과 음성
+    
+    // 전일 대비 증가 수치 
+    document.getElementById('data0_1').innerText='+'+statisticDBData[0]['TodayCase']; // 어제 대비 증가한 확진자  
+    // document.getElementById('TodayDeath').innerText='+'+statisticDBData[0]['TodayDeath']; // 어제 대비 증가한 사망자
+    document.getElementById('TodayRecovered').innerText='+'+statisticDBData[0]['TodayRecovered']; // 어제 대비 증가한 완치자
+    
+    // 전일 대비 해외 유입/지역발생 수치 
+    document.getElementById('TotalNewFcase').innerText='+'+coronaAPIData['korea']['newFcase'];
+    document.getElementById('TotalNewCcase').innerText='+'+coronaAPIData['korea']['newCcase'];
+</script>

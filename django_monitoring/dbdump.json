@@ -1,0 +1,807 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "statisticvalues"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "subscriber"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "regionmedium"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "infected"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "infectedmovement"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "regionlarge"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "facility"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "regionsmall"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 1,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 2,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 3,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 4,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 5,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 6,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": 7,
+    "fields": {
+        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
+        "TotalCase": "30,733",
+        "TotalDeath": "505",
+        "TotalRecovered": "26,466",
+        "NowCase": "3,762",
+        "TotalChecking": "2,908,890",
+        "notcaseCount": "2,824,128"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "add_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "change_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "delete_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "view_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add subscriber",
+        "content_type": [
+            "mainpage",
+            "subscriber"
+        ],
+        "codename": "add_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change subscriber",
+        "content_type": [
+            "mainpage",
+            "subscriber"
+        ],
+        "codename": "change_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete subscriber",
+        "content_type": [
+            "mainpage",
+            "subscriber"
+        ],
+        "codename": "delete_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view subscriber",
+        "content_type": [
+            "mainpage",
+            "subscriber"
+        ],
+        "codename": "view_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "add_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "change_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "delete_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "view_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "add_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "change_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "delete_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "view_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region large",
+        "content_type": [
+            "mainpage",
+            "regionlarge"
+        ],
+        "codename": "add_regionlarge"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region large",
+        "content_type": [
+            "mainpage",
+            "regionlarge"
+        ],
+        "codename": "change_regionlarge"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region large",
+        "content_type": [
+            "mainpage",
+            "regionlarge"
+        ],
+        "codename": "delete_regionlarge"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region large",
+        "content_type": [
+            "mainpage",
+            "regionlarge"
+        ],
+        "codename": "view_regionlarge"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "add_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "change_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "delete_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "view_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "add_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "change_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "delete_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "view_regionsmall"
+    }
+}
+]

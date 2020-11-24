@@ -67,10 +67,16 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='StatisticValues',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('st_name', models.CharField(max_length=20)),
-                ('value', models.IntegerField()),
-                ('updated_time', models.DateTimeField()),
+                # ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('updateTime', models.CharField(max_length=15, default="2020.11.21", serialize=False, primary_key=True)),
+                ('TotalCase', models.TextField(default="0")),
+                ('TotalDeath', models.TextField(default="0")),
+                ('TotalRecovered', models.TextField(default="0")),
+                ('NowCase', models.TextField(default="0")),
+                ('TotalChecking', models.TextField(default="0")),
+                # ('notcaseCount', models.TextField(default="0")),
+                ('TodayCase', models.TextField(default="0")),
+                ('TodayRecovered', models.TextField(default="0")),
             ],
         ),
         migrations.CreateModel(

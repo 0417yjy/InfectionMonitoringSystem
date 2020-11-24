@@ -23,7 +23,7 @@ function HistogramData() {
             }
         },
         {
-            label: "격리해제",
+            label: "완치",
             backgroundColor: "green",
             data: [251, 129, 106, 55, 69, 35, 134, 162, 52],
             datalabels: {
@@ -51,3 +51,4 @@ function HorizonBarData() {
         }
     ];
 }
+
