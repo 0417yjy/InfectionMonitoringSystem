@@ -45,6 +45,13 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
+        "model": "infected"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
         "model": "regionlarge"
     }
 },
@@ -66,21 +73,14 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
+        "model": "statisticvalues"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
         "model": "subscriber"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "facility"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "infected"
     }
 },
 {
@@ -94,7 +94,3176 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "statisticvalues"
+        "model": "facility"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bacx1dyq1nvsu9j1518uzirzkbxhntxl",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmxN_5R0ucM1nq94ACypTipEHeHSCmgfTPzXiLitpa4dV7inMVZKHH63RLSg-sO8h3rrUlqdV3mJHdFHrTLqWV-Xg7376BgL99akyfN1hkfbACA4HRyahyUcQ4YOEOyTGPy3o2cELJGY5G1CTRcibV4fwC7tzeB:1kidoU:0pB3BwaJndqmGrfB5zjL4Z2eQNqQ7Kx7hzK8q-7AUyQ",
+        "expire_date": "2020-12-11T13:29:26.180Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 1,
+    "fields": {
+        "name": "전체선택",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:07:41Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 2,
+    "fields": {
+        "name": "서울특별시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:08:57Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 3,
+    "fields": {
+        "name": "부산광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:09:36Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 4,
+    "fields": {
+        "name": "대구광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:10:00Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 5,
+    "fields": {
+        "name": "광주광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:10:40Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 6,
+    "fields": {
+        "name": "인천광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:10:55Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 7,
+    "fields": {
+        "name": "대전광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:03Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 8,
+    "fields": {
+        "name": "울산광역시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:12Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 9,
+    "fields": {
+        "name": "세종특별자치시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:21Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 10,
+    "fields": {
+        "name": "경기도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:28Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 11,
+    "fields": {
+        "name": "강원도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:36Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 12,
+    "fields": {
+        "name": "충청북도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:44Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 13,
+    "fields": {
+        "name": "충청남도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:52Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 14,
+    "fields": {
+        "name": "전라북도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:11:59Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 15,
+    "fields": {
+        "name": "전라남도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:04Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 16,
+    "fields": {
+        "name": "경상북도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:10Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 17,
+    "fields": {
+        "name": "경상남도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:15Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 18,
+    "fields": {
+        "name": "제주특별자치도",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:22Z"
+    }
+},
+{
+    "model": "mainpage.regionlarge",
+    "pk": 19,
+    "fields": {
+        "name": "해외유입",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z"
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 1,
+    "fields": {
+        "name": "종로구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 2,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 3,
+    "fields": {
+        "name": "용산구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 4,
+    "fields": {
+        "name": "성동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 5,
+    "fields": {
+        "name": "광진구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 6,
+    "fields": {
+        "name": "동대문구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 7,
+    "fields": {
+        "name": "중랑구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 8,
+    "fields": {
+        "name": "성북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 9,
+    "fields": {
+        "name": "강북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 10,
+    "fields": {
+        "name": "도봉구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 11,
+    "fields": {
+        "name": "노원구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 12,
+    "fields": {
+        "name": "은평구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 13,
+    "fields": {
+        "name": "서대문구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 14,
+    "fields": {
+        "name": "마포구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 15,
+    "fields": {
+        "name": "양천구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 16,
+    "fields": {
+        "name": "강서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 17,
+    "fields": {
+        "name": "구로구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 18,
+    "fields": {
+        "name": "금천구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 19,
+    "fields": {
+        "name": "영등포구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 20,
+    "fields": {
+        "name": "동작구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 21,
+    "fields": {
+        "name": "관악구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 22,
+    "fields": {
+        "name": "서초구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 23,
+    "fields": {
+        "name": "강남구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 24,
+    "fields": {
+        "name": "송파구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 25,
+    "fields": {
+        "name": "강동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 2
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 26,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 27,
+    "fields": {
+        "name": "서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 28,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 29,
+    "fields": {
+        "name": "영도구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 30,
+    "fields": {
+        "name": "부산진구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 31,
+    "fields": {
+        "name": "동래구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 32,
+    "fields": {
+        "name": "남구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 33,
+    "fields": {
+        "name": "북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 34,
+    "fields": {
+        "name": "강서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 35,
+    "fields": {
+        "name": "해운대구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 36,
+    "fields": {
+        "name": "사하구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 37,
+    "fields": {
+        "name": "금정구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 38,
+    "fields": {
+        "name": "연제구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 39,
+    "fields": {
+        "name": "수영구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 40,
+    "fields": {
+        "name": "사상구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 41,
+    "fields": {
+        "name": "기장군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 3
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 42,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 43,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 44,
+    "fields": {
+        "name": "서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 45,
+    "fields": {
+        "name": "남구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 46,
+    "fields": {
+        "name": "북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 47,
+    "fields": {
+        "name": "수성구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 48,
+    "fields": {
+        "name": "달서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 49,
+    "fields": {
+        "name": "달성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 4
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 50,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 5
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 51,
+    "fields": {
+        "name": "서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 5
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 52,
+    "fields": {
+        "name": "남구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 5
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 53,
+    "fields": {
+        "name": "북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 5
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 54,
+    "fields": {
+        "name": "광산구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 5
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 55,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 56,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 57,
+    "fields": {
+        "name": "미추홀구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 58,
+    "fields": {
+        "name": "연수구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 59,
+    "fields": {
+        "name": "남동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 60,
+    "fields": {
+        "name": "부평구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 61,
+    "fields": {
+        "name": "계양구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 62,
+    "fields": {
+        "name": "서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 63,
+    "fields": {
+        "name": "강화군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 64,
+    "fields": {
+        "name": "옹진군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 6
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 65,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 7
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 66,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 7
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 67,
+    "fields": {
+        "name": "서구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 7
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 68,
+    "fields": {
+        "name": "유성구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 7
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 69,
+    "fields": {
+        "name": "대덕구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 7
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 70,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 71,
+    "fields": {
+        "name": "남구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 72,
+    "fields": {
+        "name": "동구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 73,
+    "fields": {
+        "name": "북구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 74,
+    "fields": {
+        "name": "울주군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 75,
+    "fields": {
+        "name": "중구",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 8
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 76,
+    "fields": {
+        "name": "조치원읍",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 77,
+    "fields": {
+        "name": "금남면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 78,
+    "fields": {
+        "name": "부강면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 79,
+    "fields": {
+        "name": "소정면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 80,
+    "fields": {
+        "name": "연기면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 81,
+    "fields": {
+        "name": "연동면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 82,
+    "fields": {
+        "name": "연서면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 83,
+    "fields": {
+        "name": "장군면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 84,
+    "fields": {
+        "name": "전동면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 85,
+    "fields": {
+        "name": "전의면",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 86,
+    "fields": {
+        "name": "고운동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 87,
+    "fields": {
+        "name": "다정동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 88,
+    "fields": {
+        "name": "대평동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 89,
+    "fields": {
+        "name": "도담동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 90,
+    "fields": {
+        "name": "보람동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 91,
+    "fields": {
+        "name": "소담동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 92,
+    "fields": {
+        "name": "새롬동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 93,
+    "fields": {
+        "name": "아름동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 94,
+    "fields": {
+        "name": "종촌동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 95,
+    "fields": {
+        "name": "한솔동",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 9
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 96,
+    "fields": {
+        "name": "수원시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 97,
+    "fields": {
+        "name": "성남시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 98,
+    "fields": {
+        "name": "안양시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 99,
+    "fields": {
+        "name": "안산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 100,
+    "fields": {
+        "name": "용인시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 101,
+    "fields": {
+        "name": "부천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 102,
+    "fields": {
+        "name": "광명시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 103,
+    "fields": {
+        "name": "평택시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 104,
+    "fields": {
+        "name": "과천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 105,
+    "fields": {
+        "name": "오산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 106,
+    "fields": {
+        "name": "시흥시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 107,
+    "fields": {
+        "name": "군포시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 108,
+    "fields": {
+        "name": "의왕시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 109,
+    "fields": {
+        "name": "하남시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 110,
+    "fields": {
+        "name": "이천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 111,
+    "fields": {
+        "name": "화성시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 112,
+    "fields": {
+        "name": "광주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 113,
+    "fields": {
+        "name": "여주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 114,
+    "fields": {
+        "name": "양평군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 115,
+    "fields": {
+        "name": "고양시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 116,
+    "fields": {
+        "name": "의정부시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 117,
+    "fields": {
+        "name": "동두천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 118,
+    "fields": {
+        "name": "구리시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 119,
+    "fields": {
+        "name": "남양주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 120,
+    "fields": {
+        "name": "파주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 121,
+    "fields": {
+        "name": "양주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 122,
+    "fields": {
+        "name": "포천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 123,
+    "fields": {
+        "name": "연천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 124,
+    "fields": {
+        "name": "가평군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 10
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 125,
+    "fields": {
+        "name": "춘천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 126,
+    "fields": {
+        "name": "원주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 127,
+    "fields": {
+        "name": "강릉시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 128,
+    "fields": {
+        "name": "동해시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 129,
+    "fields": {
+        "name": "태백시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 130,
+    "fields": {
+        "name": "속초시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 131,
+    "fields": {
+        "name": "삼척시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 132,
+    "fields": {
+        "name": "홍청군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 133,
+    "fields": {
+        "name": "횡성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 134,
+    "fields": {
+        "name": "영월군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 135,
+    "fields": {
+        "name": "평창군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 136,
+    "fields": {
+        "name": "정선군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 137,
+    "fields": {
+        "name": "철원군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 138,
+    "fields": {
+        "name": "화천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 139,
+    "fields": {
+        "name": "양구군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 140,
+    "fields": {
+        "name": "고성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 141,
+    "fields": {
+        "name": "양양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 11
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 142,
+    "fields": {
+        "name": "청주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 143,
+    "fields": {
+        "name": "충주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 144,
+    "fields": {
+        "name": "제천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 145,
+    "fields": {
+        "name": "보은군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 146,
+    "fields": {
+        "name": "옥천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 147,
+    "fields": {
+        "name": "영동군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 148,
+    "fields": {
+        "name": "증평군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 149,
+    "fields": {
+        "name": "진천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 150,
+    "fields": {
+        "name": "괴산군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 151,
+    "fields": {
+        "name": "음성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 152,
+    "fields": {
+        "name": "단양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 12
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 153,
+    "fields": {
+        "name": "천안시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 154,
+    "fields": {
+        "name": "공주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 155,
+    "fields": {
+        "name": "보령시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 156,
+    "fields": {
+        "name": "아산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 157,
+    "fields": {
+        "name": "서산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 158,
+    "fields": {
+        "name": "논산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 159,
+    "fields": {
+        "name": "계룡시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 160,
+    "fields": {
+        "name": "당진시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 161,
+    "fields": {
+        "name": "금산군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 162,
+    "fields": {
+        "name": "부여군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 163,
+    "fields": {
+        "name": "서천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 164,
+    "fields": {
+        "name": "청양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 165,
+    "fields": {
+        "name": "홍성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 166,
+    "fields": {
+        "name": "에산군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 167,
+    "fields": {
+        "name": "태안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 13
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 168,
+    "fields": {
+        "name": "전주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 169,
+    "fields": {
+        "name": "군산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 170,
+    "fields": {
+        "name": "익산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 171,
+    "fields": {
+        "name": "정읍시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 172,
+    "fields": {
+        "name": "남원시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 173,
+    "fields": {
+        "name": "김제시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 174,
+    "fields": {
+        "name": "완주군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 175,
+    "fields": {
+        "name": "진안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 176,
+    "fields": {
+        "name": "무주군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 177,
+    "fields": {
+        "name": "장수군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 178,
+    "fields": {
+        "name": "임실군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 179,
+    "fields": {
+        "name": "순창군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 180,
+    "fields": {
+        "name": "고창군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 181,
+    "fields": {
+        "name": "부안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 14
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 182,
+    "fields": {
+        "name": "목포시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 183,
+    "fields": {
+        "name": "여수시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 184,
+    "fields": {
+        "name": "순천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 185,
+    "fields": {
+        "name": "나주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 186,
+    "fields": {
+        "name": "광양시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 187,
+    "fields": {
+        "name": "담양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 188,
+    "fields": {
+        "name": "곡성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 189,
+    "fields": {
+        "name": "구례군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 190,
+    "fields": {
+        "name": "고흥군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 191,
+    "fields": {
+        "name": "보성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 192,
+    "fields": {
+        "name": "화순군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 193,
+    "fields": {
+        "name": "장흥군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 194,
+    "fields": {
+        "name": "강진군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 195,
+    "fields": {
+        "name": "해남군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 196,
+    "fields": {
+        "name": "영암군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 197,
+    "fields": {
+        "name": "무안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 198,
+    "fields": {
+        "name": "함평군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 199,
+    "fields": {
+        "name": "영관군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 200,
+    "fields": {
+        "name": "장성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 201,
+    "fields": {
+        "name": "완도군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 202,
+    "fields": {
+        "name": "진도군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 203,
+    "fields": {
+        "name": "신안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 15
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 204,
+    "fields": {
+        "name": "포항시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 205,
+    "fields": {
+        "name": "경주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 206,
+    "fields": {
+        "name": "김천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 207,
+    "fields": {
+        "name": "안동시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 208,
+    "fields": {
+        "name": "구미시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 209,
+    "fields": {
+        "name": "영주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 210,
+    "fields": {
+        "name": "영천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 211,
+    "fields": {
+        "name": "상주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 212,
+    "fields": {
+        "name": "문경시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 213,
+    "fields": {
+        "name": "경산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 214,
+    "fields": {
+        "name": "군위군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 215,
+    "fields": {
+        "name": "의성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 216,
+    "fields": {
+        "name": "청송군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 217,
+    "fields": {
+        "name": "영양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 218,
+    "fields": {
+        "name": "영덕군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 219,
+    "fields": {
+        "name": "청도군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 220,
+    "fields": {
+        "name": "고령군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 221,
+    "fields": {
+        "name": "성주군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 222,
+    "fields": {
+        "name": "칠곡군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 223,
+    "fields": {
+        "name": "에천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 224,
+    "fields": {
+        "name": "봉화군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 225,
+    "fields": {
+        "name": "울진군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 226,
+    "fields": {
+        "name": "울릉군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 16
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 227,
+    "fields": {
+        "name": "창원시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 228,
+    "fields": {
+        "name": "진주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 229,
+    "fields": {
+        "name": "통영시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 230,
+    "fields": {
+        "name": "사천시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 231,
+    "fields": {
+        "name": "김해시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 232,
+    "fields": {
+        "name": "밀양시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 233,
+    "fields": {
+        "name": "거제시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 234,
+    "fields": {
+        "name": "양산시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 235,
+    "fields": {
+        "name": "의령군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 236,
+    "fields": {
+        "name": "함안군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 237,
+    "fields": {
+        "name": "창녕군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 238,
+    "fields": {
+        "name": "고성군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 239,
+    "fields": {
+        "name": "남해군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 240,
+    "fields": {
+        "name": "하동군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 241,
+    "fields": {
+        "name": "산청군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 242,
+    "fields": {
+        "name": "함양군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 243,
+    "fields": {
+        "name": "거창군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 244,
+    "fields": {
+        "name": "합천군",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 17
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 245,
+    "fields": {
+        "name": "제주시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 18
+    }
+},
+{
+    "model": "mainpage.regionmedium",
+    "pk": 246,
+    "fields": {
+        "name": "서귀포시",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-12T15:12:43Z",
+        "parent_region": 18
     }
 },
 {
@@ -429,6 +3598,50 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add region large",
         "content_type": [
             "mainpage",
@@ -561,6 +3774,50 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "add_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "change_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "delete_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "view_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add subscriber",
         "content_type": [
             "mainpage",
@@ -600,94 +3857,6 @@
             "subscriber"
         ],
         "codename": "view_subscriber"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "add_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "change_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "delete_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "view_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "add_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "change_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "delete_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "view_infected"
     }
 },
 {
@@ -737,45 +3906,62 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add statistic values",
+        "name": "Can add facility",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "facility"
         ],
-        "codename": "add_statisticvalues"
+        "codename": "add_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change statistic values",
+        "name": "Can change facility",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "facility"
         ],
-        "codename": "change_statisticvalues"
+        "codename": "change_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete statistic values",
+        "name": "Can delete facility",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "facility"
         ],
-        "codename": "delete_statisticvalues"
+        "codename": "delete_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view statistic values",
+        "name": "Can view facility",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "facility"
         ],
-        "codename": "view_statisticvalues"
+        "codename": "view_facility"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$UVGwTt5PeqU5$aT0P9dBIBMBIf4qSjVqZG4vLE5NO1U331uLA22iphZ8=",
+        "last_login": "2020-11-27T13:29:26.166Z",
+        "is_superuser": true,
+        "username": "jongyeonyoon",
+        "first_name": "",
+        "last_name": "",
+        "email": "0417yjy@naver.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-11-27T13:29:18.207Z",
+        "groups": [],
+        "user_permissions": []
     }
 }
 ]
