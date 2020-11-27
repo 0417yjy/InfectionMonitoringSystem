@@ -12,3 +12,9 @@ API 키: f14954c4a0b04d9a53b1603e20d40e1b8
 ```
 * API 데이터 볼 수 있는 곳
 https://repl.it/@lordroshan29/APITESTPYTHON#main.py<br>
+
+* 코로나 API 데이터 하루에 한번 자동으로 받는 받기
+- 서버 사용해야 할듯,,,?
+- 배치잡을 생성하는 경우
+- 1일1회 작업이므로 crontab 이용할 수 있음.
+

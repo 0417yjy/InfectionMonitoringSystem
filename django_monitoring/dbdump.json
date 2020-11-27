@@ -45,7 +45,21 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "statisticvalues"
+        "model": "regionlarge"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "regionmedium"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "regionsmall"
     }
 },
 {
@@ -59,7 +73,7 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "regionmedium"
+        "model": "facility"
     }
 },
 {
@@ -80,112 +94,72 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "regionlarge"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "facility"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "regionsmall"
+        "model": "statisticvalues"
     }
 },
 {
     "model": "mainpage.statisticvalues",
-    "pk": 1,
+    "pk": "2020.11.23",
     "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
+        "TotalCase": "31,004",
+        "TotalDeath": "509",
+        "TotalRecovered": "26,539",
+        "NowCase": "3,956",
+        "TotalChecking": "2,922,135",
+        "TodayCase": "271",
+        "TodayRecovered": "73"
     }
 },
 {
     "model": "mainpage.statisticvalues",
-    "pk": 2,
+    "pk": "2020.11.24",
     "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
+        "TotalCase": "31,353",
+        "TotalDeath": "510",
+        "TotalRecovered": "26,722",
+        "NowCase": "4,121",
+        "TotalChecking": "2,946,399",
+        "TodayCase": "349",
+        "TodayRecovered": "183"
     }
 },
 {
     "model": "mainpage.statisticvalues",
-    "pk": 3,
+    "pk": "2020.11.25",
     "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
+        "TotalCase": "31,735",
+        "TotalDeath": "513",
+        "TotalRecovered": "26,825",
+        "NowCase": "4,397",
+        "TotalChecking": "2,966,405",
+        "TodayCase": "382",
+        "TodayRecovered": "103"
     }
 },
 {
     "model": "mainpage.statisticvalues",
-    "pk": 4,
+    "pk": "2020.11.26",
     "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
+        "TotalCase": "32,318",
+        "TotalDeath": "515",
+        "TotalRecovered": "26,950",
+        "NowCase": "4,853",
+        "TotalChecking": "2,988,046",
+        "TodayCase": "583",
+        "TodayRecovered": "125"
     }
 },
 {
     "model": "mainpage.statisticvalues",
-    "pk": 5,
+    "pk": "2020.11.27",
     "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
-    }
-},
-{
-    "model": "mainpage.statisticvalues",
-    "pk": 6,
-    "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
-    }
-},
-{
-    "model": "mainpage.statisticvalues",
-    "pk": 7,
-    "fields": {
-        "updateTime": "코로나바이러스감염증-19 국내 발생현황 (11.22. 00시 기준)",
-        "TotalCase": "30,733",
-        "TotalDeath": "505",
-        "TotalRecovered": "26,466",
-        "NowCase": "3,762",
-        "TotalChecking": "2,908,890",
-        "notcaseCount": "2,824,128"
+        "TotalCase": "32,887",
+        "TotalDeath": "516",
+        "TotalRecovered": "27,103",
+        "NowCase": "5,268",
+        "TotalChecking": "3,009,577",
+        "TodayCase": "569",
+        "TodayRecovered": "153"
     }
 },
 {
@@ -455,45 +429,133 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add statistic values",
+        "name": "Can add region large",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "regionlarge"
         ],
-        "codename": "add_statisticvalues"
+        "codename": "add_regionlarge"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change statistic values",
+        "name": "Can change region large",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "regionlarge"
         ],
-        "codename": "change_statisticvalues"
+        "codename": "change_regionlarge"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete statistic values",
+        "name": "Can delete region large",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "regionlarge"
         ],
-        "codename": "delete_statisticvalues"
+        "codename": "delete_regionlarge"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view statistic values",
+        "name": "Can view region large",
         "content_type": [
             "mainpage",
-            "statisticvalues"
+            "regionlarge"
         ],
-        "codename": "view_statisticvalues"
+        "codename": "view_regionlarge"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "add_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "change_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "delete_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region medium",
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "codename": "view_regionmedium"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "add_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "change_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "delete_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "view_regionsmall"
     }
 },
 {
@@ -543,45 +605,45 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add region medium",
+        "name": "Can add facility",
         "content_type": [
             "mainpage",
-            "regionmedium"
+            "facility"
         ],
-        "codename": "add_regionmedium"
+        "codename": "add_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change region medium",
+        "name": "Can change facility",
         "content_type": [
             "mainpage",
-            "regionmedium"
+            "facility"
         ],
-        "codename": "change_regionmedium"
+        "codename": "change_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete region medium",
+        "name": "Can delete facility",
         "content_type": [
             "mainpage",
-            "regionmedium"
+            "facility"
         ],
-        "codename": "delete_regionmedium"
+        "codename": "delete_facility"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view region medium",
+        "name": "Can view facility",
         "content_type": [
             "mainpage",
-            "regionmedium"
+            "facility"
         ],
-        "codename": "view_regionmedium"
+        "codename": "view_facility"
     }
 },
 {
@@ -675,133 +737,45 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add region large",
+        "name": "Can add statistic values",
         "content_type": [
             "mainpage",
-            "regionlarge"
+            "statisticvalues"
         ],
-        "codename": "add_regionlarge"
+        "codename": "add_statisticvalues"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change region large",
+        "name": "Can change statistic values",
         "content_type": [
             "mainpage",
-            "regionlarge"
+            "statisticvalues"
         ],
-        "codename": "change_regionlarge"
+        "codename": "change_statisticvalues"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete region large",
+        "name": "Can delete statistic values",
         "content_type": [
             "mainpage",
-            "regionlarge"
+            "statisticvalues"
         ],
-        "codename": "delete_regionlarge"
+        "codename": "delete_statisticvalues"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view region large",
+        "name": "Can view statistic values",
         "content_type": [
             "mainpage",
-            "regionlarge"
+            "statisticvalues"
         ],
-        "codename": "view_regionlarge"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "add_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "change_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "delete_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view facility",
-        "content_type": [
-            "mainpage",
-            "facility"
-        ],
-        "codename": "view_facility"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "add_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "change_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "delete_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "view_regionsmall"
+        "codename": "view_statisticvalues"
     }
 }
 ]
