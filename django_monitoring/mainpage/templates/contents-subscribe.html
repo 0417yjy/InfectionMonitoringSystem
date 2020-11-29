@@ -1,125 +1,193 @@
 <!DOCTYPE HTML>
 <script type="text/javascript" src="/static/js/subscribemodal.js">
-   //추가 버튼
-   var rowIndex=1;
-   function addregion(form){
-     if(rowIndex > 4) return false;
-     rowIndex++;
-     var getTable = document.getElementById("Inserttable");
-     var oCurrentRow = getTable.insertRow(getTable.rows.length);
-     var oCurrentCell = oCurrentRow.insertCell(0);
-     oCurrentCell.innerHTML = "<tr><td colspan=2>
-     <select name="sido1" id="sido1"></select>
-     <select name="gugun1" id="gugun1"></select></td></tr>";
-   }
-   function delregion(form){
-     if(rowIndex < 0) {
-     return false;
-   }
-   else{
-     rowIndex--;
-     var getTable = document.getElementById("insertTable");
-     getTable.deleteRow(rowIndex);
-   }
- }
+  //추가 버튼
+  var rowIndex = 1;
+  function addregion(form) {
+    if (rowIndex > 4) return false;
+    rowIndex++;
+    var getTable = document.getElementById("Inserttable");
+    var oCurrentRow = getTable.insertRow(getTable.rows.length);
+    var oCurrentCell = oCurrentRow.insertCell(0);
+    oCurrentCell.innerHTML = "<tr><td colspan=2>
+      < select name = "sido1" id = "sido1" ></select >
+        <select name="gugun1" id="gugun1"></select></td ></tr > ";
+  }
+  function delregion(form) {
+    if (rowIndex < 0) {
+      return false;
+    }
+    else {
+      rowIndex--;
+      var getTable = document.getElementById("insertTable");
+      getTable.deleteRow(rowIndex);
+    }
+  }
 
-  </script>
+</script>
 
-  <body>
-    <div style="margin-top: 88px;">
-      <div class="text-center">
-        <h1 style="font-size: 60px; color:rgb(26, 86, 175); font-weight: bold">
-          <div style="position:relative; margin-bottom: 20px;"> 알림 메세지를 받아보고 싶나요? </div>
-        </h1>
-        <h3 style="font-size: 30px; color:rgb(204, 0, 153); font-weight: bold">
-          <div style="position:relative; margin-bottom: 20px;"> 그렇다면 구독하세요! </div>
-        </h3>
-        <div style="position:relative; margin-top: 40px;background-color:'black';">
-          <a class="emailsubscribe" data-toggle="modal" data-target="#emailsubscribeModal" href="#">
-            <img src="/static/assets/img/subscribe_mail.png" style="width:275px; height:275px"> </a>
-          <img src="/static/assets/img/subscribe.png"
-            style="margin-left : 100px; margin-top : 50px; width:250px; height:300px">
-          <a class="kakaosubscribe" data-toggle="modal" data-target="#kakaosubscribeModal" href="#">
-            <img src="/static/assets/img/subscribe_kakao.png" style="margin-left : 100px; width:300px; height:300px">
-          </a>
-        </div>
+<body>
+  <div style="margin-top: 88px;">
+    <div class="text-center">
+      <h1 style="font-size: 60px; color:rgb(26, 86, 175); font-weight: bold">
+        <div style="position:relative; margin-bottom: 20px;"> 알림 메세지를 받아보고 싶나요? </div>
+      </h1>
+      <h3 style="font-size: 30px; color:rgb(204, 0, 153); font-weight: bold">
+        <div style="position:relative; margin-bottom: 20px;"> 그렇다면 구독하세요! </div>
+      </h3>
+      <div style="position:relative; margin-top: 40px;background-color:'black';">
+        <a class="emailsubscribe" data-toggle="modal" data-target="#emailsubscribeModal" href="#">
+          <img src="/static/assets/img/subscribe_mail.png" style="width:275px; height:275px"> </a>
+        <img src="/static/assets/img/subscribe.png"
+          style="margin-left : 100px; margin-top : 50px; width:250px; height:300px">
+        <a class="kakaosubscribe" data-toggle="modal" data-target="#kakaosubscribeModal" href="#">
+          <img src="/static/assets/img/subscribe_kakao.png" style="margin-left : 100px; width:300px; height:300px">
+        </a>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="emailsubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header"> E-Mail로 구독하기
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                aria-hidden="true">×</span></button>
-
-          </div>
-          <div class="modal-body">
-            <form id="login" action="" method="post">
+  <div class="modal fade" id="emailsubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header"> E-Mail로 구독하기
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="subscribe-modal-body d-flex flex-row">
+            <form id="login" action="" method="post" style="width:100%">
               <!-- 필요한 action 지정 -->
-              <script type="text/javascript" src="/static/js/subscribe.js"></script>
+              <script>
+                const larges = {{ largeRegions | safe }};
+                const mediums = {{ mediumRegions | safe }};
 
-              <div>
-                <select id="select-large">
-                  <option value="">선택</option>
-                </select>
-                <select id="select-medium">
-                  <option value="">선택</option>
-                </select>
-                <select id="select-small">
-                  <option value="">선택</option>
-                </select>
+                function mediumRegion_add_all_select_option() {
+                  // '전체선택'의 pk값 구하기
+                  var all_select_pk = -1;
+                  const all_select = "전체선택";
+                  for (var i = mediums.length - 1; i >= 0; i--) {
+                    if (mediums[i].fields.name == all_select) {
+                      all_select_pk = mediums[i].pk;
+                    }
+                  }
+                  jQuery('#select-medium').append(fn_option(all_select_pk, all_select)); // '전체선택' 옵션 추가
+                }
+
+                function fn_option(code, name) {
+                  return '<option value="' + code + '">' + name + '</option>';
+                }
+
+
+                jQuery(document).ready(function () {
+                  //대분류 지역 옵션 추가
+                  jQuery.each(larges, function (i, item) {
+                    //append를 이용하여 option 하위에 붙여넣음
+                    jQuery('#select-large').append(fn_option(item.pk, item.fields.name));
+                  });
+                  mediumRegion_add_all_select_option();
+
+                  console.log(larges);
+                  console.log(mediums);
+                  //대분류 선택 시, 중분류 지역 옵션 추가
+                  jQuery('#select-large').change(function () {
+                    jQuery('#select-medium').prop('disabled', false);
+                    jQuery('#select-medium').empty();
+
+                    mediumRegion_add_all_select_option();
+
+                    // 부모값 선택이 '전체선택'이 아닌 경우에만 각 지역 옵션 추가
+                    if (jQuery('#select-large > option:selected').val() != 1) {
+                      jQuery.each(mediums, function (i, item) {
+                        if (jQuery('#select-large > option:selected').val() == item.fields.parent_region)
+                          jQuery('#select-medium').append(fn_option(item.pk, item.fields.name));
+                      });
+                    }
+                  });
+
+                  // jQuery(document).ready(function () {
+                  //   //중분류 지역 옵션 추가
+                  //   jQuery.each(mediums, function (i, item) {
+                  //     //append를 이용하여 option 하위에 붙여넣음
+                  //     jQuery('#select-medium').append(fn_option(item.pk, item.fields.name));
+                  //   });
+                  // });
+
+                });
+              </script>
+              <div class="d-flex justify-content-around" style="margin-top: 10px;">
+                <div class="flex-fill">
+                  <div class="d-flex justify-content-center">
+                    <select style="width: 85%;" id="select-large">
+                    </select>
+                  </div>
+                </div>
+                <div class="flex-fill">
+                  <div class="d-flex justify-content-center">
+                    <select style="width: 85%;" id="select-medium">
+                    </select>
+                  </div>
+                </div>
+                <!-- <div class="flex-fill">
+                  <div class="d-flex justify-content-center">
+                    <select style="width: 85%;" id="select-small" disabled>
+                      <option value="">선택</option>
+                    </select>
+                  </div>
+                </div> -->
               </div>
 
-              <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
-              <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
-                placeholder="e-mail주소를 입력해주세요">
-              <br><br>
-              <button type="submit" class="btn btn-primary submit_button" id="emailsubscribe" name="emailsubscribe">
-                이메일로 구독하기 </button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="kakaosubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header"> KaKaoID로 구독하기
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                aria-hidden="true">×</span></button>
-
-          </div>
-          <div class="modal-body">
-            <tr>
-
-
-
-              <script type="text/javascript" src="/static/js/subscribemodal.js"></script>
-              <td>
-
-                <select name="sido1" id="sido1"></select>
-                <select name="gugun1" id="gugun1"></select>
-
-              </td>
-              <br><br>
-            </tr>
-            <select name="sido2" id="sido2"></select>
-            <select name="gugun2" id="gugun2"></select>
-            <br><br>
-            <tr>
-              <form id="login" action="" method="post">
-                <!-- 필요한 action 지정 -->
+              <div style="margin-top: 25px">
                 <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
                 <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
-                  placeholder="kakaoTalk ID를 입력해주세요">
-                <br><br>
-                <button type="submit" class="btn btn-primary submit_button" id="kakaosubscribe" name="kakaosubscribe">
-                  카카오로 구독하기 </button>
-            </tr>
+                  placeholder="e-mail주소를 입력해주세요">
+              </div>
+              <button type="submit" class="btn btn-primary submit_button" id="emailsubscribe" name="emailsubscribe"
+                style="margin-top: 25px;">
+                이메일로 구독하기
+              </button>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="modal fade" id="kakaosubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header"> KaKaoID로 구독하기
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+
+        </div>
+        <div class="modal-body">
+          <tr>
+
+
+
+            <script type="text/javascript" src="/static/js/subscribemodal.js"></script>
+            <td>
+
+              <select name="sido1" id="sido1"></select>
+              <select name="gugun1" id="gugun1"></select>
+
+            </td>
+            <br><br>
+          </tr>
+          <select name="sido2" id="sido2"></select>
+          <select name="gugun2" id="gugun2"></select>
+          <br><br>
+          <tr>
+            <form id="login" action="" method="post">
+              <!-- 필요한 action 지정 -->
+              <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
+              <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username"
+                placeholder="kakaoTalk ID를 입력해주세요">
+              <br><br>
+              <button type="submit" class="btn btn-primary submit_button" id="kakaosubscribe" name="kakaosubscribe">
+                카카오로 구독하기 </button>
+          </tr>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

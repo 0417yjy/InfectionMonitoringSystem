@@ -1,13 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core import serializers
 from . import keyword 
-from .models import StatisticValues, Subscriber
+from .models import StatisticValues, RegionLarge, RegionMedium
 from datetime import datetime
+import json
 
 def index(request):
+    #============================================ Start of 'contents-home.html' ====================================================
     #통계 받아오는 API로 가져옴
     result = keyword.keywordFindAPI() 
-    print(result)
+    #print(result)
      #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
      #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
      #index.html에서 result, result2, result3 변수를 html 태그나 javascript코드 등에서 사용 가능하다.
@@ -51,12 +54,26 @@ def index(request):
 
     statisticDB = StatisticValues.objects.all() # 테이블 데이타를 전부 가져오기 위한 메소드
     statisticDBValues = list(StatisticValues.objects.all().values())
-    context ={
+    
+    #print(statisticDBValues)
+    #print(statisticValue)
+    #=============================================== End of 'contents-home.html' ========================================================
+
+
+    #============================================ Start of 'contents-subscribe.html' ====================================================
+    largeRegions = RegionLarge.objects.all()
+    largeRegionsValues = serializers.serialize('json', largeRegions)
+    mediumRegions = RegionMedium.objects.all()
+    mediumRegionsValues = serializers.serialize('json', mediumRegions)
+    #============================================= End of 'contents-subscribe.html' =====================================================
+    context = {
+        # contents-home
         'result' : result,
-        'statisticDBValues' : statisticDBValues,
+        'statisticDBValues': statisticDBValues,
+        # contents-subscribe
+        'largeRegions': largeRegionsValues,
+        'mediumRegions': mediumRegionsValues
     }
-    print(statisticDBValues)
-    print(statisticValue)
     return render(request, 'index.html', context)
 
 def mapview(request):
@@ -77,5 +94,4 @@ def mapview(request):
     return render(request, 'contents-subscribe.html', context) # render는 view에서 템플릿에 전달할 데이타를 Dictionary로 전달한다
 
 '''
-# Create your views here.
 
