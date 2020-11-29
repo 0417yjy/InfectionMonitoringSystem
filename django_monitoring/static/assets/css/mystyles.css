@@ -10386,3 +10386,7 @@ body {
 .subscribe-modal-body {
   width: 90%;
 }
+
+.btn-circle {
+  border-radius: 50%;
+}
