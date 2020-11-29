@@ -2456,15 +2456,16 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+
 .btn-primary {
-  color: var(--blue);
-  background-color: var(--white);
-  border-color: var(--blue);
+  color: #fff;
+  background-color: #3d9bff;
+  border-color: #3d9bff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #3d9bff;
-  border-color: darkblue;
+  background-color: #3685da;
+  border-color: #3685da;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
@@ -10381,4 +10382,12 @@ body {
   background-color: rgb(39, 101, 236);
   border-radius: 50%;
   display: inline-block;
+}
+
+.subscribe-modal-body {
+  width: 90%;
+}
+
+.btn-circle {
+  border-radius: 50%;
 }
