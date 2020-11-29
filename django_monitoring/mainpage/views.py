@@ -110,6 +110,39 @@ def subscribe_email(request):
         form = SubscirberForm(request.POST)
     return redirect('index')
 
+def subscribe_kakao(request):
+    if request.method == 'POST':
+        form = SubscirberForm(request.POST)
+        if form.is_valid():
+            kakao_id = request.POST.get('address', 'false')
+            kakao_nickname = request.POST.get('nickname', 'false')
+            #print(email)
+
+            # 지역 구독 리스트 가져오기
+            i = 0
+            while request.POST.get('large_' + str(i)):
+                large_pk = request.POST.get('large_' + str(i))
+                med_pk = request.POST.get('med_' + str(i))
+                #print(str(i) + ': ' + large_pk + ', ' + med_pk)
+                
+                # 데이터베이스에 저장
+                new_subscription = Subscriber(
+                    address=kakao_id,
+                    sub_type="Kakao",
+                    large_region=RegionLarge.objects.get(pk=large_pk),
+                    medium_region=RegionMedium.objects.get(pk=med_pk)
+                )
+                new_subscription.save()
+
+                i += 1
+
+            # 성공 메시지 전달    
+            messages.success(request, str(i) + '개 지역이 ' + kakao_nickname + '님의 구독 리스트에 추가되었습니다!')
+            return redirect('index')
+    else:
+        form = SubscirberForm(request.POST)
+    return redirect('index')    
+
 def mapview(request):
     return render(request, 'map.html')
 

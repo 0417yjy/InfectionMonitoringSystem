@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <script>
   function emailHandler() {
+    // action을 이메일로 변경
+    document.getElementById('subscribe-form').setAttribute('action', "{% url 'subscribe_email' %}");
+
     // 이메일 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = 'E-Mail로 구독하기';
     document.getElementById('insert_address').innerHTML =
@@ -15,10 +18,18 @@
   }
 
   function kakaoHandler() {
+    // action을 카카오로 변경
+    document.getElementById('subscribe-form').setAttribute('action', "{% url 'subscribe_kakao' %}");
+
     // 카카오톡 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = '카카오톡으로 구독하기';
-    document.getElementById('insert_address').innerHTML = '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>';
+    document.getElementById('insert_address').innerHTML = 
+    '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>' + 
+    '<input id="subscribe_address" name="address">' +
+    '<input id="subscribe_nickname" name="nickname">';
     document.getElementById('subscribe_footer').innerHTML = '<button type="button" class="btn btn-outline-secondary" data-dismiss="modal" style="width: 100%;">Close</button>';
+    document.getElementById('subscribe_address').style.display = 'none';
+    document.getElementById('subscribe_nickname').style.display = 'none';
   }
 
   const larges = {{ largeRegions | safe }};
@@ -61,6 +72,8 @@
   function initialize_selects(idx) {
     jQuery('#sel_large_' + idx).empty();
     jQuery('#sel_med_' + idx).empty();
+    jQuery('#sel_large_' + idx).attr('name', 'large_' + idx);
+    jQuery('#sel_med_' + idx).attr('name', 'med_' + idx);
 
     //대분류 지역 옵션 추가
     jQuery.each(larges, function (i, item) {
@@ -73,13 +86,10 @@
   }
 
   function set_idx_to_selects(entry, idx) {
-    console.log('adding ids')
     entry.find('.select-large').attr('id', 'sel_large_' + idx);
     entry.find('.select-medium').attr('id', 'sel_med_' + idx);
-    console.log('adding names')
     entry.find('.select-large').attr('name', 'large_' + idx);
     entry.find('.select-medium').attr('name', 'med_' + idx);
-    console.log('done')
     add_change_event(idx);
   }
 
@@ -118,6 +128,41 @@
 
   });
 </script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type='text/javascript'>
+  //<![CDATA[
+  // 사용할 앱의 JavaScript 키를 설정해 주세요.
+  Kakao.init('09e74e4091015b732b377f235443730a');
+  var token;
+  var userID;
+  function Kakaologin(){
+    Kakao.Auth.login({
+      persistAccessToken: true,
+      success: function(auth){
+        token = auth.access_token;
+        Kakao.API.request({
+          url: '/v2/user/me',
+          success: function(res) {
+            console.log(res);
+            userID = res.id;						//유저의 카카오톡 고유 id
+            var userNickName = res.properties.nickname;	//유저가 등록한 별명
+
+            document.getElementById('subscribe-form').address.value = userID;
+            document.getElementById('subscribe-form').nickname.value = userNickName;
+            document.getElementById('subscribe-form').submit();
+            $('#subscribeModal').modal('hide')
+          },
+          fail: function(error) {
+            alert(JSON.stringify(error));
+          }
+        });
+      }, 
+      fail: function(err){ 
+        console.error(err) 
+      } 
+    });
+  };
+</script>
 
 <body>
   <div style="margin-top: 88px;">
@@ -150,7 +195,7 @@
         </div>
         <div class="d-flex justify-content-center">
           <div class="subscribe-modal-body d-flex flex-row">
-            <form id="subscribe-form" action="{% url 'subscribe_email' %}" method="post" style="width:100%">
+            <form id="subscribe-form" method="post" style="width:100%">
               {% csrf_token %}
               <!-- 필요한 action 지정 -->
               <div id="dynamic_region_select">
