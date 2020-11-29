@@ -3,13 +3,22 @@
   function emailHandler() {
     // 이메일 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = 'E-Mail로 구독하기';
-    document.getElementById('user_id').innerHTML = 'E-Mail 주소';
+    document.getElementById('insert_address').innerHTML =
+      '<small id="user_id">E-Mail 주소</small>' +
+      '<div class="login-error alert alert-danger" role="alert" style="display: none;"></div>' +
+      '<input type="email" id="subscribe_mail" name="address" class="form-control" autocomplete="username">';
+    document.getElementById('subscribe_footer').innerHTML =
+      '<div class="d-flex justify-content-around">' +
+      '<div class="flex-fill"><button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button></div>' +
+      '<div class="flex-fill"><button type="submit" class="btn btn-outline-primary submit_button" id="emailsubscribe"name="emailsubscribe">Submit</button></div>' +
+      '</div>';
   }
 
   function kakaoHandler() {
     // 카카오톡 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = '카카오톡으로 구독하기';
-    document.getElementById('user_id').innerHTML = 'Kakao 아이디';
+    document.getElementById('insert_address').innerHTML = '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>';
+    document.getElementById('subscribe_footer').innerHTML = '<button type="button" class="btn btn-outline-secondary" data-dismiss="modal" style="width: 100%;">Close</button>';
   }
 
   const larges = {{ largeRegions | safe }};
@@ -175,13 +184,20 @@
                   </div>
                 </div>
               </div>
-              <div style="margin-top: 25px">
-                <small id="user_id">E-Mail 주소</small>
+              <div style="margin-top: 25px" id="insert_address">
+                <!-- 이메일 -->
+                <!-- <small id="user_id">E-Mail 주소</small>
                 <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
-                <input type="email" id="subscribe_mail" name="address" class="form-control" autocomplete="username">
+                <input type="email" id="subscribe_mail" name="address" class="form-control" autocomplete="username"> -->
+
+                <!-- 카카오톡 -->
+                <!-- <a class="nav-link active" href="javascript:Kakaologin()">
+                  <img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;">
+                </a> -->
               </div>
-              <div class="modal-footer" style="margin-top: 25px;">
-                <div class="d-flex justify-content-around">
+              <div class="modal-footer" style="margin-top: 25px;" id='subscribe_footer'>
+                <!-- 이메일 -->
+                <!-- <div class="d-flex justify-content-around">
                   <div class="flex-fill">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                   </div>
@@ -189,7 +205,11 @@
                     <button type="submit" class="btn btn-outline-primary submit_button" id="emailsubscribe"
                       name="emailsubscribe">Submit</button>
                   </div>
-                </div>
+                </div> -->
+
+                <!-- 카카오톡 -->
+                <!-- <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"
+                  style="width: 100%;">Close</button> -->
               </div>
           </div>
         </div>
@@ -208,12 +228,12 @@
         </div> -->
         <div class="modal-body">
           {% if messages %}
-            {% for message in messages %}
-            <p class="{{ message.tags }}">{{ message }}</p>
-            {% endfor %}
+          {% for message in messages %}
+          <p class="{{ message.tags }}">{{ message }}</p>
+          {% endfor %}
           {% endif %}
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer" style="width: 100%;">
           <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">OK</button>
         </div>
       </div>
