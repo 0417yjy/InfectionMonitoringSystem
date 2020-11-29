@@ -11,7 +11,7 @@
     document.getElementById('subscribe_modal_label').innerHTML = '카카오톡으로 구독하기';
     document.getElementById('user_id').innerHTML = 'Kakao 아이디';
   }
-  
+
   const larges = {{ largeRegions | safe }};
   const mediums = {{ mediumRegions | safe }};
   var current_select_idx = 0;
@@ -64,8 +64,13 @@
   }
 
   function set_idx_to_selects(entry, idx) {
+    console.log('adding ids')
     entry.find('.select-large').attr('id', 'sel_large_' + idx);
     entry.find('.select-medium').attr('id', 'sel_med_' + idx);
+    console.log('adding names')
+    entry.find('.select-large').attr('name', 'large_' + idx);
+    entry.find('.select-medium').attr('name', 'med_' + idx);
+    console.log('done')
     add_change_event(idx);
   }
 
@@ -125,7 +130,7 @@
       </div>
     </div>
   </div>
-
+  <!-- 구독 폼 모달 창 -->
   <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -136,7 +141,8 @@
         </div>
         <div class="d-flex justify-content-center">
           <div class="subscribe-modal-body d-flex flex-row">
-            <form id="subscribe-form" action="" method="post" style="width:100%">
+            <form id="subscribe-form" action="{% url 'subscribe_email' %}" method="post" style="width:100%">
+              {% csrf_token %}
               <!-- 필요한 action 지정 -->
               <div id="dynamic_region_select">
                 <small id="roi">관심 지역</small>
@@ -172,7 +178,7 @@
               <div style="margin-top: 25px">
                 <small id="user_id">E-Mail 주소</small>
                 <div class="login-error alert alert-danger" role="alert" style="display: none;"></div>
-                <input type="email" id="subscribe_mail" name="email" class="form-control" autocomplete="username">
+                <input type="email" id="subscribe_mail" name="address" class="form-control" autocomplete="username">
               </div>
               <div class="modal-footer" style="margin-top: 25px;">
                 <div class="d-flex justify-content-around">
@@ -190,4 +196,36 @@
       </div>
     </div>
   </div>
+  <!-- 구독 결과 모달 창-->
+  <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title">결과</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body">
+          {% if messages %}
+            {% for message in messages %}
+            <p class="{{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if messages %}
+  <script>
+    {% for message in messages %}
+    $(document).ready(function () {
+      $('#resultModal').modal('show');
+    });
+    {% endfor %}
+  </script>
+  {% endif %}
 </body>

@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core import serializers
+from django.contrib import messages
 from . import keyword 
-from .models import StatisticValues, RegionLarge, RegionMedium
+from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
+from .forms import SubscirberForm
 from datetime import datetime
 import json
 
@@ -75,6 +77,38 @@ def index(request):
         'mediumRegions': mediumRegionsValues
     }
     return render(request, 'index.html', context)
+
+def subscribe_email(request):
+    if request.method == 'POST':
+        form = SubscirberForm(request.POST)
+        if form.is_valid():
+            email = request.POST.get('address', 'false')
+            #print(email)
+
+            # 지역 구독 리스트 가져오기
+            i = 0
+            while request.POST.get('large_' + str(i)):
+                large_pk = request.POST.get('large_' + str(i))
+                med_pk = request.POST.get('med_' + str(i))
+                print(str(i) + ': ' + large_pk + ', ' + med_pk)
+                
+                # 데이터베이스에 저장
+                new_subscription = Subscriber(
+                    address=email,
+                    sub_type="Email",
+                    large_region=RegionLarge.objects.get(pk=large_pk),
+                    medium_region=RegionMedium.objects.get(pk=med_pk)
+                )
+                new_subscription.save()
+
+                i += 1
+
+            # 성공 메시지 전달    
+            messages.success(request, str(i) + '개 지역이 ' + email + '의 구독 리스트에 추가되었습니다!')
+            return redirect('index')
+    else:
+        form = SubscirberForm(request.POST)
+    return redirect('index')
 
 def mapview(request):
     return render(request, 'map.html')
