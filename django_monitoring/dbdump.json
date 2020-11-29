@@ -3267,6 +3267,18 @@
     }
 },
 {
+    "model": "mainpage.regionmedium",
+    "pk": 247,
+    "fields": {
+        "name": "전체선택",
+        "no_infected": 0,
+        "no_deceased": 0,
+        "no_offisolated": 0,
+        "updated_time": "2020-11-29T04:10:18Z",
+        "parent_region": 1
+    }
+},
+{
     "model": "mainpage.statisticvalues",
     "pk": "2020.11.23",
     "fields": {
@@ -3329,6 +3341,32 @@
         "TotalChecking": "3,009,577",
         "TodayCase": "569",
         "TodayRecovered": "153"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": "2020.11.28",
+    "fields": {
+        "TotalCase": "33,375",
+        "TotalDeath": "522",
+        "TotalRecovered": "27,349",
+        "NowCase": "5,504",
+        "TotalChecking": "3,032,004",
+        "TodayCase": "504",
+        "TodayRecovered": "246"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": "2020.11.29",
+    "fields": {
+        "TotalCase": "33,824",
+        "TotalDeath": "523",
+        "TotalRecovered": "27,542",
+        "NowCase": "5,759",
+        "TotalChecking": "3,046,971",
+        "TodayCase": "450",
+        "TodayRecovered": "193"
     }
 },
 {
@@ -3962,6 +4000,24 @@
         "date_joined": "2020-11-27T13:29:18.207Z",
         "groups": [],
         "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-11-29T04:10:23.659Z",
+        "user": [
+            "jongyeonyoon"
+        ],
+        "content_type": [
+            "mainpage",
+            "regionmedium"
+        ],
+        "object_id": "247",
+        "object_repr": "전체선택",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
 }
 ]
