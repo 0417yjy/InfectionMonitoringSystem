@@ -5,7 +5,6 @@ from django.contrib import messages
 from . import keyword 
 from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
 from .forms import SubscirberForm
-from .mailsender import send_safe_mail
 from datetime import datetime
 import json
 
