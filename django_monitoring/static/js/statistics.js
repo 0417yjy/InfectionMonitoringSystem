@@ -1,11 +1,11 @@
-function HistogramData() {
+function HistogramData(weekDate, diseased7, death7, cured7) {
     // 현재는 예시. 나중에 함수로 적용
-    this.labels = ["10.7", "10.8", "10.9", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15"];
+    this.labels = weekDate;
     this.datasets = [
         {
             label: "확진",
             backgroundColor: "red",
-            data: [134, 69, 54, 72, 58, 100, 91, 84, 110],
+            data: diseased7,
             datalabels: {
                 align: 'end',
                 anchor: 'end',
@@ -15,7 +15,7 @@ function HistogramData() {
         {
             label: "사망",
             backgroundColor: "black",
-            data: [3, 2, 1, 2, 2, 2, 1, 3, 4],
+            data: death7,
             datalabels: {
                 align: 'end',
                 anchor: 'end',
@@ -25,7 +25,7 @@ function HistogramData() {
         {
             label: "완치",
             backgroundColor: "green",
-            data: [251, 129, 106, 55, 69, 35, 134, 162, 52],
+            data: cured7,
             datalabels: {
                 align: 'end',
                 anchor: 'end',
