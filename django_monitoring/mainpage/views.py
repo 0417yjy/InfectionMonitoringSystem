@@ -5,13 +5,14 @@ from django.contrib import messages
 from . import keyword 
 from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
 from .forms import SubscirberForm
+from .mailsender import send_safe_mail
 from datetime import datetime
 import json
 
 def index(request):
     #============================================ Start of 'contents-home.html' ====================================================
     #통계 받아오는 API로 가져옴
-    result = keyword.keywordFindAPI() 
+    result = keyword.keywordFindAPI()
     #print(result)
      #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
      #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
@@ -34,13 +35,13 @@ def index(request):
         #                     notcaseCount = request.POST['notcaseCount'])
         
         YEAR= datetime.today().year        # 현재 연도 가져오기
-        #print(YEAR)
-        MONTH= datetime.today().month      # 현재 월 가져오기
-        #print(MONTH)
-        DAY= datetime.today().day        # 현재 일 가져오기
+        # #print(YEAR)
+        # MONTH= datetime.today().month      # 현재 월 가져오기
+        # #print(MONTH)
+        # DAY= datetime.today().day        # 현재 일 가져오기
         #print(DAY)
-        TodayDate=str(YEAR)+"."+str(MONTH)+"."+str(DAY)
-        print(TodayDate)
+        #TodayDate=str(YEAR)+"."+str(MONTH)+"."+str(DAY)
+        #print(TodayDate)
         # if statisticDB.objects.get(updateTime=TodayDate).updateTime != TodayDate:
         #if not statisticDB.objects.filter(updateTime=TodayDate).exists(): 
         statisticValue = StatisticValues(updateTime = str(YEAR)+"."+result['updateTime'][23:28], 
@@ -50,7 +51,8 @@ def index(request):
                              TodayCase = result['data0_1'], TodayRecovered =result['TodayRecovered'])
         statisticValue.save()
         
-    except :
+    except Exception as e:
+        print(e)
         statisticValue  = None
     # updateTime # 정보 업데이트 시간 data['updateTime'][23:28] -> 월.일(00.00 구조)
 
