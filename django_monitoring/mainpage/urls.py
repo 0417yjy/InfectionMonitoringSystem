@@ -5,5 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('subscribe/email', views.subscribe_email, name='subscribe_email')
+    path('subscribe/email', views.subscribe_email, name='subscribe_email'),
+    path('subscribe/kakaotalk', views.subscribe_kakao, name='subscribe_kakao')
 ]

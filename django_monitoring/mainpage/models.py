@@ -56,7 +56,7 @@ class Subscriber(models.Model):
     #small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.sub_type + ": " + self.address
+        return self.sub_type + ": " + self.address + ": " + str(self.large_region) + "/" + str(self.medium_region)
 
 # class Facility(models.Model):
 #     # Entity about facility (a kind of map overlay components)
