@@ -102,7 +102,7 @@
     "pk": "bacx1dyq1nvsu9j1518uzirzkbxhntxl",
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe_iGlmxN_5R0ucM1nq94ACypTipEHeHSCmgfTPzXiLitpa4dV7inMVZKHH63RLSg-sO8h3rrUlqdV3mJHdFHrTLqWV-Xg7376BgL99akyfN1hkfbACA4HRyahyUcQ4YOEOyTGPy3o2cELJGY5G1CTRcibV4fwC7tzeB:1kidoU:0pB3BwaJndqmGrfB5zjL4Z2eQNqQ7Kx7hzK8q-7AUyQ",
-        "expire_date": "2020-12-11T13:29:26.180Z"
+        "expire_date": "2020-12-11T13:29:26.180"
     }
 },
 {
@@ -110,10 +110,10 @@
     "pk": 1,
     "fields": {
         "name": "전체선택",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:07:41Z"
+        "no_infected": 34201,
+        "no_deceased": 526,
+        "no_offisolated": 27625,
+        "updated_time": "2020-12-01T05:05:44.654"
     }
 },
 {
@@ -121,10 +121,10 @@
     "pk": 2,
     "fields": {
         "name": "서울특별시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:08:57Z"
+        "no_infected": 8811,
+        "no_deceased": 93,
+        "no_offisolated": 6534,
+        "updated_time": "2020-12-01T05:05:44.694"
     }
 },
 {
@@ -132,10 +132,10 @@
     "pk": 3,
     "fields": {
         "name": "부산광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:09:36Z"
+        "no_infected": 809,
+        "no_deceased": 16,
+        "no_offisolated": 600,
+        "updated_time": "2020-12-01T05:05:44.711"
     }
 },
 {
@@ -143,10 +143,10 @@
     "pk": 4,
     "fields": {
         "name": "대구광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:10:00Z"
+        "no_infected": 7232,
+        "no_deceased": 199,
+        "no_offisolated": 6998,
+        "updated_time": "2020-12-01T05:05:44.724"
     }
 },
 {
@@ -154,10 +154,10 @@
     "pk": 5,
     "fields": {
         "name": "광주광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:10:40Z"
+        "no_infected": 696,
+        "no_deceased": 3,
+        "no_offisolated": 568,
+        "updated_time": "2020-12-01T05:05:44.759"
     }
 },
 {
@@ -165,10 +165,10 @@
     "pk": 6,
     "fields": {
         "name": "인천광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:10:55Z"
+        "no_infected": 1409,
+        "no_deceased": 11,
+        "no_offisolated": 1084,
+        "updated_time": "2020-12-01T05:05:44.740"
     }
 },
 {
@@ -176,10 +176,10 @@
     "pk": 7,
     "fields": {
         "name": "대전광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:03Z"
+        "no_infected": 494,
+        "no_deceased": 6,
+        "no_offisolated": 446,
+        "updated_time": "2020-12-01T05:05:44.781"
     }
 },
 {
@@ -187,10 +187,10 @@
     "pk": 8,
     "fields": {
         "name": "울산광역시",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:12Z"
+        "no_infected": 198,
+        "no_deceased": 2,
+        "no_offisolated": 166,
+        "updated_time": "2020-12-01T05:05:44.795"
     }
 },
 {
@@ -198,10 +198,10 @@
     "pk": 9,
     "fields": {
         "name": "세종특별자치시",
-        "no_infected": 0,
+        "no_infected": 100,
         "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:21Z"
+        "no_offisolated": 84,
+        "updated_time": "2020-12-01T05:05:44.815"
     }
 },
 {
@@ -209,10 +209,10 @@
     "pk": 10,
     "fields": {
         "name": "경기도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:28Z"
+        "no_infected": 7277,
+        "no_deceased": 116,
+        "no_offisolated": 5858,
+        "updated_time": "2020-12-01T05:05:44.839"
     }
 },
 {
@@ -220,10 +220,10 @@
     "pk": 11,
     "fields": {
         "name": "강원도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:36Z"
+        "no_infected": 652,
+        "no_deceased": 6,
+        "no_offisolated": 400,
+        "updated_time": "2020-12-01T05:05:44.856"
     }
 },
 {
@@ -231,10 +231,10 @@
     "pk": 12,
     "fields": {
         "name": "충청북도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:44Z"
+        "no_infected": 327,
+        "no_deceased": 3,
+        "no_offisolated": 207,
+        "updated_time": "2020-12-01T05:05:44.874"
     }
 },
 {
@@ -242,10 +242,10 @@
     "pk": 13,
     "fields": {
         "name": "충청남도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:52Z"
+        "no_infected": 899,
+        "no_deceased": 9,
+        "no_offisolated": 667,
+        "updated_time": "2020-12-01T05:05:44.893"
     }
 },
 {
@@ -253,10 +253,10 @@
     "pk": 14,
     "fields": {
         "name": "전라북도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:11:59Z"
+        "no_infected": 334,
+        "no_deceased": 2,
+        "no_offisolated": 173,
+        "updated_time": "2020-12-01T05:05:44.912"
     }
 },
 {
@@ -264,10 +264,10 @@
     "pk": 15,
     "fields": {
         "name": "전라남도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:04Z"
+        "no_infected": 424,
+        "no_deceased": 2,
+        "no_offisolated": 214,
+        "updated_time": "2020-12-01T05:05:44.929"
     }
 },
 {
@@ -275,10 +275,10 @@
     "pk": 16,
     "fields": {
         "name": "경상북도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:10Z"
+        "no_infected": 1704,
+        "no_deceased": 57,
+        "no_offisolated": 1560,
+        "updated_time": "2020-12-01T05:05:44.944"
     }
 },
 {
@@ -286,10 +286,10 @@
     "pk": 17,
     "fields": {
         "name": "경상남도",
-        "no_infected": 0,
-        "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:15Z"
+        "no_infected": 625,
+        "no_deceased": 1,
+        "no_offisolated": 388,
+        "updated_time": "2020-12-01T05:05:44.958"
     }
 },
 {
@@ -297,21 +297,21 @@
     "pk": 18,
     "fields": {
         "name": "제주특별자치도",
-        "no_infected": 0,
+        "no_infected": 80,
         "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:22Z"
+        "no_offisolated": 60,
+        "updated_time": "2020-12-01T05:05:44.977"
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 19,
     "fields": {
-        "name": "해외유입",
-        "no_infected": 0,
+        "name": "해외검역",
+        "no_infected": 2130,
         "no_deceased": 0,
-        "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z"
+        "no_offisolated": 1618,
+        "updated_time": "2020-12-01T05:05:44.994"
     }
 },
 {
@@ -322,7 +322,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -334,7 +334,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -346,7 +346,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -358,7 +358,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -370,7 +370,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -382,7 +382,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -394,7 +394,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -406,7 +406,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -418,7 +418,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -430,7 +430,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -442,7 +442,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -454,7 +454,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -466,7 +466,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -478,7 +478,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -490,7 +490,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -502,7 +502,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -514,7 +514,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -526,7 +526,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -538,7 +538,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -550,7 +550,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -562,7 +562,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -574,7 +574,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -586,7 +586,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -598,7 +598,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -610,7 +610,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 2
     }
 },
@@ -622,7 +622,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -634,7 +634,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -646,7 +646,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -658,7 +658,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -670,7 +670,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -682,7 +682,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -694,7 +694,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -706,7 +706,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -718,7 +718,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -730,7 +730,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -742,7 +742,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -754,7 +754,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -766,7 +766,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -778,7 +778,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -790,7 +790,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -802,7 +802,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 3
     }
 },
@@ -814,7 +814,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -826,7 +826,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -838,7 +838,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -850,7 +850,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -862,7 +862,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -874,7 +874,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -886,7 +886,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -898,7 +898,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 4
     }
 },
@@ -910,7 +910,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 5
     }
 },
@@ -922,7 +922,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 5
     }
 },
@@ -934,7 +934,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 5
     }
 },
@@ -946,7 +946,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 5
     }
 },
@@ -958,7 +958,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 5
     }
 },
@@ -970,7 +970,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -982,7 +982,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -994,7 +994,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1006,7 +1006,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1018,7 +1018,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1030,7 +1030,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1042,7 +1042,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1054,7 +1054,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1066,7 +1066,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1078,7 +1078,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 6
     }
 },
@@ -1090,7 +1090,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 7
     }
 },
@@ -1102,7 +1102,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 7
     }
 },
@@ -1114,7 +1114,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 7
     }
 },
@@ -1126,7 +1126,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 7
     }
 },
@@ -1138,7 +1138,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 7
     }
 },
@@ -1150,7 +1150,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1162,7 +1162,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1174,7 +1174,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1186,7 +1186,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1198,7 +1198,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1210,7 +1210,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 8
     }
 },
@@ -1222,7 +1222,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1234,7 +1234,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1246,7 +1246,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1258,7 +1258,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1270,7 +1270,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1282,7 +1282,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1294,7 +1294,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1306,7 +1306,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1318,7 +1318,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1330,7 +1330,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1342,7 +1342,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1354,7 +1354,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1366,7 +1366,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1378,7 +1378,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1390,7 +1390,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1402,7 +1402,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1414,7 +1414,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1426,7 +1426,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1438,7 +1438,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1450,7 +1450,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 9
     }
 },
@@ -1462,7 +1462,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1474,7 +1474,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1486,7 +1486,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1498,7 +1498,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1510,7 +1510,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1522,7 +1522,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1534,7 +1534,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1546,7 +1546,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1558,7 +1558,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1570,7 +1570,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1582,7 +1582,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1594,7 +1594,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1606,7 +1606,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1618,7 +1618,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1630,7 +1630,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1642,7 +1642,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1654,7 +1654,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1666,7 +1666,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1678,7 +1678,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1690,7 +1690,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1702,7 +1702,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1714,7 +1714,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1726,7 +1726,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1738,7 +1738,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1750,7 +1750,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1762,7 +1762,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1774,7 +1774,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1786,7 +1786,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1798,7 +1798,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 10
     }
 },
@@ -1810,7 +1810,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1822,7 +1822,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1834,7 +1834,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1846,7 +1846,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1858,7 +1858,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1870,7 +1870,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1882,7 +1882,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1894,7 +1894,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1906,7 +1906,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1918,7 +1918,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1930,7 +1930,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1942,7 +1942,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1954,7 +1954,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1966,7 +1966,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1978,7 +1978,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -1990,7 +1990,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -2002,7 +2002,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 11
     }
 },
@@ -2014,7 +2014,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2026,7 +2026,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2038,7 +2038,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2050,7 +2050,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2062,7 +2062,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2074,7 +2074,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2086,7 +2086,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2098,7 +2098,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2110,7 +2110,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2122,7 +2122,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2134,7 +2134,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 12
     }
 },
@@ -2146,7 +2146,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2158,7 +2158,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2170,7 +2170,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2182,7 +2182,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2194,7 +2194,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2206,7 +2206,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2218,7 +2218,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2230,7 +2230,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2242,7 +2242,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2254,7 +2254,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2266,7 +2266,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2278,7 +2278,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2290,7 +2290,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2302,7 +2302,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2314,7 +2314,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 13
     }
 },
@@ -2326,7 +2326,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2338,7 +2338,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2350,7 +2350,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2362,7 +2362,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2374,7 +2374,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2386,7 +2386,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2398,7 +2398,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2410,7 +2410,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2422,7 +2422,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2434,7 +2434,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2446,7 +2446,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2458,7 +2458,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2470,7 +2470,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2482,7 +2482,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 14
     }
 },
@@ -2494,7 +2494,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2506,7 +2506,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2518,7 +2518,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2530,7 +2530,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2542,7 +2542,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2554,7 +2554,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2566,7 +2566,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2578,7 +2578,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2590,7 +2590,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2602,7 +2602,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2614,7 +2614,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2626,7 +2626,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2638,7 +2638,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2650,7 +2650,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2662,7 +2662,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2674,7 +2674,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2686,7 +2686,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2698,7 +2698,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2710,7 +2710,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2722,7 +2722,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2734,7 +2734,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2746,7 +2746,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 15
     }
 },
@@ -2758,7 +2758,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2770,7 +2770,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2782,7 +2782,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2794,7 +2794,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2806,7 +2806,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2818,7 +2818,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2830,7 +2830,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2842,7 +2842,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2854,7 +2854,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2866,7 +2866,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2878,7 +2878,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2890,7 +2890,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2902,7 +2902,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2914,7 +2914,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2926,7 +2926,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2938,7 +2938,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2950,7 +2950,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2962,7 +2962,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2974,7 +2974,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2986,7 +2986,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -2998,7 +2998,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -3010,7 +3010,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -3022,7 +3022,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 16
     }
 },
@@ -3034,7 +3034,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3046,7 +3046,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3058,7 +3058,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3070,7 +3070,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3082,7 +3082,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3094,7 +3094,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3106,7 +3106,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3118,7 +3118,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3130,7 +3130,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3142,7 +3142,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3154,7 +3154,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3166,7 +3166,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3178,7 +3178,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3190,7 +3190,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3202,7 +3202,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3214,7 +3214,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3226,7 +3226,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3238,7 +3238,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 17
     }
 },
@@ -3250,7 +3250,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 18
     }
 },
@@ -3262,7 +3262,7 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-12T15:12:43Z",
+        "updated_time": "2020-11-12T15:12:43",
         "parent_region": 18
     }
 },
@@ -3274,8 +3274,18 @@
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
-        "updated_time": "2020-11-29T04:10:18Z",
+        "updated_time": "2020-11-29T04:10:18",
         "parent_region": 1
+    }
+},
+{
+    "model": "mainpage.subscriber",
+    "pk": 9,
+    "fields": {
+        "address": "0417yjy@naver.com",
+        "sub_type": "Email",
+        "large_region": 2,
+        "medium_region": 247
     }
 },
 {
@@ -3367,6 +3377,19 @@
         "TotalChecking": "3,046,971",
         "TodayCase": "450",
         "TodayRecovered": "193"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": "2020.11.30",
+    "fields": {
+        "TotalCase": "34,201",
+        "TotalDeath": "526",
+        "TotalRecovered": "27,625",
+        "NowCase": "6,050",
+        "TotalChecking": "3,061,172",
+        "TodayCase": "438",
+        "TodayRecovered": "83"
     }
 },
 {
@@ -3989,7 +4012,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$216000$UVGwTt5PeqU5$aT0P9dBIBMBIf4qSjVqZG4vLE5NO1U331uLA22iphZ8=",
-        "last_login": "2020-11-27T13:29:26.166Z",
+        "last_login": "2020-11-27T13:29:26.166",
         "is_superuser": true,
         "username": "jongyeonyoon",
         "first_name": "",
@@ -3997,27 +4020,9 @@
         "email": "0417yjy@naver.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2020-11-27T13:29:18.207Z",
+        "date_joined": "2020-11-27T13:29:18.207",
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-        "action_time": "2020-11-29T04:10:23.659Z",
-        "user": [
-            "jongyeonyoon"
-        ],
-        "content_type": [
-            "mainpage",
-            "regionmedium"
-        ],
-        "object_id": "247",
-        "object_repr": "전체선택",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
     }
 }
 ]
