@@ -54,7 +54,7 @@
     // 7일간 확진/ 사망/ 완치 데이터 list로 
     var diseased7=new Array(); // 7일간 확진자
     for(var dis=6;dis>=0;dis--){      
-        diseased7[6-dis]=statisticDBData[sizeOfData-1-dis]['TodayCase'].substring(5,);
+        diseased7[6-dis]=statisticDBData[sizeOfData-1-dis]['TodayCase'].replace(/[^0-9]/g,'');
     }
     var death7=new Array(); // 7일간 사망자
     var dead=0;
