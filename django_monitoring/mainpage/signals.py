@@ -39,15 +39,15 @@ def StatisticValues_post_save(sender, **kwargs):
                     region_name = result[region]['countryName']
                     region_obj = RegionLarge.objects.filter(name__contains=region_name[0]).get(name__contains=region_name[1])
 
-                    # 늘어난 확진자 수 계산
-                    increased_num = convert_to_int_with_comma(result[region]['totalCase']) - region_obj.no_infected
+                # 늘어난 확진자 수 계산
+                increased_num = convert_to_int_with_comma(result[region]['totalCase']) - region_obj.no_infected
 
-                    region_obj.no_infected = convert_to_int_with_comma(result[region]['totalCase'])
-                    region_obj.no_deceased = convert_to_int_with_comma(result[region]['death'])
-                    region_obj.no_offisolated = convert_to_int_with_comma(result[region]['recovered'])
-                    region_obj.updated_time = datetime.now()
-                    region_obj.save()
+                region_obj.no_infected = convert_to_int_with_comma(result[region]['totalCase'])
+                region_obj.no_deceased = convert_to_int_with_comma(result[region]['death'])
+                region_obj.no_offisolated = convert_to_int_with_comma(result[region]['recovered'])
+                region_obj.updated_time = datetime.now()
+                region_obj.save()
 
-                    if increased_num > 0:
-                        send_messages(region_obj, increased_num)
+                if increased_num > 0:
+                    send_messages(region_obj, increased_num)
         print('Updated RegionLarge instances')
