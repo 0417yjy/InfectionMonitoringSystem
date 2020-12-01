@@ -131,6 +131,7 @@
             type: 'horizontalBar',
             data: hb_data,
             options: {
+                responsive: true,
                 sort: true,
                 legend: {
                     display: false
@@ -145,6 +146,11 @@
                         display: true,
                         fontSize: 12,
                         text: [coronaAPIData['updateTime']]
+                    }
+                },
+                layout: {
+                    padding: {
+                        right: 50
                     }
                 }
             }
