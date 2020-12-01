@@ -42,10 +42,16 @@ def StatisticValues_post_save(sender, **kwargs):
                 # 늘어난 확진자 수 계산
                 increased_num = convert_to_int_with_comma(result[region]['totalCase']) - region_obj.no_infected
 
+                # 기존 데이터는 전일로 복사
+                region_obj.prev_no_infected = region_obj.no_infected
+                region_obj.prev_no_deceased = region_obj.no_deceased
+                region_obj.prev_no_offisolated = region_obj.no_offisolated
+                # 새 데이터로 업데이트
                 region_obj.no_infected = convert_to_int_with_comma(result[region]['totalCase'])
                 region_obj.no_deceased = convert_to_int_with_comma(result[region]['death'])
                 region_obj.no_offisolated = convert_to_int_with_comma(result[region]['recovered'])
                 region_obj.updated_time = datetime.now()
+                # 변경사항 저장
                 region_obj.save()
 
                 if increased_num > 0:

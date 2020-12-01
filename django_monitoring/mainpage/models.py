@@ -21,6 +21,9 @@ class AbstractRegion(models.Model):  # Abstract class of region models
     no_deceased = models.IntegerField()
     no_offisolated = models.IntegerField()
     updated_time = models.DateTimeField()
+    prev_no_infected = models.IntegerField(default=0) # 각 지역별로도 감염 통계를 저장함
+    prev_no_deceased = models.IntegerField(default=0)
+    prev_no_offisolated = models.IntegerField(default=0)
     
     class Meta:
         abstract = True
