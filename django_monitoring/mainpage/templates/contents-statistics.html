@@ -86,11 +86,7 @@
             title: {
                 display: true,
                 fontSize: 15,
-<<<<<<< refs/remotes/origin/master
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+ coronaAPIData['TotalCase']+ '명']
-=======
                 text: ['대한민국 지역별 확진자 현황', '총 확진자: '+coronaAPIData['TotalCase']+'명',] //CoronaAPI데이터에서 TotalCase를 가져와서 씀.
->>>>>>> Add Showing TotalCase at stastistics
             },
             plugins: {
                 chartJsPluginSubtitle: {
@@ -101,27 +97,9 @@
             }
         }
     });
-<<<<<<< refs/remotes/origin/master
 </script>
-
-<<<<<<< refs/remotes/origin/master
-<<<<<<< refs/remotes/origin/master
-=======
-<script>
-    var coronaAPIData=new statisticsView();
-    document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>") 
-</script>
->>>>>>> get API data
-=======
 <script src="/mainpage/keyword.py"></script>
 <script>
     var coronaAPIData=new statisticsView();
     document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>");
 </script>
->>>>>>> add javascript src
-=======
-        
-    
-    // document.write("TotalCase : " +coronaAPIData["TotalCase"]+"<br>") 
-</script>
->>>>>>> Add Showing TotalCase at stastistics
