@@ -272,7 +272,7 @@
         <ul id="toggle">
             <li id="infected-overlay" data-order="0">
                 <!-- span onclick="setMapType('roadmap')"-->
-                <span onclick ="info_overlay_onoff()"> 
+                <span onclick ="info_overlay_onoff(this)"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-alert-circle">
@@ -285,7 +285,7 @@
             </li>
             <li id="facility-overlay" data-order="1">
                 <!-- span onclick="setMapType('roadmap')"-->
-                <span onclick ="facility_overlay_onoff()">
+                <span onclick ="facility_overlay_onoff(this)">
                     <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Building_M" overflow="hidden">
                         <g id="Icons">
@@ -315,7 +315,7 @@
                 시설물 정보
             </li>
             <li id="movement-overlay" data-order="2">
-                <span onclick="movement_overlay_onoff()">
+                <span onclick="movement_overlay_onoff(this)">
                 <!-- span onclick="setMapType('roadmap')"-->
                     <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_DanceSteps" overflow="hidden">
@@ -866,11 +866,12 @@
             });
         }
         var overlay_info_flag = true; // 확진자 정보 오버레이
-        var overlay_facility_flag = false; // 시설물 정보 오버레이
-        var overlay_movement_flag = false; // 확진자 동선 오버레이
+        var overlay_facility_flag = true; // 시설물 정보 오버레이
+        var overlay_movement_flag = true; // 확진자 동선 오버레이
         
 
-        function info_overlay_onoff() {
+        function info_overlay_onoff(element) {
+            element.parentNode.classList.toggle("on");
             console.log("info onoff");
             var nameList = document.getElementsByClassName("name");
             var numList = document.getElementsByClassName("totalNum");
@@ -983,8 +984,10 @@
                 console.log(overlay_info_flag);
             }
         }
-        function facility_overlay_onoff(){
+        function facility_overlay_onoff(element){
+            element.parentNode.classList.toggle("on");
             console.log("facility onoff");
+
             if(overlay_facility_flag){
                 category = document.getElementById("category");
                 category.style.display = "block";
@@ -995,7 +998,8 @@
                 overlay_facility_flag = true;
             }
         }
-        function movement_overlay_onoff(){
+        function movement_overlay_onoff(element){
+            element.parentNode.classList.toggle("on");
             console.log("movement onoff");
             var i;
             if(overlay_movement_flag){

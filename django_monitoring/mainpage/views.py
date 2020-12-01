@@ -90,10 +90,10 @@ def index(request):
         # contents-mapview
         'locationset' : locationset,
         'seoul_gu_result' : seoul_gu_results,
-        'patient_pathes' : patient_pathes
+        'patient_pathes' : patient_pathes,
         # contents-subscribe
         # 'largeRegions': largeRegionsValues, # duplicate
-        'mediumRegions': mediumRegionsValues]
+        'mediumRegions': mediumRegionsValues
     }
     return render(request, 'index.html', context)
 

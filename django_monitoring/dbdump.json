@@ -117,7 +117,7 @@
     "model": "mainpage.regionlarge",
     "pk": 1,
     "fields": {
-        "name": "ÀüÃ¼¼±ÅÃ",
+        "name": "ì „ì²´ì„ íƒ",
         "no_infected": 34652,
         "no_deceased": 526,
         "no_offisolated": 27885,
@@ -131,7 +131,7 @@
     "model": "mainpage.regionlarge",
     "pk": 2,
     "fields": {
-        "name": "¼­¿ïÆ¯º°½Ã",
+        "name": "ì„œìš¸íŠ¹ë³„ì‹œ",
         "no_infected": 8966,
         "no_deceased": 93,
         "no_offisolated": 6620,
@@ -145,7 +145,7 @@
     "model": "mainpage.regionlarge",
     "pk": 3,
     "fields": {
-        "name": "ºÎ»ê±¤¿ª½Ã",
+        "name": "ë¶€ì‚°ê´‘ì—­ì‹œ",
         "no_infected": 840,
         "no_deceased": 16,
         "no_offisolated": 602,
@@ -159,7 +159,7 @@
     "model": "mainpage.regionlarge",
     "pk": 4,
     "fields": {
-        "name": "´ë±¸±¤¿ª½Ã",
+        "name": "ëŒ€êµ¬ê´‘ì—­ì‹œ",
         "no_infected": 7243,
         "no_deceased": 199,
         "no_offisolated": 6999,
@@ -173,7 +173,7 @@
     "model": "mainpage.regionlarge",
     "pk": 5,
     "fields": {
-        "name": "±¤ÁÖ±¤¿ª½Ã",
+        "name": "ê´‘ì£¼ê´‘ì—­ì‹œ",
         "no_infected": 718,
         "no_deceased": 3,
         "no_offisolated": 576,
@@ -187,7 +187,7 @@
     "model": "mainpage.regionlarge",
     "pk": 6,
     "fields": {
-        "name": "ÀÎÃµ±¤¿ª½Ã",
+        "name": "ì¸ì²œê´‘ì—­ì‹œ",
         "no_infected": 1425,
         "no_deceased": 11,
         "no_offisolated": 1090,
@@ -201,7 +201,7 @@
     "model": "mainpage.regionlarge",
     "pk": 7,
     "fields": {
-        "name": "´ëÀü±¤¿ª½Ã",
+        "name": "ëŒ€ì „ê´‘ì—­ì‹œ",
         "no_infected": 504,
         "no_deceased": 6,
         "no_offisolated": 446,
@@ -215,7 +215,7 @@
     "model": "mainpage.regionlarge",
     "pk": 8,
     "fields": {
-        "name": "¿ï»ê±¤¿ª½Ã",
+        "name": "ìš¸ì‚°ê´‘ì—­ì‹œ",
         "no_infected": 201,
         "no_deceased": 2,
         "no_offisolated": 166,
@@ -229,7 +229,7 @@
     "model": "mainpage.regionlarge",
     "pk": 9,
     "fields": {
-        "name": "¼¼Á¾Æ¯º°ÀÚÄ¡½Ã",
+        "name": "ì„¸ì¢…íŠ¹ë³„ìì¹˜ì‹œ",
         "no_infected": 102,
         "no_deceased": 0,
         "no_offisolated": 85,
@@ -243,7 +243,7 @@
     "model": "mainpage.regionlarge",
     "pk": 10,
     "fields": {
-        "name": "°æ±âµµ",
+        "name": "ê²½ê¸°ë„",
         "no_infected": 7373,
         "no_deceased": 116,
         "no_offisolated": 5933,
@@ -257,7 +257,7 @@
     "model": "mainpage.regionlarge",
     "pk": 11,
     "fields": {
-        "name": "°­¿øµµ",
+        "name": "ê°•ì›ë„",
         "no_infected": 661,
         "no_deceased": 6,
         "no_offisolated": 423,
@@ -271,7 +271,7 @@
     "model": "mainpage.regionlarge",
     "pk": 12,
     "fields": {
-        "name": "ÃæÃ»ºÏµµ",
+        "name": "ì¶©ì²­ë¶ë„",
         "no_infected": 359,
         "no_deceased": 3,
         "no_offisolated": 209,
@@ -285,7 +285,7 @@
     "model": "mainpage.regionlarge",
     "pk": 13,
     "fields": {
-        "name": "ÃæÃ»³²µµ",
+        "name": "ì¶©ì²­ë‚¨ë„",
         "no_infected": 915,
         "no_deceased": 9,
         "no_offisolated": 686,
@@ -299,7 +299,7 @@
     "model": "mainpage.regionlarge",
     "pk": 14,
     "fields": {
-        "name": "Àü¶óºÏµµ",
+        "name": "ì „ë¼ë¶ë„",
         "no_infected": 343,
         "no_deceased": 2,
         "no_offisolated": 173,
@@ -313,7 +313,7 @@
     "model": "mainpage.regionlarge",
     "pk": 15,
     "fields": {
-        "name": "Àü¶ó³²µµ",
+        "name": "ì „ë¼ë‚¨ë„",
         "no_infected": 426,
         "no_deceased": 2,
         "no_offisolated": 216,
@@ -327,7 +327,7 @@
     "model": "mainpage.regionlarge",
     "pk": 16,
     "fields": {
-        "name": "°æ»óºÏµµ",
+        "name": "ê²½ìƒë¶ë„",
         "no_infected": 1715,
         "no_deceased": 57,
         "no_offisolated": 1575,
@@ -341,7 +341,7 @@
     "model": "mainpage.regionlarge",
     "pk": 17,
     "fields": {
-        "name": "°æ»ó³²µµ",
+        "name": "ê²½ìƒë‚¨ë„",
         "no_infected": 636,
         "no_deceased": 1,
         "no_offisolated": 400,
@@ -355,7 +355,7 @@
     "model": "mainpage.regionlarge",
     "pk": 18,
     "fields": {
-        "name": "Á¦ÁÖÆ¯º°ÀÚÄ¡µµ",
+        "name": "ì œì£¼íŠ¹ë³„ìì¹˜ë„",
         "no_infected": 81,
         "no_deceased": 0,
         "no_offisolated": 63,
@@ -369,7 +369,7 @@
     "model": "mainpage.regionlarge",
     "pk": 19,
     "fields": {
-        "name": "ÇØ¿Ü°Ë¿ª",
+        "name": "í•´ì™¸ê²€ì—­",
         "no_infected": 2144,
         "no_deceased": 0,
         "no_offisolated": 1623,
@@ -383,7 +383,7 @@
     "model": "mainpage.regionmedium",
     "pk": 1,
     "fields": {
-        "name": "Á¾·Î±¸",
+        "name": "ì¢…ë¡œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -398,7 +398,7 @@
     "model": "mainpage.regionmedium",
     "pk": 2,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -413,7 +413,7 @@
     "model": "mainpage.regionmedium",
     "pk": 3,
     "fields": {
-        "name": "¿ë»ê±¸",
+        "name": "ìš©ì‚°êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -428,7 +428,7 @@
     "model": "mainpage.regionmedium",
     "pk": 4,
     "fields": {
-        "name": "¼ºµ¿±¸",
+        "name": "ì„±ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -443,7 +443,7 @@
     "model": "mainpage.regionmedium",
     "pk": 5,
     "fields": {
-        "name": "±¤Áø±¸",
+        "name": "ê´‘ì§„êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -458,7 +458,7 @@
     "model": "mainpage.regionmedium",
     "pk": 6,
     "fields": {
-        "name": "µ¿´ë¹®±¸",
+        "name": "ë™ëŒ€ë¬¸êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -473,7 +473,7 @@
     "model": "mainpage.regionmedium",
     "pk": 7,
     "fields": {
-        "name": "Áß¶û±¸",
+        "name": "ì¤‘ë‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -488,7 +488,7 @@
     "model": "mainpage.regionmedium",
     "pk": 8,
     "fields": {
-        "name": "¼ººÏ±¸",
+        "name": "ì„±ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -503,7 +503,7 @@
     "model": "mainpage.regionmedium",
     "pk": 9,
     "fields": {
-        "name": "°­ºÏ±¸",
+        "name": "ê°•ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -518,7 +518,7 @@
     "model": "mainpage.regionmedium",
     "pk": 10,
     "fields": {
-        "name": "µµºÀ±¸",
+        "name": "ë„ë´‰êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -533,7 +533,7 @@
     "model": "mainpage.regionmedium",
     "pk": 11,
     "fields": {
-        "name": "³ë¿ø±¸",
+        "name": "ë…¸ì›êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -548,7 +548,7 @@
     "model": "mainpage.regionmedium",
     "pk": 12,
     "fields": {
-        "name": "ÀºÆò±¸",
+        "name": "ì€í‰êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -563,7 +563,7 @@
     "model": "mainpage.regionmedium",
     "pk": 13,
     "fields": {
-        "name": "¼­´ë¹®±¸",
+        "name": "ì„œëŒ€ë¬¸êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -578,7 +578,7 @@
     "model": "mainpage.regionmedium",
     "pk": 14,
     "fields": {
-        "name": "¸¶Æ÷±¸",
+        "name": "ë§ˆí¬êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -593,7 +593,7 @@
     "model": "mainpage.regionmedium",
     "pk": 15,
     "fields": {
-        "name": "¾çÃµ±¸",
+        "name": "ì–‘ì²œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -608,7 +608,7 @@
     "model": "mainpage.regionmedium",
     "pk": 16,
     "fields": {
-        "name": "°­¼­±¸",
+        "name": "ê°•ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -623,7 +623,7 @@
     "model": "mainpage.regionmedium",
     "pk": 17,
     "fields": {
-        "name": "±¸·Î±¸",
+        "name": "êµ¬ë¡œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -638,7 +638,7 @@
     "model": "mainpage.regionmedium",
     "pk": 18,
     "fields": {
-        "name": "±İÃµ±¸",
+        "name": "ê¸ˆì²œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -653,7 +653,7 @@
     "model": "mainpage.regionmedium",
     "pk": 19,
     "fields": {
-        "name": "¿µµîÆ÷±¸",
+        "name": "ì˜ë“±í¬êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -668,7 +668,7 @@
     "model": "mainpage.regionmedium",
     "pk": 20,
     "fields": {
-        "name": "µ¿ÀÛ±¸",
+        "name": "ë™ì‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -683,7 +683,7 @@
     "model": "mainpage.regionmedium",
     "pk": 21,
     "fields": {
-        "name": "°ü¾Ç±¸",
+        "name": "ê´€ì•…êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -698,7 +698,7 @@
     "model": "mainpage.regionmedium",
     "pk": 22,
     "fields": {
-        "name": "¼­ÃÊ±¸",
+        "name": "ì„œì´ˆêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -713,7 +713,7 @@
     "model": "mainpage.regionmedium",
     "pk": 23,
     "fields": {
-        "name": "°­³²±¸",
+        "name": "ê°•ë‚¨êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -728,7 +728,7 @@
     "model": "mainpage.regionmedium",
     "pk": 24,
     "fields": {
-        "name": "¼ÛÆÄ±¸",
+        "name": "ì†¡íŒŒêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -743,7 +743,7 @@
     "model": "mainpage.regionmedium",
     "pk": 25,
     "fields": {
-        "name": "°­µ¿±¸",
+        "name": "ê°•ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -758,7 +758,7 @@
     "model": "mainpage.regionmedium",
     "pk": 26,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -773,7 +773,7 @@
     "model": "mainpage.regionmedium",
     "pk": 27,
     "fields": {
-        "name": "¼­±¸",
+        "name": "ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -788,7 +788,7 @@
     "model": "mainpage.regionmedium",
     "pk": 28,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -803,7 +803,7 @@
     "model": "mainpage.regionmedium",
     "pk": 29,
     "fields": {
-        "name": "¿µµµ±¸",
+        "name": "ì˜ë„êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -818,7 +818,7 @@
     "model": "mainpage.regionmedium",
     "pk": 30,
     "fields": {
-        "name": "ºÎ»êÁø±¸",
+        "name": "ë¶€ì‚°ì§„êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -833,7 +833,7 @@
     "model": "mainpage.regionmedium",
     "pk": 31,
     "fields": {
-        "name": "µ¿·¡±¸",
+        "name": "ë™ë˜êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -848,7 +848,7 @@
     "model": "mainpage.regionmedium",
     "pk": 32,
     "fields": {
-        "name": "³²±¸",
+        "name": "ë‚¨êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -863,7 +863,7 @@
     "model": "mainpage.regionmedium",
     "pk": 33,
     "fields": {
-        "name": "ºÏ±¸",
+        "name": "ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -878,7 +878,7 @@
     "model": "mainpage.regionmedium",
     "pk": 34,
     "fields": {
-        "name": "°­¼­±¸",
+        "name": "ê°•ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -893,7 +893,7 @@
     "model": "mainpage.regionmedium",
     "pk": 35,
     "fields": {
-        "name": "ÇØ¿î´ë±¸",
+        "name": "í•´ìš´ëŒ€êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -908,7 +908,7 @@
     "model": "mainpage.regionmedium",
     "pk": 36,
     "fields": {
-        "name": "»çÇÏ±¸",
+        "name": "ì‚¬í•˜êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -923,7 +923,7 @@
     "model": "mainpage.regionmedium",
     "pk": 37,
     "fields": {
-        "name": "±İÁ¤±¸",
+        "name": "ê¸ˆì •êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -938,7 +938,7 @@
     "model": "mainpage.regionmedium",
     "pk": 38,
     "fields": {
-        "name": "¿¬Á¦±¸",
+        "name": "ì—°ì œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -953,7 +953,7 @@
     "model": "mainpage.regionmedium",
     "pk": 39,
     "fields": {
-        "name": "¼ö¿µ±¸",
+        "name": "ìˆ˜ì˜êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -968,7 +968,7 @@
     "model": "mainpage.regionmedium",
     "pk": 40,
     "fields": {
-        "name": "»ç»ó±¸",
+        "name": "ì‚¬ìƒêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -983,7 +983,7 @@
     "model": "mainpage.regionmedium",
     "pk": 41,
     "fields": {
-        "name": "±âÀå±º",
+        "name": "ê¸°ì¥êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -998,7 +998,7 @@
     "model": "mainpage.regionmedium",
     "pk": 42,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1013,7 +1013,7 @@
     "model": "mainpage.regionmedium",
     "pk": 43,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1028,7 +1028,7 @@
     "model": "mainpage.regionmedium",
     "pk": 44,
     "fields": {
-        "name": "¼­±¸",
+        "name": "ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1043,7 +1043,7 @@
     "model": "mainpage.regionmedium",
     "pk": 45,
     "fields": {
-        "name": "³²±¸",
+        "name": "ë‚¨êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1058,7 +1058,7 @@
     "model": "mainpage.regionmedium",
     "pk": 46,
     "fields": {
-        "name": "ºÏ±¸",
+        "name": "ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1073,7 +1073,7 @@
     "model": "mainpage.regionmedium",
     "pk": 47,
     "fields": {
-        "name": "¼ö¼º±¸",
+        "name": "ìˆ˜ì„±êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1088,7 +1088,7 @@
     "model": "mainpage.regionmedium",
     "pk": 48,
     "fields": {
-        "name": "´Ş¼­±¸",
+        "name": "ë‹¬ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1103,7 +1103,7 @@
     "model": "mainpage.regionmedium",
     "pk": 49,
     "fields": {
-        "name": "´Ş¼º±º",
+        "name": "ë‹¬ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1118,7 +1118,7 @@
     "model": "mainpage.regionmedium",
     "pk": 50,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1133,7 +1133,7 @@
     "model": "mainpage.regionmedium",
     "pk": 51,
     "fields": {
-        "name": "¼­±¸",
+        "name": "ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1148,7 +1148,7 @@
     "model": "mainpage.regionmedium",
     "pk": 52,
     "fields": {
-        "name": "³²±¸",
+        "name": "ë‚¨êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1163,7 +1163,7 @@
     "model": "mainpage.regionmedium",
     "pk": 53,
     "fields": {
-        "name": "ºÏ±¸",
+        "name": "ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1178,7 +1178,7 @@
     "model": "mainpage.regionmedium",
     "pk": 54,
     "fields": {
-        "name": "±¤»ê±¸",
+        "name": "ê´‘ì‚°êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1193,7 +1193,7 @@
     "model": "mainpage.regionmedium",
     "pk": 55,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1208,7 +1208,7 @@
     "model": "mainpage.regionmedium",
     "pk": 56,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1223,7 +1223,7 @@
     "model": "mainpage.regionmedium",
     "pk": 57,
     "fields": {
-        "name": "¹ÌÃßÈ¦±¸",
+        "name": "ë¯¸ì¶”í™€êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1238,7 +1238,7 @@
     "model": "mainpage.regionmedium",
     "pk": 58,
     "fields": {
-        "name": "¿¬¼ö±¸",
+        "name": "ì—°ìˆ˜êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1253,7 +1253,7 @@
     "model": "mainpage.regionmedium",
     "pk": 59,
     "fields": {
-        "name": "³²µ¿±¸",
+        "name": "ë‚¨ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1268,7 +1268,7 @@
     "model": "mainpage.regionmedium",
     "pk": 60,
     "fields": {
-        "name": "ºÎÆò±¸",
+        "name": "ë¶€í‰êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1283,7 +1283,7 @@
     "model": "mainpage.regionmedium",
     "pk": 61,
     "fields": {
-        "name": "°è¾ç±¸",
+        "name": "ê³„ì–‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1298,7 +1298,7 @@
     "model": "mainpage.regionmedium",
     "pk": 62,
     "fields": {
-        "name": "¼­±¸",
+        "name": "ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1313,7 +1313,7 @@
     "model": "mainpage.regionmedium",
     "pk": 63,
     "fields": {
-        "name": "°­È­±º",
+        "name": "ê°•í™”êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1328,7 +1328,7 @@
     "model": "mainpage.regionmedium",
     "pk": 64,
     "fields": {
-        "name": "¿ËÁø±º",
+        "name": "ì˜¹ì§„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1343,7 +1343,7 @@
     "model": "mainpage.regionmedium",
     "pk": 65,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1358,7 +1358,7 @@
     "model": "mainpage.regionmedium",
     "pk": 66,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1373,7 +1373,7 @@
     "model": "mainpage.regionmedium",
     "pk": 67,
     "fields": {
-        "name": "¼­±¸",
+        "name": "ì„œêµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1388,7 +1388,7 @@
     "model": "mainpage.regionmedium",
     "pk": 68,
     "fields": {
-        "name": "À¯¼º±¸",
+        "name": "ìœ ì„±êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1403,7 +1403,7 @@
     "model": "mainpage.regionmedium",
     "pk": 69,
     "fields": {
-        "name": "´ë´ö±¸",
+        "name": "ëŒ€ë•êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1418,7 +1418,7 @@
     "model": "mainpage.regionmedium",
     "pk": 70,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1433,7 +1433,7 @@
     "model": "mainpage.regionmedium",
     "pk": 71,
     "fields": {
-        "name": "³²±¸",
+        "name": "ë‚¨êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1448,7 +1448,7 @@
     "model": "mainpage.regionmedium",
     "pk": 72,
     "fields": {
-        "name": "µ¿±¸",
+        "name": "ë™êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1463,7 +1463,7 @@
     "model": "mainpage.regionmedium",
     "pk": 73,
     "fields": {
-        "name": "ºÏ±¸",
+        "name": "ë¶êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1478,7 +1478,7 @@
     "model": "mainpage.regionmedium",
     "pk": 74,
     "fields": {
-        "name": "¿ïÁÖ±º",
+        "name": "ìš¸ì£¼êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1493,7 +1493,7 @@
     "model": "mainpage.regionmedium",
     "pk": 75,
     "fields": {
-        "name": "Áß±¸",
+        "name": "ì¤‘êµ¬",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1508,7 +1508,7 @@
     "model": "mainpage.regionmedium",
     "pk": 76,
     "fields": {
-        "name": "Á¶Ä¡¿øÀ¾",
+        "name": "ì¡°ì¹˜ì›ì",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1523,7 +1523,7 @@
     "model": "mainpage.regionmedium",
     "pk": 77,
     "fields": {
-        "name": "±İ³²¸é",
+        "name": "ê¸ˆë‚¨ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1538,7 +1538,7 @@
     "model": "mainpage.regionmedium",
     "pk": 78,
     "fields": {
-        "name": "ºÎ°­¸é",
+        "name": "ë¶€ê°•ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1553,7 +1553,7 @@
     "model": "mainpage.regionmedium",
     "pk": 79,
     "fields": {
-        "name": "¼ÒÁ¤¸é",
+        "name": "ì†Œì •ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1568,7 +1568,7 @@
     "model": "mainpage.regionmedium",
     "pk": 80,
     "fields": {
-        "name": "¿¬±â¸é",
+        "name": "ì—°ê¸°ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1583,7 +1583,7 @@
     "model": "mainpage.regionmedium",
     "pk": 81,
     "fields": {
-        "name": "¿¬µ¿¸é",
+        "name": "ì—°ë™ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1598,7 +1598,7 @@
     "model": "mainpage.regionmedium",
     "pk": 82,
     "fields": {
-        "name": "¿¬¼­¸é",
+        "name": "ì—°ì„œë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1613,7 +1613,7 @@
     "model": "mainpage.regionmedium",
     "pk": 83,
     "fields": {
-        "name": "Àå±º¸é",
+        "name": "ì¥êµ°ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1628,7 +1628,7 @@
     "model": "mainpage.regionmedium",
     "pk": 84,
     "fields": {
-        "name": "Àüµ¿¸é",
+        "name": "ì „ë™ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1643,7 +1643,7 @@
     "model": "mainpage.regionmedium",
     "pk": 85,
     "fields": {
-        "name": "ÀüÀÇ¸é",
+        "name": "ì „ì˜ë©´",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1658,7 +1658,7 @@
     "model": "mainpage.regionmedium",
     "pk": 86,
     "fields": {
-        "name": "°í¿îµ¿",
+        "name": "ê³ ìš´ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1673,7 +1673,7 @@
     "model": "mainpage.regionmedium",
     "pk": 87,
     "fields": {
-        "name": "´ÙÁ¤µ¿",
+        "name": "ë‹¤ì •ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1688,7 +1688,7 @@
     "model": "mainpage.regionmedium",
     "pk": 88,
     "fields": {
-        "name": "´ëÆòµ¿",
+        "name": "ëŒ€í‰ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1703,7 +1703,7 @@
     "model": "mainpage.regionmedium",
     "pk": 89,
     "fields": {
-        "name": "µµ´ãµ¿",
+        "name": "ë„ë‹´ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1718,7 +1718,7 @@
     "model": "mainpage.regionmedium",
     "pk": 90,
     "fields": {
-        "name": "º¸¶÷µ¿",
+        "name": "ë³´ëŒë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1733,7 +1733,7 @@
     "model": "mainpage.regionmedium",
     "pk": 91,
     "fields": {
-        "name": "¼Ò´ãµ¿",
+        "name": "ì†Œë‹´ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1748,7 +1748,7 @@
     "model": "mainpage.regionmedium",
     "pk": 92,
     "fields": {
-        "name": "»õ·Òµ¿",
+        "name": "ìƒˆë¡¬ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1763,7 +1763,7 @@
     "model": "mainpage.regionmedium",
     "pk": 93,
     "fields": {
-        "name": "¾Æ¸§µ¿",
+        "name": "ì•„ë¦„ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1778,7 +1778,7 @@
     "model": "mainpage.regionmedium",
     "pk": 94,
     "fields": {
-        "name": "Á¾ÃÌµ¿",
+        "name": "ì¢…ì´Œë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1793,7 +1793,7 @@
     "model": "mainpage.regionmedium",
     "pk": 95,
     "fields": {
-        "name": "ÇÑ¼Öµ¿",
+        "name": "í•œì†”ë™",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1808,7 +1808,7 @@
     "model": "mainpage.regionmedium",
     "pk": 96,
     "fields": {
-        "name": "¼ö¿ø½Ã",
+        "name": "ìˆ˜ì›ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1823,7 +1823,7 @@
     "model": "mainpage.regionmedium",
     "pk": 97,
     "fields": {
-        "name": "¼º³²½Ã",
+        "name": "ì„±ë‚¨ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1838,7 +1838,7 @@
     "model": "mainpage.regionmedium",
     "pk": 98,
     "fields": {
-        "name": "¾È¾ç½Ã",
+        "name": "ì•ˆì–‘ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1853,7 +1853,7 @@
     "model": "mainpage.regionmedium",
     "pk": 99,
     "fields": {
-        "name": "¾È»ê½Ã",
+        "name": "ì•ˆì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1868,7 +1868,7 @@
     "model": "mainpage.regionmedium",
     "pk": 100,
     "fields": {
-        "name": "¿ëÀÎ½Ã",
+        "name": "ìš©ì¸ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1883,7 +1883,7 @@
     "model": "mainpage.regionmedium",
     "pk": 101,
     "fields": {
-        "name": "ºÎÃµ½Ã",
+        "name": "ë¶€ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1898,7 +1898,7 @@
     "model": "mainpage.regionmedium",
     "pk": 102,
     "fields": {
-        "name": "±¤¸í½Ã",
+        "name": "ê´‘ëª…ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1913,7 +1913,7 @@
     "model": "mainpage.regionmedium",
     "pk": 103,
     "fields": {
-        "name": "ÆòÅÃ½Ã",
+        "name": "í‰íƒì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1928,7 +1928,7 @@
     "model": "mainpage.regionmedium",
     "pk": 104,
     "fields": {
-        "name": "°úÃµ½Ã",
+        "name": "ê³¼ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1943,7 +1943,7 @@
     "model": "mainpage.regionmedium",
     "pk": 105,
     "fields": {
-        "name": "¿À»ê½Ã",
+        "name": "ì˜¤ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1958,7 +1958,7 @@
     "model": "mainpage.regionmedium",
     "pk": 106,
     "fields": {
-        "name": "½ÃÈï½Ã",
+        "name": "ì‹œí¥ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1973,7 +1973,7 @@
     "model": "mainpage.regionmedium",
     "pk": 107,
     "fields": {
-        "name": "±ºÆ÷½Ã",
+        "name": "êµ°í¬ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -1988,7 +1988,7 @@
     "model": "mainpage.regionmedium",
     "pk": 108,
     "fields": {
-        "name": "ÀÇ¿Õ½Ã",
+        "name": "ì˜ì™•ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2003,7 +2003,7 @@
     "model": "mainpage.regionmedium",
     "pk": 109,
     "fields": {
-        "name": "ÇÏ³²½Ã",
+        "name": "í•˜ë‚¨ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2018,7 +2018,7 @@
     "model": "mainpage.regionmedium",
     "pk": 110,
     "fields": {
-        "name": "ÀÌÃµ½Ã",
+        "name": "ì´ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2033,7 +2033,7 @@
     "model": "mainpage.regionmedium",
     "pk": 111,
     "fields": {
-        "name": "È­¼º½Ã",
+        "name": "í™”ì„±ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2048,7 +2048,7 @@
     "model": "mainpage.regionmedium",
     "pk": 112,
     "fields": {
-        "name": "±¤ÁÖ½Ã",
+        "name": "ê´‘ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2063,7 +2063,7 @@
     "model": "mainpage.regionmedium",
     "pk": 113,
     "fields": {
-        "name": "¿©ÁÖ½Ã",
+        "name": "ì—¬ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2078,7 +2078,7 @@
     "model": "mainpage.regionmedium",
     "pk": 114,
     "fields": {
-        "name": "¾çÆò±º",
+        "name": "ì–‘í‰êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2093,7 +2093,7 @@
     "model": "mainpage.regionmedium",
     "pk": 115,
     "fields": {
-        "name": "°í¾ç½Ã",
+        "name": "ê³ ì–‘ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2108,7 +2108,7 @@
     "model": "mainpage.regionmedium",
     "pk": 116,
     "fields": {
-        "name": "ÀÇÁ¤ºÎ½Ã",
+        "name": "ì˜ì •ë¶€ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2123,7 +2123,7 @@
     "model": "mainpage.regionmedium",
     "pk": 117,
     "fields": {
-        "name": "µ¿µÎÃµ½Ã",
+        "name": "ë™ë‘ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2138,7 +2138,7 @@
     "model": "mainpage.regionmedium",
     "pk": 118,
     "fields": {
-        "name": "±¸¸®½Ã",
+        "name": "êµ¬ë¦¬ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2153,7 +2153,7 @@
     "model": "mainpage.regionmedium",
     "pk": 119,
     "fields": {
-        "name": "³²¾çÁÖ½Ã",
+        "name": "ë‚¨ì–‘ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2168,7 +2168,7 @@
     "model": "mainpage.regionmedium",
     "pk": 120,
     "fields": {
-        "name": "ÆÄÁÖ½Ã",
+        "name": "íŒŒì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2183,7 +2183,7 @@
     "model": "mainpage.regionmedium",
     "pk": 121,
     "fields": {
-        "name": "¾çÁÖ½Ã",
+        "name": "ì–‘ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2198,7 +2198,7 @@
     "model": "mainpage.regionmedium",
     "pk": 122,
     "fields": {
-        "name": "Æ÷Ãµ½Ã",
+        "name": "í¬ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2213,7 +2213,7 @@
     "model": "mainpage.regionmedium",
     "pk": 123,
     "fields": {
-        "name": "¿¬Ãµ±º",
+        "name": "ì—°ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2228,7 +2228,7 @@
     "model": "mainpage.regionmedium",
     "pk": 124,
     "fields": {
-        "name": "°¡Æò±º",
+        "name": "ê°€í‰êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2243,7 +2243,7 @@
     "model": "mainpage.regionmedium",
     "pk": 125,
     "fields": {
-        "name": "ÃáÃµ½Ã",
+        "name": "ì¶˜ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2258,7 +2258,7 @@
     "model": "mainpage.regionmedium",
     "pk": 126,
     "fields": {
-        "name": "¿øÁÖ½Ã",
+        "name": "ì›ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2273,7 +2273,7 @@
     "model": "mainpage.regionmedium",
     "pk": 127,
     "fields": {
-        "name": "°­¸ª½Ã",
+        "name": "ê°•ë¦‰ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2288,7 +2288,7 @@
     "model": "mainpage.regionmedium",
     "pk": 128,
     "fields": {
-        "name": "µ¿ÇØ½Ã",
+        "name": "ë™í•´ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2303,7 +2303,7 @@
     "model": "mainpage.regionmedium",
     "pk": 129,
     "fields": {
-        "name": "ÅÂ¹é½Ã",
+        "name": "íƒœë°±ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2318,7 +2318,7 @@
     "model": "mainpage.regionmedium",
     "pk": 130,
     "fields": {
-        "name": "¼ÓÃÊ½Ã",
+        "name": "ì†ì´ˆì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2333,7 +2333,7 @@
     "model": "mainpage.regionmedium",
     "pk": 131,
     "fields": {
-        "name": "»ïÃ´½Ã",
+        "name": "ì‚¼ì²™ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2348,7 +2348,7 @@
     "model": "mainpage.regionmedium",
     "pk": 132,
     "fields": {
-        "name": "È«Ã»±º",
+        "name": "í™ì²­êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2363,7 +2363,7 @@
     "model": "mainpage.regionmedium",
     "pk": 133,
     "fields": {
-        "name": "È¾¼º±º",
+        "name": "íš¡ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2378,7 +2378,7 @@
     "model": "mainpage.regionmedium",
     "pk": 134,
     "fields": {
-        "name": "¿µ¿ù±º",
+        "name": "ì˜ì›”êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2393,7 +2393,7 @@
     "model": "mainpage.regionmedium",
     "pk": 135,
     "fields": {
-        "name": "ÆòÃ¢±º",
+        "name": "í‰ì°½êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2408,7 +2408,7 @@
     "model": "mainpage.regionmedium",
     "pk": 136,
     "fields": {
-        "name": "Á¤¼±±º",
+        "name": "ì •ì„ êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2423,7 +2423,7 @@
     "model": "mainpage.regionmedium",
     "pk": 137,
     "fields": {
-        "name": "Ã¶¿ø±º",
+        "name": "ì² ì›êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2438,7 +2438,7 @@
     "model": "mainpage.regionmedium",
     "pk": 138,
     "fields": {
-        "name": "È­Ãµ±º",
+        "name": "í™”ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2453,7 +2453,7 @@
     "model": "mainpage.regionmedium",
     "pk": 139,
     "fields": {
-        "name": "¾ç±¸±º",
+        "name": "ì–‘êµ¬êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2468,7 +2468,7 @@
     "model": "mainpage.regionmedium",
     "pk": 140,
     "fields": {
-        "name": "°í¼º±º",
+        "name": "ê³ ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2483,7 +2483,7 @@
     "model": "mainpage.regionmedium",
     "pk": 141,
     "fields": {
-        "name": "¾ç¾ç±º",
+        "name": "ì–‘ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2498,7 +2498,7 @@
     "model": "mainpage.regionmedium",
     "pk": 142,
     "fields": {
-        "name": "Ã»ÁÖ½Ã",
+        "name": "ì²­ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2513,7 +2513,7 @@
     "model": "mainpage.regionmedium",
     "pk": 143,
     "fields": {
-        "name": "ÃæÁÖ½Ã",
+        "name": "ì¶©ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2528,7 +2528,7 @@
     "model": "mainpage.regionmedium",
     "pk": 144,
     "fields": {
-        "name": "Á¦Ãµ½Ã",
+        "name": "ì œì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2543,7 +2543,7 @@
     "model": "mainpage.regionmedium",
     "pk": 145,
     "fields": {
-        "name": "º¸Àº±º",
+        "name": "ë³´ì€êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2558,7 +2558,7 @@
     "model": "mainpage.regionmedium",
     "pk": 146,
     "fields": {
-        "name": "¿ÁÃµ±º",
+        "name": "ì˜¥ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2573,7 +2573,7 @@
     "model": "mainpage.regionmedium",
     "pk": 147,
     "fields": {
-        "name": "¿µµ¿±º",
+        "name": "ì˜ë™êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2588,7 +2588,7 @@
     "model": "mainpage.regionmedium",
     "pk": 148,
     "fields": {
-        "name": "ÁõÆò±º",
+        "name": "ì¦í‰êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2603,7 +2603,7 @@
     "model": "mainpage.regionmedium",
     "pk": 149,
     "fields": {
-        "name": "ÁøÃµ±º",
+        "name": "ì§„ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2618,7 +2618,7 @@
     "model": "mainpage.regionmedium",
     "pk": 150,
     "fields": {
-        "name": "±«»ê±º",
+        "name": "ê´´ì‚°êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2633,7 +2633,7 @@
     "model": "mainpage.regionmedium",
     "pk": 151,
     "fields": {
-        "name": "À½¼º±º",
+        "name": "ìŒì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2648,7 +2648,7 @@
     "model": "mainpage.regionmedium",
     "pk": 152,
     "fields": {
-        "name": "´Ü¾ç±º",
+        "name": "ë‹¨ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2663,7 +2663,7 @@
     "model": "mainpage.regionmedium",
     "pk": 153,
     "fields": {
-        "name": "Ãµ¾È½Ã",
+        "name": "ì²œì•ˆì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2678,7 +2678,7 @@
     "model": "mainpage.regionmedium",
     "pk": 154,
     "fields": {
-        "name": "°øÁÖ½Ã",
+        "name": "ê³µì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2693,7 +2693,7 @@
     "model": "mainpage.regionmedium",
     "pk": 155,
     "fields": {
-        "name": "º¸·É½Ã",
+        "name": "ë³´ë ¹ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2708,7 +2708,7 @@
     "model": "mainpage.regionmedium",
     "pk": 156,
     "fields": {
-        "name": "¾Æ»ê½Ã",
+        "name": "ì•„ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2723,7 +2723,7 @@
     "model": "mainpage.regionmedium",
     "pk": 157,
     "fields": {
-        "name": "¼­»ê½Ã",
+        "name": "ì„œì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2738,7 +2738,7 @@
     "model": "mainpage.regionmedium",
     "pk": 158,
     "fields": {
-        "name": "³í»ê½Ã",
+        "name": "ë…¼ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2753,7 +2753,7 @@
     "model": "mainpage.regionmedium",
     "pk": 159,
     "fields": {
-        "name": "°è·æ½Ã",
+        "name": "ê³„ë£¡ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2768,7 +2768,7 @@
     "model": "mainpage.regionmedium",
     "pk": 160,
     "fields": {
-        "name": "´çÁø½Ã",
+        "name": "ë‹¹ì§„ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2783,7 +2783,7 @@
     "model": "mainpage.regionmedium",
     "pk": 161,
     "fields": {
-        "name": "±İ»ê±º",
+        "name": "ê¸ˆì‚°êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2798,7 +2798,7 @@
     "model": "mainpage.regionmedium",
     "pk": 162,
     "fields": {
-        "name": "ºÎ¿©±º",
+        "name": "ë¶€ì—¬êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2813,7 +2813,7 @@
     "model": "mainpage.regionmedium",
     "pk": 163,
     "fields": {
-        "name": "¼­Ãµ±º",
+        "name": "ì„œì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2828,7 +2828,7 @@
     "model": "mainpage.regionmedium",
     "pk": 164,
     "fields": {
-        "name": "Ã»¾ç±º",
+        "name": "ì²­ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2843,7 +2843,7 @@
     "model": "mainpage.regionmedium",
     "pk": 165,
     "fields": {
-        "name": "È«¼º±º",
+        "name": "í™ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2858,7 +2858,7 @@
     "model": "mainpage.regionmedium",
     "pk": 166,
     "fields": {
-        "name": "¿¡»ê±º",
+        "name": "ì—ì‚°êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2873,7 +2873,7 @@
     "model": "mainpage.regionmedium",
     "pk": 167,
     "fields": {
-        "name": "ÅÂ¾È±º",
+        "name": "íƒœì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2888,7 +2888,7 @@
     "model": "mainpage.regionmedium",
     "pk": 168,
     "fields": {
-        "name": "ÀüÁÖ½Ã",
+        "name": "ì „ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2903,7 +2903,7 @@
     "model": "mainpage.regionmedium",
     "pk": 169,
     "fields": {
-        "name": "±º»ê½Ã",
+        "name": "êµ°ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2918,7 +2918,7 @@
     "model": "mainpage.regionmedium",
     "pk": 170,
     "fields": {
-        "name": "ÀÍ»ê½Ã",
+        "name": "ìµì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2933,7 +2933,7 @@
     "model": "mainpage.regionmedium",
     "pk": 171,
     "fields": {
-        "name": "Á¤À¾½Ã",
+        "name": "ì •ìì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2948,7 +2948,7 @@
     "model": "mainpage.regionmedium",
     "pk": 172,
     "fields": {
-        "name": "³²¿ø½Ã",
+        "name": "ë‚¨ì›ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2963,7 +2963,7 @@
     "model": "mainpage.regionmedium",
     "pk": 173,
     "fields": {
-        "name": "±èÁ¦½Ã",
+        "name": "ê¹€ì œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2978,7 +2978,7 @@
     "model": "mainpage.regionmedium",
     "pk": 174,
     "fields": {
-        "name": "¿ÏÁÖ±º",
+        "name": "ì™„ì£¼êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -2993,7 +2993,7 @@
     "model": "mainpage.regionmedium",
     "pk": 175,
     "fields": {
-        "name": "Áø¾È±º",
+        "name": "ì§„ì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3008,7 +3008,7 @@
     "model": "mainpage.regionmedium",
     "pk": 176,
     "fields": {
-        "name": "¹«ÁÖ±º",
+        "name": "ë¬´ì£¼êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3023,7 +3023,7 @@
     "model": "mainpage.regionmedium",
     "pk": 177,
     "fields": {
-        "name": "Àå¼ö±º",
+        "name": "ì¥ìˆ˜êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3038,7 +3038,7 @@
     "model": "mainpage.regionmedium",
     "pk": 178,
     "fields": {
-        "name": "ÀÓ½Ç±º",
+        "name": "ì„ì‹¤êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3053,7 +3053,7 @@
     "model": "mainpage.regionmedium",
     "pk": 179,
     "fields": {
-        "name": "¼øÃ¢±º",
+        "name": "ìˆœì°½êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3068,7 +3068,7 @@
     "model": "mainpage.regionmedium",
     "pk": 180,
     "fields": {
-        "name": "°íÃ¢±º",
+        "name": "ê³ ì°½êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3083,7 +3083,7 @@
     "model": "mainpage.regionmedium",
     "pk": 181,
     "fields": {
-        "name": "ºÎ¾È±º",
+        "name": "ë¶€ì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3098,7 +3098,7 @@
     "model": "mainpage.regionmedium",
     "pk": 182,
     "fields": {
-        "name": "¸ñÆ÷½Ã",
+        "name": "ëª©í¬ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3113,7 +3113,7 @@
     "model": "mainpage.regionmedium",
     "pk": 183,
     "fields": {
-        "name": "¿©¼ö½Ã",
+        "name": "ì—¬ìˆ˜ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3128,7 +3128,7 @@
     "model": "mainpage.regionmedium",
     "pk": 184,
     "fields": {
-        "name": "¼øÃµ½Ã",
+        "name": "ìˆœì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3143,7 +3143,7 @@
     "model": "mainpage.regionmedium",
     "pk": 185,
     "fields": {
-        "name": "³ªÁÖ½Ã",
+        "name": "ë‚˜ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3158,7 +3158,7 @@
     "model": "mainpage.regionmedium",
     "pk": 186,
     "fields": {
-        "name": "±¤¾ç½Ã",
+        "name": "ê´‘ì–‘ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3173,7 +3173,7 @@
     "model": "mainpage.regionmedium",
     "pk": 187,
     "fields": {
-        "name": "´ã¾ç±º",
+        "name": "ë‹´ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3188,7 +3188,7 @@
     "model": "mainpage.regionmedium",
     "pk": 188,
     "fields": {
-        "name": "°î¼º±º",
+        "name": "ê³¡ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3203,7 +3203,7 @@
     "model": "mainpage.regionmedium",
     "pk": 189,
     "fields": {
-        "name": "±¸·Ê±º",
+        "name": "êµ¬ë¡€êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3218,7 +3218,7 @@
     "model": "mainpage.regionmedium",
     "pk": 190,
     "fields": {
-        "name": "°íÈï±º",
+        "name": "ê³ í¥êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3233,7 +3233,7 @@
     "model": "mainpage.regionmedium",
     "pk": 191,
     "fields": {
-        "name": "º¸¼º±º",
+        "name": "ë³´ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3248,7 +3248,7 @@
     "model": "mainpage.regionmedium",
     "pk": 192,
     "fields": {
-        "name": "È­¼ø±º",
+        "name": "í™”ìˆœêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3263,7 +3263,7 @@
     "model": "mainpage.regionmedium",
     "pk": 193,
     "fields": {
-        "name": "ÀåÈï±º",
+        "name": "ì¥í¥êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3278,7 +3278,7 @@
     "model": "mainpage.regionmedium",
     "pk": 194,
     "fields": {
-        "name": "°­Áø±º",
+        "name": "ê°•ì§„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3293,7 +3293,7 @@
     "model": "mainpage.regionmedium",
     "pk": 195,
     "fields": {
-        "name": "ÇØ³²±º",
+        "name": "í•´ë‚¨êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3308,7 +3308,7 @@
     "model": "mainpage.regionmedium",
     "pk": 196,
     "fields": {
-        "name": "¿µ¾Ï±º",
+        "name": "ì˜ì•”êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3323,7 +3323,7 @@
     "model": "mainpage.regionmedium",
     "pk": 197,
     "fields": {
-        "name": "¹«¾È±º",
+        "name": "ë¬´ì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3338,7 +3338,7 @@
     "model": "mainpage.regionmedium",
     "pk": 198,
     "fields": {
-        "name": "ÇÔÆò±º",
+        "name": "í•¨í‰êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3353,7 +3353,7 @@
     "model": "mainpage.regionmedium",
     "pk": 199,
     "fields": {
-        "name": "¿µ°ü±º",
+        "name": "ì˜ê´€êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3368,7 +3368,7 @@
     "model": "mainpage.regionmedium",
     "pk": 200,
     "fields": {
-        "name": "Àå¼º±º",
+        "name": "ì¥ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3383,7 +3383,7 @@
     "model": "mainpage.regionmedium",
     "pk": 201,
     "fields": {
-        "name": "¿Ïµµ±º",
+        "name": "ì™„ë„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3398,7 +3398,7 @@
     "model": "mainpage.regionmedium",
     "pk": 202,
     "fields": {
-        "name": "Áøµµ±º",
+        "name": "ì§„ë„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3413,7 +3413,7 @@
     "model": "mainpage.regionmedium",
     "pk": 203,
     "fields": {
-        "name": "½Å¾È±º",
+        "name": "ì‹ ì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3428,7 +3428,7 @@
     "model": "mainpage.regionmedium",
     "pk": 204,
     "fields": {
-        "name": "Æ÷Ç×½Ã",
+        "name": "í¬í•­ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3443,7 +3443,7 @@
     "model": "mainpage.regionmedium",
     "pk": 205,
     "fields": {
-        "name": "°æÁÖ½Ã",
+        "name": "ê²½ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3458,7 +3458,7 @@
     "model": "mainpage.regionmedium",
     "pk": 206,
     "fields": {
-        "name": "±èÃµ½Ã",
+        "name": "ê¹€ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3473,7 +3473,7 @@
     "model": "mainpage.regionmedium",
     "pk": 207,
     "fields": {
-        "name": "¾Èµ¿½Ã",
+        "name": "ì•ˆë™ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3488,7 +3488,7 @@
     "model": "mainpage.regionmedium",
     "pk": 208,
     "fields": {
-        "name": "±¸¹Ì½Ã",
+        "name": "êµ¬ë¯¸ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3503,7 +3503,7 @@
     "model": "mainpage.regionmedium",
     "pk": 209,
     "fields": {
-        "name": "¿µÁÖ½Ã",
+        "name": "ì˜ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3518,7 +3518,7 @@
     "model": "mainpage.regionmedium",
     "pk": 210,
     "fields": {
-        "name": "¿µÃµ½Ã",
+        "name": "ì˜ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3533,7 +3533,7 @@
     "model": "mainpage.regionmedium",
     "pk": 211,
     "fields": {
-        "name": "»óÁÖ½Ã",
+        "name": "ìƒì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3548,7 +3548,7 @@
     "model": "mainpage.regionmedium",
     "pk": 212,
     "fields": {
-        "name": "¹®°æ½Ã",
+        "name": "ë¬¸ê²½ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3563,7 +3563,7 @@
     "model": "mainpage.regionmedium",
     "pk": 213,
     "fields": {
-        "name": "°æ»ê½Ã",
+        "name": "ê²½ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3578,7 +3578,7 @@
     "model": "mainpage.regionmedium",
     "pk": 214,
     "fields": {
-        "name": "±ºÀ§±º",
+        "name": "êµ°ìœ„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3593,7 +3593,7 @@
     "model": "mainpage.regionmedium",
     "pk": 215,
     "fields": {
-        "name": "ÀÇ¼º±º",
+        "name": "ì˜ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3608,7 +3608,7 @@
     "model": "mainpage.regionmedium",
     "pk": 216,
     "fields": {
-        "name": "Ã»¼Û±º",
+        "name": "ì²­ì†¡êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3623,7 +3623,7 @@
     "model": "mainpage.regionmedium",
     "pk": 217,
     "fields": {
-        "name": "¿µ¾ç±º",
+        "name": "ì˜ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3638,7 +3638,7 @@
     "model": "mainpage.regionmedium",
     "pk": 218,
     "fields": {
-        "name": "¿µ´ö±º",
+        "name": "ì˜ë•êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3653,7 +3653,7 @@
     "model": "mainpage.regionmedium",
     "pk": 219,
     "fields": {
-        "name": "Ã»µµ±º",
+        "name": "ì²­ë„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3668,7 +3668,7 @@
     "model": "mainpage.regionmedium",
     "pk": 220,
     "fields": {
-        "name": "°í·É±º",
+        "name": "ê³ ë ¹êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3683,7 +3683,7 @@
     "model": "mainpage.regionmedium",
     "pk": 221,
     "fields": {
-        "name": "¼ºÁÖ±º",
+        "name": "ì„±ì£¼êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3698,7 +3698,7 @@
     "model": "mainpage.regionmedium",
     "pk": 222,
     "fields": {
-        "name": "Ä¥°î±º",
+        "name": "ì¹ ê³¡êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3713,7 +3713,7 @@
     "model": "mainpage.regionmedium",
     "pk": 223,
     "fields": {
-        "name": "¿¡Ãµ±º",
+        "name": "ì—ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3728,7 +3728,7 @@
     "model": "mainpage.regionmedium",
     "pk": 224,
     "fields": {
-        "name": "ºÀÈ­±º",
+        "name": "ë´‰í™”êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3743,7 +3743,7 @@
     "model": "mainpage.regionmedium",
     "pk": 225,
     "fields": {
-        "name": "¿ïÁø±º",
+        "name": "ìš¸ì§„êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3758,7 +3758,7 @@
     "model": "mainpage.regionmedium",
     "pk": 226,
     "fields": {
-        "name": "¿ï¸ª±º",
+        "name": "ìš¸ë¦‰êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3773,7 +3773,7 @@
     "model": "mainpage.regionmedium",
     "pk": 227,
     "fields": {
-        "name": "Ã¢¿ø½Ã",
+        "name": "ì°½ì›ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3788,7 +3788,7 @@
     "model": "mainpage.regionmedium",
     "pk": 228,
     "fields": {
-        "name": "ÁøÁÖ½Ã",
+        "name": "ì§„ì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3803,7 +3803,7 @@
     "model": "mainpage.regionmedium",
     "pk": 229,
     "fields": {
-        "name": "Åë¿µ½Ã",
+        "name": "í†µì˜ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3818,7 +3818,7 @@
     "model": "mainpage.regionmedium",
     "pk": 230,
     "fields": {
-        "name": "»çÃµ½Ã",
+        "name": "ì‚¬ì²œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3833,7 +3833,7 @@
     "model": "mainpage.regionmedium",
     "pk": 231,
     "fields": {
-        "name": "±èÇØ½Ã",
+        "name": "ê¹€í•´ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3848,7 +3848,7 @@
     "model": "mainpage.regionmedium",
     "pk": 232,
     "fields": {
-        "name": "¹Ğ¾ç½Ã",
+        "name": "ë°€ì–‘ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3863,7 +3863,7 @@
     "model": "mainpage.regionmedium",
     "pk": 233,
     "fields": {
-        "name": "°ÅÁ¦½Ã",
+        "name": "ê±°ì œì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3878,7 +3878,7 @@
     "model": "mainpage.regionmedium",
     "pk": 234,
     "fields": {
-        "name": "¾ç»ê½Ã",
+        "name": "ì–‘ì‚°ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3893,7 +3893,7 @@
     "model": "mainpage.regionmedium",
     "pk": 235,
     "fields": {
-        "name": "ÀÇ·É±º",
+        "name": "ì˜ë ¹êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3908,7 +3908,7 @@
     "model": "mainpage.regionmedium",
     "pk": 236,
     "fields": {
-        "name": "ÇÔ¾È±º",
+        "name": "í•¨ì•ˆêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3923,7 +3923,7 @@
     "model": "mainpage.regionmedium",
     "pk": 237,
     "fields": {
-        "name": "Ã¢³ç±º",
+        "name": "ì°½ë…•êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3938,7 +3938,7 @@
     "model": "mainpage.regionmedium",
     "pk": 238,
     "fields": {
-        "name": "°í¼º±º",
+        "name": "ê³ ì„±êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3953,7 +3953,7 @@
     "model": "mainpage.regionmedium",
     "pk": 239,
     "fields": {
-        "name": "³²ÇØ±º",
+        "name": "ë‚¨í•´êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3968,7 +3968,7 @@
     "model": "mainpage.regionmedium",
     "pk": 240,
     "fields": {
-        "name": "ÇÏµ¿±º",
+        "name": "í•˜ë™êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3983,7 +3983,7 @@
     "model": "mainpage.regionmedium",
     "pk": 241,
     "fields": {
-        "name": "»êÃ»±º",
+        "name": "ì‚°ì²­êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -3998,7 +3998,7 @@
     "model": "mainpage.regionmedium",
     "pk": 242,
     "fields": {
-        "name": "ÇÔ¾ç±º",
+        "name": "í•¨ì–‘êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4013,7 +4013,7 @@
     "model": "mainpage.regionmedium",
     "pk": 243,
     "fields": {
-        "name": "°ÅÃ¢±º",
+        "name": "ê±°ì°½êµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4028,7 +4028,7 @@
     "model": "mainpage.regionmedium",
     "pk": 244,
     "fields": {
-        "name": "ÇÕÃµ±º",
+        "name": "í•©ì²œêµ°",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4043,7 +4043,7 @@
     "model": "mainpage.regionmedium",
     "pk": 245,
     "fields": {
-        "name": "Á¦ÁÖ½Ã",
+        "name": "ì œì£¼ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4058,7 +4058,7 @@
     "model": "mainpage.regionmedium",
     "pk": 246,
     "fields": {
-        "name": "¼­±ÍÆ÷½Ã",
+        "name": "ì„œê·€í¬ì‹œ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4073,7 +4073,7 @@
     "model": "mainpage.regionmedium",
     "pk": 247,
     "fields": {
-        "name": "ÀüÃ¼¼±ÅÃ",
+        "name": "ì „ì²´ì„ íƒ",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
@@ -4098,7 +4098,7 @@
     "model": "mainpage.infected",
     "pk": 1,
     "fields": {
-        "name": "»ç¶÷ 001",
+        "name": "ì‚¬ëŒ 001",
         "status": "Infected"
     }
 },
@@ -4109,8 +4109,8 @@
         "infected": 1,
         "medium_region": 2,
         "moved_date": "2020-11-24T16:03:00",
-        "exact_address": "Ãæ¹«·Î4°¡",
-        "desc": "´ëÁß±³Åë ÀÌ¿ë"
+        "exact_address": "ì¶©ë¬´ë¡œ4ê°€",
+        "desc": "ëŒ€ì¤‘êµí†µ ì´ìš©"
     }
 },
 {
@@ -4120,8 +4120,8 @@
         "infected": 1,
         "medium_region": 2,
         "moved_date": "2020-11-24T16:15:00",
-        "exact_address": "ÇÊµ¿·Î1±æ",
-        "desc": "µµº¸ ÀÌµ¿"
+        "exact_address": "í•„ë™ë¡œ1ê¸¸",
+        "desc": "ë„ë³´ ì´ë™"
     }
 },
 {
@@ -4131,8 +4131,8 @@
         "infected": 1,
         "medium_region": 2,
         "moved_date": "2020-11-24T16:38:00",
-        "exact_address": "ÇÊµ¿3°¡",
-        "desc": "»ó°¡ µé¸§( »óÈ£¸í ºñ°ø°³ )"
+        "exact_address": "í•„ë™3ê°€",
+        "desc": "ìƒê°€ ë“¤ë¦„( ìƒí˜¸ëª… ë¹„ê³µê°œ )"
     }
 },
 {
@@ -4142,8 +4142,8 @@
         "infected": 1,
         "medium_region": 2,
         "moved_date": "2020-11-24T17:08:00",
-        "exact_address": "Åğ°è·Î 252",
-        "desc": "´ëÁß±³Åë ÀÌ¿ë"
+        "exact_address": "í‡´ê³„ë¡œ 252",
+        "desc": "ëŒ€ì¤‘êµí†µ ì´ìš©"
     }
 },
 {
@@ -4153,8 +4153,8 @@
         "infected": 1,
         "medium_region": 6,
         "moved_date": "2020-11-24T17:38:00",
-        "exact_address": "¹«ÇĞ·Î 134",
-        "desc": "´ëÁß±³Åë ÀÌ¿ë"
+        "exact_address": "ë¬´í•™ë¡œ 134",
+        "desc": "ëŒ€ì¤‘êµí†µ ì´ìš©"
     }
 },
 {
@@ -4164,8 +4164,8 @@
         "infected": 1,
         "medium_region": 6,
         "moved_date": "2020-11-24T17:57:00",
-        "exact_address": "¹«ÇĞ·Î 44±æ",
-        "desc": "ÀÚÅÃ ±Í°¡"
+        "exact_address": "ë¬´í•™ë¡œ 44ê¸¸",
+        "desc": "ìíƒ ê·€ê°€"
     }
 },
 {
