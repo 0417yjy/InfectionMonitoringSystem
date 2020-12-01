@@ -21,6 +21,9 @@ class AbstractRegion(models.Model):  # Abstract class of region models
     no_deceased = models.IntegerField()
     no_offisolated = models.IntegerField()
     updated_time = models.DateTimeField()
+    prev_no_infected = models.IntegerField(default=0) # 각 지역별로도 감염 통계를 저장함
+    prev_no_deceased = models.IntegerField(default=0)
+    prev_no_offisolated = models.IntegerField(default=0)
     
     class Meta:
         abstract = True
@@ -37,12 +40,12 @@ class RegionMedium(AbstractRegion):
     def __str__(self):
         return self.name
 
-class RegionSmall(AbstractRegion):
-    # 전체선택 / 동 / 읍
-    parent_region = models.ForeignKey('RegionMedium', on_delete=models.CASCADE)
+# class RegionSmall(AbstractRegion):
+#     # 전체선택 / 동 / 읍
+#     parent_region = models.ForeignKey('RegionMedium', on_delete=models.CASCADE)
     
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
 class Subscriber(models.Model):
     SUBSCRIBE_TYPE_CHOICES = models.TextChoices('SubscribeType','Email Kakao')
@@ -53,22 +56,22 @@ class Subscriber(models.Model):
     # Has each region's id
     large_region = models.ForeignKey('RegionLarge', on_delete=models.CASCADE)
     medium_region = models.ForeignKey('RegionMedium', on_delete=models.CASCADE)
-    small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
+    #small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
 
     def __str__(self):
-        return sub_type + ": " + address
+        return self.sub_type + ": " + self.address + ": " + str(self.large_region) + "/" + str(self.medium_region)
 
-class Facility(models.Model):
-    # Entity about facility (a kind of map overlay components)
-    FACILITY_TYPE_CHOICES = models.TextChoices('FacilityType', 'Hospital Pharmacy Convenience')
+# class Facility(models.Model):
+#     # Entity about facility (a kind of map overlay components)
+#     FACILITY_TYPE_CHOICES = models.TextChoices('FacilityType', 'Hospital Pharmacy Convenience')
 
-    name = models.CharField(max_length=30)
-    address = models.CharField(max_length=100)
-    fac_type = models.CharField(max_length=12, choices=FACILITY_TYPE_CHOICES.choices)
-    small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
+#     name = models.CharField(max_length=30)
+#     address = models.CharField(max_length=100)
+#     fac_type = models.CharField(max_length=12, choices=FACILITY_TYPE_CHOICES.choices)
+#     #small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
 
-    def __str__(self):
-        return small_region + ": " + self.name + ": " + self.fac_type
+#     def __str__(self):
+#         return small_region + ": " + self.name + ": " + self.fac_type
 
 class Infected(models.Model):
     STATUS_CHOICES = models.TextChoices('StatusType','Infected Deceased Off-Isolated')
@@ -78,7 +81,8 @@ class Infected(models.Model):
 
 class InfectedMovement(models.Model):
     infected = models.ForeignKey('Infected', on_delete=models.CASCADE)
-    small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
+    #small_region = models.ForeignKey('RegionSmall', on_delete=models.CASCADE)
+    medium_region = models.ForeignKey('RegionMedium', on_delete=models.CASCADE, default=1)
     moved_date = models.DateTimeField()
     exact_address = models.CharField(max_length=100) # 방문 장소의 주소
     desc = models.CharField(max_length=20)  # 방문 장소 이름

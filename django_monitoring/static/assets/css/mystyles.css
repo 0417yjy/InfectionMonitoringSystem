@@ -2456,15 +2456,16 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+
 .btn-primary {
-  color: var(--blue);
-  background-color: var(--white);
-  border-color: var(--blue);
+  color: #fff;
+  background-color: #3d9bff;
+  border-color: #3d9bff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #3d9bff;
-  border-color: darkblue;
+  background-color: #3685da;
+  border-color: #3685da;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
@@ -10358,4 +10359,35 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+#sideNav {
+  z-index: 9999 !important;
+  position: fixed;
+  top: 50%;
+  right: 0.1%;
+}
+
+.nav-dot .nav-link .dot{
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.nav-dot .nav-link.active .dot,
+.nav-dot.show > .nav-link {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(39, 101, 236);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.subscribe-modal-body {
+  width: 90%;
+}
+
+.btn-circle {
+  border-radius: 50%;
 }

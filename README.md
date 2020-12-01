@@ -46,3 +46,7 @@ API 키: f14954c4a0b04d9a53b1603e20d40e1b8
 ![demo](res/site_screenshot.jpg)
 ## 이메일 구독 창
 ![email_demo](res/subscribe_email_screenshot.jpg)
+![email_suc_demo](res/subscribe_email_success.jpg)
+## 카카오톡 구독 창
+![kakao_demo](res/subscribe_kakao_screenshot.jpg)
+![kakao_suc_demo](res/subscribe_kakao_success.jpg)
