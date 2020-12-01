@@ -61,11 +61,16 @@ def index(request):
     #print(statisticDBValues)
     #print(statisticValue)
     #=============================================== End of 'contents-home.html' ========================================================
-
-
-    #============================================ Start of 'contents-subscribe.html' ====================================================
+    #============================================ Start of 'contents-statistics.html' ===================================================
     largeRegions = RegionLarge.objects.all()
     largeRegionsValues = serializers.serialize('json', largeRegions)
+    #============================================= End of 'contents-statistics.html' ====================================================
+    #============================================ Start of 'contents-subscribe.html' ====================================================
+    # duplicate
+    '''
+    largeRegions = RegionLarge.objects.all()
+    largeRegionsValues = serializers.serialize('json', largeRegions)
+    '''
     mediumRegions = RegionMedium.objects.all()
     mediumRegionsValues = serializers.serialize('json', mediumRegions)
     #============================================= End of 'contents-subscribe.html' =====================================================
@@ -73,8 +78,10 @@ def index(request):
         # contents-home
         'result' : result,
         'statisticDBValues': statisticDBValues,
-        # contents-subscribe
+        # contents-statistics
         'largeRegions': largeRegionsValues,
+        # contents-subscribe
+        # 'largeRegions': largeRegionsValues, # duplicate
         'mediumRegions': mediumRegionsValues
     }
     return render(request, 'index.html', context)
