@@ -1,3 +1,24 @@
+Chart.plugins.register({
+    beforeUpdate: function (chart) {
+        if (chart.options.sort) {
+            // Get the data from each datasets.
+            var dataArray = chart.data.datasets[0].data;
+            // Get the index after sorted.
+            let dataIndexes = dataArray.map((d, i) => i);
+            dataIndexes.sort((a, b) => {
+                return dataArray[b] - dataArray[a];
+            });
+            // create after sorted datasets.
+            var tempDatasets = [];
+            for(var i=0;i<dataArray.length;i++) {
+                tempDatasets.push(dataArray[dataIndexes[i]]);
+            }
+            // apply it
+            chart.data.datasets[0].data = tempDatasets;
+        }
+    }
+});
+
 function HistogramData(weekDate, diseased7, death7, cured7) {
     this.labels = weekDate;
     this.datasets = [

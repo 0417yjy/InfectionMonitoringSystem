@@ -124,27 +124,33 @@
 
     ctx = document.getElementById('regional-statistics').getContext('2d');
     var hb_data = new HorizonBarData(horizon_labels, horizon_data, type_name, chart_color);
-    var regional_chart = new Chart(ctx, {
-        type: 'horizontalBar',
-        data: hb_data,
-        options: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                fontSize: 15,
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: ' + coronaAPIData['TotalCase'] + '명']
-            },
-            plugins: {
-                chartJsPluginSubtitle: {
+    var regional_chart = MakeHorizonChart();
+
+    function MakeHorizonChart() {
+        var chart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: hb_data,
+            options: {
+                sort: true,
+                legend: {
+                    display: false
+                },
+                title: {
                     display: true,
-                    fontSize: 12,
-                    text: [coronaAPIData['updateTime']]
+                    fontSize: 15,
+                    text: ['대한민국 지역별 확진자 현황', '총 확진자: ' + coronaAPIData['TotalCase'] + '명']
+                },
+                plugins: {
+                    chartJsPluginSubtitle: {
+                        display: true,
+                        fontSize: 12,
+                        text: [coronaAPIData['updateTime']]
+                    }
                 }
             }
-        }
-    });
+        });
+        return chart;
+    }
 
     function setChartNameAndColor() {
         switch (type_selected) {
@@ -187,27 +193,7 @@
             hb_data = new HorizonBarData(horizon_labels, horizon_data, type_name, chart_color);
 
             if (regional_chart) regional_chart.destroy();
-            regional_chart = new Chart(ctx, {
-                type: 'horizontalBar',
-                data: hb_data,
-                options: {
-                    legend: {
-                        display: false
-                    },
-                    title: {
-                        display: true,
-                        fontSize: 15,
-                        text: ['대한민국 지역별 확진자 현황', '총 확진자: ' + coronaAPIData['TotalCase'] + '명']
-                    },
-                    plugins: {
-                        chartJsPluginSubtitle: {
-                            display: true,
-                            fontSize: 12,
-                            text: [coronaAPIData['updateTime']]
-                        }
-                    }
-                }
-            });
+            regional_chart = MakeHorizonChart();
         }
     }
 </script>
