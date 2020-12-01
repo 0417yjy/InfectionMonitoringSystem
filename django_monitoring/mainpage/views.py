@@ -66,9 +66,11 @@ def index(request):
     largeRegions = RegionLarge.objects.all()
     largeRegionsValues = serializers.serialize('json', largeRegions)
     #============================================= End of 'contents-statistics.html' ====================================================
-        #============================================= Start of 'content-mapview.html' ======================================================
+    #============================================= Start of 'content-mapview.html' ======================================================
     locationset = LocationInfo.get_location(result)
     seoul_gu_results = LocationInfo.scraping_data()
+    patient_pathes = LocationInfo.get_patient_path()
+    print(patient_pathes)
     #============================================= End of 'content-mapview.html' ========================================================
     #============================================ Start of 'contents-subscribe.html' ====================================================
     # duplicate
@@ -88,6 +90,7 @@ def index(request):
         # contents-mapview
         'locationset' : locationset,
         'seoul_gu_result' : seoul_gu_results,
+        'patient_pathes' : patient_pathes,
         # contents-subscribe
         # 'largeRegions': largeRegionsValues, # duplicate
         'mediumRegions': mediumRegionsValues

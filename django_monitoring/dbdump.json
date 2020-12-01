@@ -45,6 +45,13 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
+        "model": "infected"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
         "model": "regionlarge"
     }
 },
@@ -59,6 +66,13 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
+        "model": "statisticvalues"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
         "model": "subscriber"
     }
 },
@@ -66,21 +80,7 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "infected"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
         "model": "infectedmovement"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "statisticvalues"
     }
 },
 {
@@ -95,6 +95,14 @@
     "fields": {
         "app_label": "mainpage",
         "model": "facility"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "abq55pdcea8tys8lx4ezux9evff3lqb3",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAYGQZduu8ZyMCgVA1NSrsy3l2bdKHb_977LxV5XWpce5njKOqsQB1-t8T5UdoG5M7tNuk8tWUek94UvdOuh0nK87K7fweVe_3WAY4eKAAhJ2eCIREQtsU6lxAMhuxLsN4YKh4RTpaYrtZARskELqj3B6e3Nks:1kk1YX:Cw90sRi6DEtQh8oUi24HGVbyg5-LDNU6NX3zlwPJQhs",
+        "expire_date": "2020-12-15T18:02:41.801"
     }
 },
 {
@@ -4087,6 +4095,80 @@
     }
 },
 {
+    "model": "mainpage.infected",
+    "pk": 1,
+    "fields": {
+        "name": "사람 001",
+        "status": "Infected"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 2,
+    "fields": {
+        "infected": 1,
+        "medium_region": 2,
+        "moved_date": "2020-11-24T16:03:00",
+        "exact_address": "충무로4가",
+        "desc": "대중교통 이용"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 3,
+    "fields": {
+        "infected": 1,
+        "medium_region": 2,
+        "moved_date": "2020-11-24T16:15:00",
+        "exact_address": "필동로1길",
+        "desc": "도보 이동"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 4,
+    "fields": {
+        "infected": 1,
+        "medium_region": 2,
+        "moved_date": "2020-11-24T16:38:00",
+        "exact_address": "필동3가",
+        "desc": "상가 들름( 상호명 비공개 )"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 5,
+    "fields": {
+        "infected": 1,
+        "medium_region": 2,
+        "moved_date": "2020-11-24T17:08:00",
+        "exact_address": "퇴계로 252",
+        "desc": "대중교통 이용"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 6,
+    "fields": {
+        "infected": 1,
+        "medium_region": 6,
+        "moved_date": "2020-11-24T17:38:00",
+        "exact_address": "무학로 134",
+        "desc": "대중교통 이용"
+    }
+},
+{
+    "model": "mainpage.infectedmovement",
+    "pk": 7,
+    "fields": {
+        "infected": 1,
+        "medium_region": 6,
+        "moved_date": "2020-11-24T17:57:00",
+        "exact_address": "무학로 44길",
+        "desc": "자택 귀가"
+    }
+},
+{
     "model": "mainpage.statisticvalues",
     "pk": "2020.11.23",
     "fields": {
@@ -4470,6 +4552,50 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add region large",
         "content_type": [
             "mainpage",
@@ -4558,6 +4684,50 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "add_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "change_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "delete_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "view_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add subscriber",
         "content_type": [
             "mainpage",
@@ -4602,50 +4772,6 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "add_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "change_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "delete_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "view_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
         "name": "Can add infected movement",
         "content_type": [
             "mainpage",
@@ -4685,50 +4811,6 @@
             "infectedmovement"
         ],
         "codename": "view_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "add_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "change_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "delete_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "view_statisticvalues"
     }
 },
 {
@@ -4834,6 +4916,365 @@
         "date_joined": "2020-11-27T13:29:18.207",
         "groups": [],
         "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$wVzYMMj00MOm$1AvcKc9GTquZvOe0TFO9i3iGP+hBjJa/e11CtpI9hJs=",
+        "last_login": "2020-12-01T18:02:41.692",
+        "is_superuser": true,
+        "username": "su001",
+        "first_name": "",
+        "last_name": "",
+        "email": "woojoo1602@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-12-01T18:02:29.274",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-12-01T18:03:01.479",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "object_id": "1",
+        "object_repr": "Infected object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-12-01T18:04:01.573",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-12-01T18:04:26.131",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Moved date\", \"Exact address\", \"Desc\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-12-01T18:05:18.292",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Moved date\", \"Exact address\", \"Desc\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-12-01T18:05:27.028",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-12-01T18:05:40.365",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-12-01T18:06:01.919",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Moved date\", \"Exact address\", \"Desc\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-12-01T18:06:09.581",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-12-01T18:06:17.673",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "1",
+        "object_repr": "InfectedMovement object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-12-01T18:06:38.308",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "2",
+        "object_repr": "InfectedMovement object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-12-01T18:06:51.186",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "3",
+        "object_repr": "InfectedMovement object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-12-01T18:07:09.010",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "4",
+        "object_repr": "InfectedMovement object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-12-01T18:08:21.498",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "5",
+        "object_repr": "InfectedMovement object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-12-01T18:08:27.899",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "5",
+        "object_repr": "InfectedMovement object (5)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Desc\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-12-01T18:09:19.557",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "6",
+        "object_repr": "InfectedMovement object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-12-01T18:09:44.506",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "7",
+        "object_repr": "InfectedMovement object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-12-01T18:34:11.863",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "3",
+        "object_repr": "InfectedMovement object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Exact address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-12-01T18:35:14.067",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "3",
+        "object_repr": "InfectedMovement object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Exact address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-12-01T18:36:42.194",
+        "user": [
+            "su001"
+        ],
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "object_id": "2",
+        "object_repr": "InfectedMovement object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Exact address\"]}}]"
     }
 }
 ]

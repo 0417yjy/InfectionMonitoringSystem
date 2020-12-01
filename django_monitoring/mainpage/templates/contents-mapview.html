@@ -10,8 +10,9 @@
             font-size: 12px;
             top: -5px;
             left: 15px;
-            padding:2px;
+            padding: 2px;
         }
+
         .areaname {
             position: absolute;
             background: #fff;
@@ -20,31 +21,44 @@
             font-size: 12px;
             top: -5px;
             left: 15px;
-            padding:2px;
+            padding: 2px;
         }
-
+        .lineinfo {
+            font-size: 10px;
+            background: #fff;
+            padding: 5px;
+        }
+        .lineinfo .title {
+            font-weight: bold;
+        }
 
         .infotext {
+            visibility:hidden;
             text-align: center;
-        }
-        .infotext .name {
-            font-size: 28px;
-            font-weight:bold;
-        }
-        .infotext .totalNum{
-            font-size: 15px;
-        }
-        .gu_text {
-            text-align: center;
-        }
-        .gu_text .gu_name {
-            font-size: 14px;
-            font-weight:bold;
-        }
-        .gu_text .gu_num{
-            font-size: 10px;
         }
 
+        .infotext .name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .infotext .totalNum {
+            font-size: 15px;
+        }
+
+        .gu_text {
+            visibility:hidden;
+            text-align: center;
+        }
+
+        .gu_text .gu_name {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .gu_text .gu_num {
+            font-size: 10px;
+        }
 
         .map_wrap,
         .map_wrap * {
@@ -60,7 +74,56 @@
             height: 750px;
         }
 
+        /* ---------------------------- 오버레이 선택 ---------------------------- */
+        #toggle {
+            position: absolute;
+            margin: 0px auto;
+            top: 26%;
+            left: 25%;
+            border-radius: 5px;
+            border: 1px solid #682a00;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+            background: #d25400;
+            overflow-y: auto;
+            width: 67px;
+            z-index: 2;
+        }
+
+        #toggle li {
+            float: left;
+            list-style: none;
+            width: 65px;
+            border-bottom: 1px solid #682a00;
+            padding: 10px 0;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+            font-size: 4pt;
+        }
+
+        #toggle li.on {
+            background: #b14700;
+        }
+
+        #toggle li:hover {
+            background: #a54200;
+        }
+
+        #toggle li:last-child {
+            margin-right: 0;
+            border-right: 0;
+        }
+
+        #toggle li span {
+            display: block;
+            margin: 0 auto 3px;
+            width: 32px;
+            height: 32px;
+        }
+
+        /* ---------------------------- 시설물 선택 카테고리 ---------------------------- */
         #category {
+            visibility: hidden;
             position: absolute;
             margin: 0px auto;
             top: 10px;
@@ -125,6 +188,7 @@
             background-position-x: -46px;
         }
 
+        /* ---------------------------- 맵 상의 마커 클릭 시, 상세 정보 팝업 CSS ----------------------------*/
         .placeinfo_wrap {
             position: absolute;
             bottom: 28px;
@@ -203,7 +267,91 @@
 
 <body>
     <div class="map_wrap">
-        <div id="map" style="width:50%;height:100%;position: relative;overflow:visible;margin:0px auto; border-radius: 25px; border: 2px solid #d25400;"></div>
+        <div id="map"
+            style="width:50%;height:100%;position: relative;overflow:visible;margin:0px auto; border-radius: 25px; border: 2px solid #d25400;">
+        </div>
+        <ul id="toggle">
+            <li id="infected-overlay" data-order="0">
+                <!-- span onclick="setMapType('roadmap')"-->
+                <span onclick ="info_overlay_onoff()"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-alert-circle">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                </span>
+                확진자 정보
+            </li>
+            <li id="facility-overlay" data-order="1">
+                <!-- span onclick="setMapType('roadmap')"-->
+                <span onclick ="facility_overlay_onoff()">
+                    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Building_M" overflow="hidden">
+                        <g id="Icons">
+                            <path
+                                d="M69 85.977 69 16 64 16 64 10 32 10 32 16 27 16 27 85.977 20 85.977 20 87.977 76 87.977 76 85.977ZM34 12 62 12 62 16 34 16ZM29 18 67 18 67 85.977 50 85.977 50 75 46 75 46 85.977 29 85.977Z"
+                                fill="#FFFFFF" />
+                            <rect x="36" y="45" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="36" y="35" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="36" y="55" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="36" y="65" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="46" y="45" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="46" y="65" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="75" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="25" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="46" y="55" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="46" y="35" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="46" y="25" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="36" y="25" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="36" y="75" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="45" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="55" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="65" width="4" height="6" fill="#FFFFFF" />
+                            <rect x="56" y="35" width="4" height="6" fill="#FFFFFF" />
+                        </g>
+                    </svg>
+                </span>
+                시설물 정보
+            </li>
+            <li id="movement-overlay" data-order="2">
+                <span onclick="movement_overlay_onoff()">
+                <!-- span onclick="setMapType('roadmap')"-->
+                    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_DanceSteps" overflow="hidden">
+                        <defs></defs>
+                        <g id="A">
+                            <path
+                                d="M20.81 77.05C21.0368 79.4133 21.4549 81.7543 22.06 84.05L22.49 85.59C23.36 89.07 27.39 89.97 30.31 89.13L31.85 88.69C34.8156 87.9203 36.6028 84.9 35.85 81.93L35.42 80.39C34.7971 78.0642 33.9359 75.809 32.85 73.66L20.85 77.01Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M19.06 72.68 31.47 69.34C28.75 59.08 38.05 52.34 28.95 41.13L28.95 41.13C27.1011 38.5622 23.8956 37.3493 20.81 38.05 17.0787 38.7496 14.1643 41.6759 13.48 45.41 12.08 53.41 13.69 63.41 19.06 72.68Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M69.73 45C69.0548 47.3585 68.1921 49.6591 67.15 51.88L66.43 53.35C64.91 56.7 60.67 56.86 57.88 55.46L56.41 54.74C53.5854 53.3913 52.3621 50.0283 53.66 47.18L54.39 45.71C55.4503 43.4774 56.737 41.3597 58.23 39.39L69.73 45Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M72.58 40 61 34.48C65.5 24.96 57.6 16.57 68.58 7.18L68.58 7.18C70.8635 4.99094 74.2367 4.38407 77.14 5.64 80.6783 7.00343 83.0091 10.4081 83 14.2 82.93 22.32 79.54 31.83 72.58 40Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M50.25 84.5 51.66 90.33C54.6316 89.6151 57.4365 88.3315 59.92 86.55L56.44 81.67C54.5754 82.9984 52.4745 83.9589 50.25 84.5Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M59 79.42 63.34 83.56C65.4504 81.349 67.1202 78.7561 68.26 75.92L62.69 73.69C61.8337 75.8163 60.5816 77.7607 59 79.42Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M40.11 84 38.11 89.67C40.647 90.5517 43.3141 91.0013 46 91 46.38 91 46.76 91 47.14 91L46.86 85C44.567 85.0964 42.2765 84.7571 40.11 84Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                            <path
+                                d="M78 68 67 57 56 68 64 68C63.9655 68.8086 63.8753 69.6138 63.73 70.41L69.62 71.54C69.8321 70.3707 69.9591 69.1876 70 68Z"
+                                fill="#FFFFFF" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                </span>
+                확진자 동선
+            </li>
+        </ul>
         <ul id="category">
             <li id="PM9" data-order="0">
                 <span class="category_bg pharmacy"></span>
@@ -236,13 +384,12 @@
 
         // 지도를 생성합니다    
         var map = new kakao.maps.Map(mapContainer, mapOption);
-        
 
 
         customOverlay = new kakao.maps.CustomOverlay({}),
-        infowindow = new kakao.maps.InfoWindow({removable: true});
+            infowindow = new kakao.maps.InfoWindow({ removable: true });
         customOverlay2 = new kakao.maps.CustomOverlay({}),
-        infowindow2 = new kakao.maps.InfoWindow({removable: true});
+            infowindow2 = new kakao.maps.InfoWindow({ removable: true });
         // 장소 검색 객체를 생성합니다
         var ps = new kakao.maps.services.Places(map);
 
@@ -262,7 +409,8 @@
 
         // 각 카테고리에 클릭 이벤트를 등록합니다
         addCategoryClickEvent();
-        DrawPolygon();
+        addtoggleClickEvent();
+        // DrawPolygon();
 
         // 엘리먼트에 이벤트 핸들러를 등록하는 함수입니다
         function addEventHandle(target, type, callback) {
@@ -281,6 +429,7 @@
 
             // 커스텀 오버레이를 숨깁니다 
             placeOverlay.setMap(null);
+
 
             // 지도에 표시되고 있는 마커를 제거합니다
             removeMarker();
@@ -417,101 +566,121 @@
             if (el) {
                 el.className = 'on';
             }
-        } 
+        }
+
+        //토글 이벤트 핸들러 적용
+        function addtoggleClickEvent() {
+            var category = document.getElementById('toggle'),
+                children = category.children;
+
+            for (var i = 0; i < children.length; i++) {
+                children[i].onclick = onClickToggle;
+            }
+        }
+
+        //토글을 클릭했을 때 호출되는 함수입니다
+        function onClickToggle() {
+            this.classList.toggle("on");
+            if (this.classList.contains("on")) {
+                setFlags(this.id, true);
+            } else {
+                setFlags(this.id, false);
+            }
+        }
+      
+      
         function DrawPolygon() { 
-            $.getJSON("/static/json/SIG.geojson", function(geojson) 
+            $.getJSON("/static/json/SIG2.geojson", function(geojson) 
             { 
                 var data = geojson.features; 
                 var name = ''; //행정구 명 
-                var code = ''; 
-                $.each(data, function(index, val) {
+                var code = '';
+                $.each(data, function (index, val) {
                     name = val.properties.SIG_KOR_NM;
-                    code = val.properties.SIG_CD; 
-                    if(val.geometry.type == "MultiPolygon") { 
-                        displayArea(name, code, val.geometry.coordinates, true); 
+                    code = val.properties.SIG_CD;
+                    if (val.geometry.type == "MultiPolygon") {
+                        displayArea(name, code, val.geometry.coordinates, true);
                     }
                     else {
-                        displayArea(name, code, val.geometry.coordinates, false); 
-                    } 
-                }); 
-            }); 
-        } 
-        function makePolygon(coordinates) { 
-            var polygonPath = []; 
-            $.each(coordinates[0], function(index, coordinate) { 
-                polygonPath.push(new kakao.maps.LatLng(coordinate[1], coordinate[0])); 
-            }); 
-            return new kakao.maps.Polygon({ 
-                path:polygonPath, 
-                strokeWeight: 1, 
-                strokeColor: '#004c80', 
-                strokeOpacity: 0.8, 
-                strokeStyle: 'longdash', 
-                fillColor: '#fff', 
+                        displayArea(name, code, val.geometry.coordinates, false);
+                    }
+                });
+            });
+        }
+        function makePolygon(coordinates) {
+            var polygonPath = [];
+            $.each(coordinates[0], function (index, coordinate) {
+                polygonPath.push(new kakao.maps.LatLng(coordinate[1], coordinate[0]));
+            });
+            return new kakao.maps.Polygon({
+                path: polygonPath,
+                strokeWeight: 1,
+                strokeColor: '#004c80',
+                strokeOpacity: 0.8,
+                strokeStyle: 'longdash',
+                fillColor: '#fff',
                 fillOpacity: 0.2,
                 zIndex: i,
-            }); 
-        }
-        function makeMultiPolygon(coordinates) { 
-            var polygonPath = []; 
-            $.each(coordinates, function(index, val2) {
-                var coordinates2 = []; 
-                $.each(val2[0], function(index2, coordinate) { 
-                    coordinates2.push(new kakao.maps.LatLng(coordinate[1], coordinate[0])); 
-                }); 
-                polygonPath.push(coordinates2); 
-            }); 
-            return new kakao.maps.Polygon({ 
-                path:polygonPath, 
-                strokeWeight: 1, 
-                strokeColor: '#004c80', 
-                strokeOpacity: 0.8, 
-                strokeStyle: 'longdash', 
-                fillColor: '#fff', 
-                fillOpacity: 0.2 
-            }); 
-        } // params : 행정구 명, 도로명 코드, 좌표, 멀티폴리곤 유무 
-        
-        function displayArea(name, code, coordinates, multi) {
-            var polygon; 
-            if(multi) { 
-                polygon = makeMultiPolygon(coordinates); 
-            } 
-            else { 
-                polygon = makePolygon(coordinates); 
-            }
-            kakao.maps.event.addListener(polygon, 'mouseover', function(mouseEvent) {
-            polygon.setOptions({
-                fillColor : '#09f'
             });
-            
-            customOverlay.setContent('<div class="areaname">' + name + '</div>');
-    
-            customOverlay.setPosition(mouseEvent.latLng);
-            customOverlay.setMap(map);
-             });
-             
+        }
+        function makeMultiPolygon(coordinates) {
+            var polygonPath = [];
+            $.each(coordinates, function (index, val2) {
+                var coordinates2 = [];
+                $.each(val2[0], function (index2, coordinate) {
+                    coordinates2.push(new kakao.maps.LatLng(coordinate[1], coordinate[0]));
+                });
+                polygonPath.push(coordinates2);
+            });
+            return new kakao.maps.Polygon({
+                path: polygonPath,
+                strokeWeight: 1,
+                strokeColor: '#004c80',
+                strokeOpacity: 0.8,
+                strokeStyle: 'longdash',
+                fillColor: '#fff',
+                fillOpacity: 0.2
+            });
+        } // params : 행정구 명, 도로명 코드, 좌표, 멀티폴리곤 유무 
+
+        function displayArea(name, code, coordinates, multi) {
+            var polygon;
+            if (multi) {
+                polygon = makeMultiPolygon(coordinates);
+            }
+            else {
+                polygon = makePolygon(coordinates);
+            }
+            kakao.maps.event.addListener(polygon, 'mouseover', function (mouseEvent) {
+                polygon.setOptions({
+                    fillColor: '#09f'
+                });
+
+                customOverlay.setContent('<div class="areaname">' + name + '</div>');
+
+                customOverlay.setPosition(mouseEvent.latLng);
+                customOverlay.setMap(map);
+            });
+
             // 다각형에 mousemove 이벤트를 등록하고 이벤트가 발생하면 커스텀 오버레이의 위치를 변경합니다 
-            kakao.maps.event.addListener(polygon, 'mousemove', function(mouseEvent) {
+            kakao.maps.event.addListener(polygon, 'mousemove', function (mouseEvent) {
                 customOverlay.setPosition(mouseEvent.latLng);
             });
-    
+
             // 다각형에 mouseout 이벤트를 등록하고 이벤트가 발생하면 폴리곤의 채움색을 원래색으로 변경합니다
             // 커스텀 오버레이를 지도에서 제거합니다 
-            kakao.maps.event.addListener(polygon, 'mouseout', function() {
+            kakao.maps.event.addListener(polygon, 'mouseout', function () {
                 polygon.setOptions({
-                    fillColor : '#fff'
+                    fillColor: '#fff'
                 });
                 customOverlay.setMap(null);
             });
-        
-            polygon.setMap(map); 
+
+            polygon.setMap(map);
         }
         var location_info = {{ locationset | safe }};
-        var seoul_gu = {{seoul_gu_result | safe }}
-        console.log(seoul_gu[0]);
-        console.log(seoul_gu[1]);
-        console.log(seoul_gu[2]);
+        var seoul_gu = {{seoul_gu_result | safe }};
+        var infectedMovements = {{patient_pathes | safe}};
         var circle_list = new Array();
         var info_list = new Array();
         var k;
@@ -523,39 +692,39 @@
         var level3_c = "#B54700";
         var level4_c = "#7A3100";
 
-        
-        for(k =0; k<seoul_gu[0].length; k++){
+
+        for (k = 0; k < seoul_gu[0].length; k++) {
             seoul_gu_display(k);
         }
-        
-        function seoul_gu_display(i){
+
+        function seoul_gu_display(i) {
             var gu_name = seoul_gu[0][i];
             var gu_num = seoul_gu[1][i];
             var gu_location = seoul_gu[2][i];
             var coords = new kakao.maps.LatLng(gu_location[0], gu_location[1]);
             var rad;
             var fill_c;
-            gu_num *=1;
-            if(gu_num < 50){
+            gu_num *= 1;
+            if (gu_num < 50) {
                 rad = 500;
                 fill_c = level1_c;
-            }else if (gu_num <200){
+            } else if (gu_num < 200) {
                 rad = 800;
                 fill_c = level2_c;
-            }else if (gu_num <500){
+            } else if (gu_num < 500) {
                 rad = 1100;
                 fill_c = level3_c;
-            }else{
+            } else {
                 rad = 1500;
                 fill_c = level4_c;
             }
-            var content = '<div class="gu_text" >'+
-                          '     <div class="gu_name" id="guname">' + gu_name +'</div>' +
-                          '     <div class="gu_num" id="gunum"> 확진자수 : ' + gu_num + '</div>'+
-                          '</div>';
+            var content = '<div class="gu_text" >' +
+                '     <div class="gu_name" id="guname">' + gu_name + '</div>' +
+                '     <div class="gu_num" id="gunum"> 확진자수 : ' + gu_num + '</div>' +
+                '</div>';
             var circle = new kakao.maps.Circle({
-                map: map,
-                center : coords,
+                map: null,
+                center: coords,
                 radius: rad, // 미터 단위의 원의 반지름입니다 
                 strokeWeight: 2, // 선의 두께입니다 
                 strokeColor: '#000000', // 선의 색깔입니다
@@ -566,49 +735,49 @@
             });
             gu_circle_list.push(circle);
             var customOverlay2 = new kakao.maps.CustomOverlay({
-                map : map,
-                position : coords,
-                content : content,
+                map: map,
+                position: coords,
+                content: content,
                 xAnchor: 0.6,
                 yAnchor: 0.6,
             })
         }
         //var circles = new Array();
-        for(var i = 1; i<19; i++){
+        for (var i = 1; i < 19; i++) {
             displayCircle(i);
         }
-        
-        function displayCircle(i){
-            var location_num =coronaAPIData['data'+i+'_2'];
-            var location_name = coronaAPIData['data'+i+'_0'];
-            var coords = new kakao.maps.LatLng(location_info[0][i-1], location_info[1][i-1]);
+
+        function displayCircle(i) {
+            var location_num = coronaAPIData['data' + i + '_2'];
+            var location_name = coronaAPIData['data' + i + '_0'];
+            var coords = new kakao.maps.LatLng(location_info[0][i - 1], location_info[1][i - 1]);
             var rad;
             var fill_c;
-            location_num = location_num.replace(",","");
-            location_num = location_num*1;
-            if(location_num <100){
+            location_num = location_num.replace(",", "");
+            location_num = location_num * 1;
+            if (location_num < 100) {
                 rad = 5000;
                 fill_c = level1_c;
             }
-            else if (location_num < 500){
+            else if (location_num < 500) {
                 rad = 10000;
                 fill_c = level2_c;
             }
-            else if(location_num <2000){
+            else if (location_num < 2000) {
                 rad = 20000;
                 fill_c = level3_c;
             }
-            else{
+            else {
                 rad = 40000;
                 fill_c = level4_c;
             }
-            var content = '<div class="infotext" >'+
-                          '     <div class="name" id="infoname">' + location_name +'</div>' +
-                          '     <div class="totalNum" id="totalnum"> 확진자수 : ' + location_num + '</div>'+
-                          '</div>';
+            var content = '<div class="infotext">' +
+                '     <div class="name" id="infoname">' + location_name + '</div>' +
+                '     <div class="totalNum" id="totalnum"> 확진자수 : ' + location_num + '</div>' +
+                '</div>';
             var circle = new kakao.maps.Circle({
-                map: map,
-                center : coords,
+                map: null,
+                center: coords,
                 radius: rad, // 미터 단위의 원의 반지름입니다 
                 strokeWeight: 2, // 선의 두께입니다 
                 strokeColor: '#000000', // 선의 색깔입니다
@@ -617,97 +786,299 @@
                 fillColor: fill_c, // 채우기 색깔입니다
                 fillOpacity: 0.5,  // 채우기 불투명도 입니다  
             });
-           
+
             circle_list.push(circle);
             var customOverlay3 = new kakao.maps.CustomOverlay({
-                map : map,
-                position : coords,
-                content : content,
+                map: map,
+                position: coords,
+                content: content,
                 xAnchor: 0.6,
                 yAnchor: 0.6,
             })
             info_list.push(customOverlay3);
         }
-        kakao.maps.event.addListener(map,'zoom_changed',function(){
+
+        var movement_list = [];
+        for(var i =0; i<infectedMovements.length; i++){
+            displayMovements(i);
+        }
+        var lineinfo_list = [];
+        function displayMovements(i){
+            var linePath = [];
+            var index = i;
+            for(var j = 0; j < infectedMovements[i].length; j++){
+                console.log(infectedMovements[i][j])
+                var coord = new kakao.maps.LatLng(infectedMovements[i][j][3],infectedMovements[i][j][4]);
+                linePath.push(coord);
+            }
+            var polyline = new kakao.maps.Polyline({
+                map: null,
+                path: linePath, // 선을 구성하는 좌표배열 입니다
+                strokeWeight: 7, // 선의 두께 입니다
+                strokeColor: '#0000FF', // 선의 색깔입니다
+                strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+                strokeStyle: 'solid', // 선의 스타일입니다
+                zIndex: 1000
+            });
+            movement_list.push(polyline);
+            kakao.maps.event.addListener(polyline, 'click', function(mouseEvent) {
+                var contents;
+                for(var j = 0; j<infectedMovements[index].length; j++){
+                    
+                    var pos = linePath[j];
+                    contents = '<div class="lineinfo">' + 
+                            '   <div class="title">장소위치 : ' + infectedMovements[index][j][2] + '</div>' +
+                            '   <div class="who">경유자 : ' + infectedMovements[index][j][0] + '</div>' +
+                            '</div>';
+                    var lineinfo = new kakao.maps.InfoWindow({
+                        removable: true,
+                        map: map,
+                        content :contents,
+                        position : pos,
+                        zIndex : 1001+j,
+                        });
+                    lineinfo_list.push(lineinfo)
+                }
+                console.log(lineinfo_list);
+                setTimeout(function(){
+                    for(var j = 0; j<lineinfo_list.length; j++){
+                        console.log("delete lineinfo");
+                        lineinfo_list[j].close();
+                    }
+                }, 5000);
+            });
+        }
+        var overlay_info_flag = true; // 확진자 정보 오버레이
+        var overlay_facility_flag = false; // 시설물 정보 오버레이
+        var overlay_movement_flag = false; // 확진자 동선 오버레이
+        
+
+        function info_overlay_onoff() {
+            console.log("info onoff");
+            var nameList = document.getElementsByClassName("name");
+            var numList = document.getElementsByClassName("totalNum");
+            var gu_nameList = document.getElementsByClassName("gu_name");
+            var gu_numList = document.getElementsByClassName("gu_num");
             var i;
-            
-            if(map.getLevel() > 9 && map.getLevel()<13){
-                var nameList = document.getElementsByClassName("name");
-                var numList= document.getElementsByClassName("totalNum");
-                var gu_nameList = document.getElementsByClassName("gu_name");
-                var gu_numList = document.getElementsByClassName("gu_num");
-                for(i = 0; i<nameList.length; i++){
-                    nameList[i].style.display = "block";
-                    nameList[i].style.fontSize = (40-map.getLevel()*2)+"px";
+            if(overlay_info_flag){
+                if (map.getLevel() > 9 && map.getLevel() < 13) {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "visible";
+                        nameList[i].style.fontSize = (40 - map.getLevel() * 2) + "px";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "visible";
+                        numList[i].style.fontSize = (25 - map.getLevel() * 1.1) + "px";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(map);
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(null);
+                    }
+                    overlay_info_flag = false;
+                    console.log(overlay_info_flag);
+                } else if (map.getLevel() < 9) {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "visible";
+                        gu_nameList[i].style.fontSize = (15 - map.getLevel()) + "px";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "visible";
+                        gu_numList[i].style.fontSize = (15 - map.getLevel()) + "px";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(null);
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(map);
+                    }
+                    overlay_info_flag = false;
+                    console.log(overlay_info_flag);
                 }
-                for(i = 0; i< numList.length; i++){
-                    numList[i].style.display = "block";
-                    numList[i].style.fontSize = (25-map.getLevel()*1.1)+"px";
-                }
-                for(i=0; i<circle_list.length; i++){
-                    circle_list[i].setMap(map);
-                }
-                for(i = 0; i< gu_nameList.length; i++){
-                    gu_nameList[i].style.display = "none";
-                }
-                for(i = 0; i< gu_numList.length; i++){
-                    gu_numList[i].style.display = "none";
-                }
-                for(i=0; i< gu_circle_list.length; i++){
-                    gu_circle_list[i].setMap(null);
-                }
-            }else if(map.getLevel() <9){
-                var nameList = document.getElementsByClassName("name");
-                var numList= document.getElementsByClassName("totalNum");
-                var gu_nameList = document.getElementsByClassName("gu_name");
-                var gu_numList = document.getElementsByClassName("gu_num");
-                for(i = 0; i<nameList.length; i++){
-                    nameList[i].style.display = "none";
-                }
-                for(i = 0; i< numList.length; i++){
-                    numList[i].style.display = "none";
-                }
-                for(i = 0; i<gu_nameList.length; i++){
-                    gu_nameList[i].style.display = "block";
-                    gu_nameList[i].style.fontSize = (15-map.getLevel())+"px";
-                }
-                for(i = 0; i< gu_numList.length; i++){
-                    gu_numList[i].style.display = "block";
-                    gu_numList[i].style.fontSize = (15-map.getLevel())+"px";
-                }
-                for(i=0; i<circle_list.length; i++){
-                    circle_list[i].setMap(null);
-                }
-                for(i=0; i<gu_circle_list.length; i++){
-                    gu_circle_list[i].setMap(map);
+                else {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(null);
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(null);
+                    }
+                    overlay_info_flag = false;
+                    console.log(overlay_info_flag);
                 }
             }
             else{
-                var nameList = document.getElementsByClassName("name");
-                var numList= document.getElementsByClassName("totalNum");
-                var gu_nameList = document.getElementsByClassName("gu_name");
-                var gu_numList = document.getElementsByClassName("gu_num");
                 for(i = 0; i<nameList.length; i++){
-                    nameList[i].style.display = "none";
+                    nameList[i].style.visibility = "hidden";
                 }
-                for(i = 0; i< numList.length; i++){
-                    numList[i].style.display = "none";
-                }
-                for(i=0; i<circle_list.length; i++){
-                    circle_list[i].setMap(null);
+                for(i = 0; i<numList.length; i++){
+                    numList[i].style.visibility = "hidden";
                 }
                 for(i = 0; i<gu_nameList.length; i++){
-                    gu_nameList[i].style.display = "none";
+                    gu_nameList[i].style.visibility = "hidden";
                 }
-                for(i = 0; i< gu_numList.length; i++){
-                    gu_numList[i].style.display = "none";
+                for(i = 0; i<gu_numList.length; i++){
+                    gu_numList[i].style.visibility = "hidden";
                 }
-                for(i=0; i<gu_circle_list.length; i++){
+                for (i = 0; i < circle_list.length; i++) {
+                    circle_list[i].setMap(null);
+                }
+                for (i = 0; i < gu_circle_list.length; i++) {
                     gu_circle_list[i].setMap(null);
                 }
-                
+                overlay_info_flag = true;
+                console.log(overlay_info_flag);
             }
-        })
+        }
+        function facility_overlay_onoff(){
+            console.log("facility onoff");
+            if(overlay_facility_flag){
+                document.getElementById
+                category = document.getElementById("category");
+                category.style.visibility = "hidden";
+                overlay_facility_flag = false;
+            }else{
+                category = document.getElementById("category");
+                category.style.visibility = "visible";
+                overlay_facility_flag = true;
+            }
+        }
+        function movement_overlay_onoff(){
+            console.log("movement onoff");
+            var i;
+            if(overlay_movement_flag){
+                for(i = 0; i<movement_list.length; i++){
+                    movement_list[i].setMap(map);
+                }
+                overlay_movement_flag = false;
+            }else{
+                for(i = 0; i<movement_list.length; i++){
+                    movement_list[i].setMap(null);
+                }
+                overlay_movement_flag = true;
+            }
+        }
+
+        
+        kakao.maps.event.addListener(map, 'zoom_changed', function(mouseEvent){
+            var i;
+            if(!overlay_info_flag){
+                if (map.getLevel() > 9 && map.getLevel() < 13) {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "visible";
+                        nameList[i].style.fontSize = (40 - map.getLevel() * 2) + "px";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "visible";
+                        numList[i].style.fontSize = (25 - map.getLevel() * 1.1) + "px";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(map);
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(null);
+                    }
+                } else if (map.getLevel() < 9) {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "visible";
+                        gu_nameList[i].style.fontSize = (15 - map.getLevel()) + "px";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "visible";
+                        gu_numList[i].style.fontSize = (15 - map.getLevel()) + "px";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(null);
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(map);
+                    }
+                }
+                else {
+                    var nameList = document.getElementsByClassName("name");
+                    var numList = document.getElementsByClassName("totalNum");
+                    var gu_nameList = document.getElementsByClassName("gu_name");
+                    var gu_numList = document.getElementsByClassName("gu_num");
+                    for (i = 0; i < nameList.length; i++) {
+                        nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < numList.length; i++) {
+                        numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < circle_list.length; i++) {
+                        circle_list[i].setMap(null);
+                    }
+                    for (i = 0; i < gu_nameList.length; i++) {
+                        gu_nameList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_numList.length; i++) {
+                        gu_numList[i].style.visibility = "hidden";
+                    }
+                    for (i = 0; i < gu_circle_list.length; i++) {
+                        gu_circle_list[i].setMap(null);
+                    }
+                }
+            }else{
+                console.log("overlay_info_flag is true");
+            }
+            
+        });
     </script>
     <script>
     </script>
