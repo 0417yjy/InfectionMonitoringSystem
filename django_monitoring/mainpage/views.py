@@ -168,6 +168,4 @@ def mapview(request):
     except :
         Subscribedatas  = None
     return render(request, 'contents-subscribe.html', context) # render는 view에서 템플릿에 전달할 데이타를 Dictionary로 전달한다
-
-
-
+'''

@@ -42,12 +42,7 @@
 
 
     var hdata = new HistogramData();
-<<<<<<< refs/remotes/origin/master
     var coronaAPIData = {{ result | safe }};
-=======
-    var coronaAPIData = {{ result | safe }}; //views.py의 index 메서드에서 context로 전달된 변수 중 result 를 가져와서 씀
-    //{{}} 문법은 장고에서 쓰이는 문법입니다.
->>>>>>> Add Showing TotalCase at stastistics
 
     var daily_chart = new Chart(ctx, {
         type: 'bar',
