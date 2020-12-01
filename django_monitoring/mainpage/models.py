@@ -12,7 +12,7 @@ Copyright 2020 Jongyeon Yoon
 
 
 from django.db import models
-# from datetime import datetime 
+# from datetime import datetime
 
 # Create your models here.
 class AbstractRegion(models.Model):  # Abstract class of region models
@@ -24,7 +24,7 @@ class AbstractRegion(models.Model):  # Abstract class of region models
     prev_no_infected = models.IntegerField(default=0) # 각 지역별로도 감염 통계를 저장함
     prev_no_deceased = models.IntegerField(default=0)
     prev_no_offisolated = models.IntegerField(default=0)
-    
+
     class Meta:
         abstract = True
 
@@ -36,21 +36,21 @@ class RegionLarge(AbstractRegion):
 class RegionMedium(AbstractRegion):
     # 전체선택 / 구 / 군 / 시
     parent_region = models.ForeignKey('RegionLarge', on_delete=models.CASCADE)
-    
+
     def __str__(self):
         return self.name
 
 # class RegionSmall(AbstractRegion):
 #     # 전체선택 / 동 / 읍
 #     parent_region = models.ForeignKey('RegionMedium', on_delete=models.CASCADE)
-    
+
 #     def __str__(self):
 #         return self.name
 
 class Subscriber(models.Model):
     SUBSCRIBE_TYPE_CHOICES = models.TextChoices('SubscribeType','Email Kakao')
 
-    address = models.CharField(max_length=20)  # kakaotalk id or email address
+    address = models.CharField(max_length=40)  # kakaotalk id or email address
     sub_type = models.CharField(max_length=5, choices=SUBSCRIBE_TYPE_CHOICES.choices)
 
     # Has each region's id
@@ -86,7 +86,7 @@ class InfectedMovement(models.Model):
     moved_date = models.DateTimeField()
     exact_address = models.CharField(max_length=100) # 방문 장소의 주소
     desc = models.CharField(max_length=20)  # 방문 장소 이름
-    
+
 class StatisticValues(models.Model):
     # 지역별 감염 정보 외의, 전체 감염 정보 / 검사완료 & 검사중 등 다른 통계 자료를 저장하는 테이블
 
@@ -95,10 +95,10 @@ class StatisticValues(models.Model):
     TotalDeath = models.TextField(default="0")           # 총 사망자
     TotalRecovered = models.TextField(default="0")       # 총 완치자
     NowCase = models.TextField(default="0")              # 치료중인 사람
-    TotalChecking = models.TextField(default="0")        # 검사완료 
+    TotalChecking = models.TextField(default="0")        # 검사완료
     # notcaseCount = models.TextField(default="0")         # 결과 음성
 
-    TodayCase = models.TextField(default="0")            # 전일 대비 확진자, data2["data0_1"]의미 
+    TodayCase = models.TextField(default="0")            # 전일 대비 확진자, data2["data0_1"]의미
     TodayRecovered = models.TextField(default="0")       # 전일 대비 완치자
 
 # from django.db import models

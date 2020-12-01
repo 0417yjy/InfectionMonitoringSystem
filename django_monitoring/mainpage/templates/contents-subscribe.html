@@ -23,8 +23,8 @@
 
     // 카카오톡 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = '카카오톡으로 구독하기';
-    document.getElementById('insert_address').innerHTML = 
-    '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>' + 
+    document.getElementById('insert_address').innerHTML =
+    '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>' +
     '<input id="subscribe_address" name="address">' +
     '<input id="subscribe_nickname" name="nickname">';
     document.getElementById('subscribe_footer').innerHTML = '<button type="button" class="btn btn-outline-secondary" data-dismiss="modal" style="width: 100%;">Close</button>';
@@ -132,7 +132,7 @@
 <script type='text/javascript'>
   //<![CDATA[
   // 사용할 앱의 JavaScript 키를 설정해 주세요.
-  Kakao.init('09e74e4091015b732b377f235443730a');
+  Kakao.init('b851943dab872358471f9d88909d8d61');
   var token;
   var userID;
   function Kakaologin(){
@@ -147,7 +147,7 @@
             userID = res.id;						//유저의 카카오톡 고유 id
             var userNickName = res.properties.nickname;	//유저가 등록한 별명
 
-            document.getElementById('subscribe-form').address.value = userID;
+            document.getElementById('subscribe-form').address.value = token;
             document.getElementById('subscribe-form').nickname.value = userNickName;
             document.getElementById('subscribe-form').submit();
             $('#subscribeModal').modal('hide')
@@ -156,10 +156,10 @@
             alert(JSON.stringify(error));
           }
         });
-      }, 
-      fail: function(err){ 
-        console.error(err) 
-      } 
+      },
+      fail: function(err){
+        console.error(err)
+      }
     });
   };
 </script>
