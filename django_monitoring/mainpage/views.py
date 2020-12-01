@@ -73,7 +73,9 @@ def index(request):
     #============================================= Start of 'content-mapview.html' ======================================================
     locationset = LocationInfo.get_location(result)
     seoul_gu_results = LocationInfo.scraping_data()
+    patient_pathes = LocationInfo.get_patient_path()
     #============================================= End of 'content-mapview.html' =============================== #=======================
+    print(patient_pathes)
     context = {
         # contents-home
         'result' : result,
@@ -84,6 +86,7 @@ def index(request):
         # contents-mapview
         'locationset' : locationset,
         'seoul_gu_result' : seoul_gu_results,
+        'patient_pathes' : patient_pathes
     }
     return render(request, 'index.html', context)
 

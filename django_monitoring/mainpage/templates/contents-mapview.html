@@ -23,7 +23,14 @@
             left: 15px;
             padding: 2px;
         }
-
+        .lineinfo {
+            font-size: 10px;
+            background: #fff;
+            padding: 5px;
+        }
+        .lineinfo .title {
+            font-weight: bold;
+        }
 
         .infotext {
             text-align: center;
@@ -419,6 +426,7 @@
             // 커스텀 오버레이를 숨깁니다 
             placeOverlay.setMap(null);
 
+
             // 지도에 표시되고 있는 마커를 제거합니다
             removeMarker();
 
@@ -575,8 +583,8 @@
                 setFlags(this.id, false);
             }
         }
-
-        function setFlags(id, bool) {
+      
+      function setFlags(id, bool) {
             switch(id) {
                 case "infected-overlay":
                     overlay_info_flag = bool;
@@ -593,10 +601,11 @@
                     break;
             }
         }
-
-        function DrawPolygon() {
-            $.getJSON("/static/json/SIG.geojson", function (geojson) {
-                var data = geojson.features;
+      
+        function DrawPolygon() { 
+            $.getJSON("/static/json/SIG2.geojson", function(geojson) 
+            { 
+                var data = geojson.features; 
                 var name = ''; //행정구 명 
                 var code = '';
                 $.each(data, function (index, val) {
@@ -683,10 +692,8 @@
             polygon.setMap(map);
         }
         var location_info = {{ locationset | safe }};
-        var seoul_gu = {{ seoul_gu_result | safe }}
-        console.log(seoul_gu[0]);
-        console.log(seoul_gu[1]);
-        console.log(seoul_gu[2]);
+        var seoul_gu = {{seoul_gu_result | safe }};
+        var infectedMovements = {{patient_pathes | safe}};
         var circle_list = new Array();
         var info_list = new Array();
         var k;
@@ -897,6 +904,56 @@
                     gu_circle_list[i].setMap(null);
                 }
             }
+        });
+        var path_list = [];
+        for(var i =0; i<infectedMovements.length; i++){
+            displayMovements(i);
+        }
+        var lineinfo_list = [];
+        function displayMovements(i){
+            var linePath = [];
+            var index = i;
+            for(var j = 0; j < infectedMovements[i].length; j++){
+                console.log(infectedMovements[i][j])
+                var coord = new kakao.maps.LatLng(infectedMovements[i][j][3],infectedMovements[i][j][4]);
+                linePath.push(coord);
+            }
+            var polyline = new kakao.maps.Polyline({
+                map: map,
+                path: linePath, // 선을 구성하는 좌표배열 입니다
+                strokeWeight: 7, // 선의 두께 입니다
+                strokeColor: '#0000FF', // 선의 색깔입니다
+                strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+                strokeStyle: 'solid', // 선의 스타일입니다
+                zIndex: 1000
+            });
+            path_list.push(polyline);
+            kakao.maps.event.addListener(polyline, 'click', function(mouseEvent) {
+                var contents;
+                for(var j = 0; j<infectedMovements[index].length; j++){
+                    
+                    var pos = linePath[j];
+                    contents = '<div class="lineinfo">' + 
+                            '   <div class="title">장소위치 : ' + infectedMovements[index][j][2] + '</div>' +
+                            '   <div class="who">경유자 : ' + infectedMovements[index][j][0] + '</div>' +
+                            '</div>';
+                    var lineinfo = new kakao.maps.InfoWindow({
+                        removable: true,
+                        map: map,
+                        content :contents,
+                        position : pos,
+                        zIndex : 1001+j,
+                        });
+                    lineinfo_list.push(lineinfo)
+                }
+                console.log(lineinfo_list);
+                setTimeout(function(){
+                    for(var j = 0; j<lineinfo_list.length; j++){
+                        console.log("delete lineinfo");
+                        lineinfo_list[j].close();
+                    }
+                }, 5000);
+            });
         }
 
         kakao.maps.event.addListener(map, 'zoom_changed', info_overlay_onoff);
