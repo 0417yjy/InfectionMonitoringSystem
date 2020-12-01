@@ -45,13 +45,6 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "infected"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
         "model": "regionlarge"
     }
 },
@@ -66,7 +59,21 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "regionsmall"
+        "model": "subscriber"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "infected"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
+        "model": "infectedmovement"
     }
 },
 {
@@ -80,14 +87,7 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
-        "model": "subscriber"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "infectedmovement"
+        "model": "regionsmall"
     }
 },
 {
@@ -109,220 +109,280 @@
     "model": "mainpage.regionlarge",
     "pk": 1,
     "fields": {
-        "name": "¿¸√ºº±≈√",
-        "no_infected": 34201,
+        "name": "Ï†ÑÏ≤¥ÏÑ†ÌÉù",
+        "no_infected": 34652,
         "no_deceased": 526,
-        "no_offisolated": 27625,
-        "updated_time": "2020-12-01T05:05:44.654"
+        "no_offisolated": 27885,
+        "updated_time": "2020-12-01T13:42:07.305",
+        "prev_no_infected": 34652,
+        "prev_no_deceased": 526,
+        "prev_no_offisolated": 27885
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 2,
     "fields": {
-        "name": "º≠øÔ∆Ø∫∞Ω√",
-        "no_infected": 8811,
+        "name": "ÏÑúÏö∏ÌäπÎ≥ÑÏãú",
+        "no_infected": 8966,
         "no_deceased": 93,
-        "no_offisolated": 6534,
-        "updated_time": "2020-12-01T05:05:44.694"
+        "no_offisolated": 6620,
+        "updated_time": "2020-12-01T13:42:07.329",
+        "prev_no_infected": 8966,
+        "prev_no_deceased": 93,
+        "prev_no_offisolated": 6620
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 3,
     "fields": {
-        "name": "∫ŒªÍ±§ø™Ω√",
-        "no_infected": 809,
+        "name": "Î∂ÄÏÇ∞Í¥ëÏó≠Ïãú",
+        "no_infected": 840,
         "no_deceased": 16,
-        "no_offisolated": 600,
-        "updated_time": "2020-12-01T05:05:44.711"
+        "no_offisolated": 602,
+        "updated_time": "2020-12-01T13:42:07.350",
+        "prev_no_infected": 840,
+        "prev_no_deceased": 16,
+        "prev_no_offisolated": 602
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 4,
     "fields": {
-        "name": "¥Î±∏±§ø™Ω√",
-        "no_infected": 7232,
+        "name": "ÎåÄÍµ¨Í¥ëÏó≠Ïãú",
+        "no_infected": 7243,
         "no_deceased": 199,
-        "no_offisolated": 6998,
-        "updated_time": "2020-12-01T05:05:44.724"
+        "no_offisolated": 6999,
+        "updated_time": "2020-12-01T13:42:07.367",
+        "prev_no_infected": 7243,
+        "prev_no_deceased": 199,
+        "prev_no_offisolated": 6999
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 5,
     "fields": {
-        "name": "±§¡÷±§ø™Ω√",
-        "no_infected": 696,
+        "name": "Í¥ëÏ£ºÍ¥ëÏó≠Ïãú",
+        "no_infected": 718,
         "no_deceased": 3,
-        "no_offisolated": 568,
-        "updated_time": "2020-12-01T05:05:44.759"
+        "no_offisolated": 576,
+        "updated_time": "2020-12-01T13:42:07.393",
+        "prev_no_infected": 718,
+        "prev_no_deceased": 3,
+        "prev_no_offisolated": 576
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 6,
     "fields": {
-        "name": "¿Œ√µ±§ø™Ω√",
-        "no_infected": 1409,
+        "name": "Ïù∏Ï≤úÍ¥ëÏó≠Ïãú",
+        "no_infected": 1425,
         "no_deceased": 11,
-        "no_offisolated": 1084,
-        "updated_time": "2020-12-01T05:05:44.740"
+        "no_offisolated": 1090,
+        "updated_time": "2020-12-01T13:42:07.380",
+        "prev_no_infected": 1425,
+        "prev_no_deceased": 11,
+        "prev_no_offisolated": 1090
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 7,
     "fields": {
-        "name": "¥Î¿¸±§ø™Ω√",
-        "no_infected": 494,
+        "name": "ÎåÄÏ†ÑÍ¥ëÏó≠Ïãú",
+        "no_infected": 504,
         "no_deceased": 6,
         "no_offisolated": 446,
-        "updated_time": "2020-12-01T05:05:44.781"
+        "updated_time": "2020-12-01T13:42:07.403",
+        "prev_no_infected": 504,
+        "prev_no_deceased": 6,
+        "prev_no_offisolated": 446
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 8,
     "fields": {
-        "name": "øÔªÍ±§ø™Ω√",
-        "no_infected": 198,
+        "name": "Ïö∏ÏÇ∞Í¥ëÏó≠Ïãú",
+        "no_infected": 201,
         "no_deceased": 2,
         "no_offisolated": 166,
-        "updated_time": "2020-12-01T05:05:44.795"
+        "updated_time": "2020-12-01T13:42:07.412",
+        "prev_no_infected": 201,
+        "prev_no_deceased": 2,
+        "prev_no_offisolated": 166
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 9,
     "fields": {
-        "name": "ºº¡æ∆Ø∫∞¿⁄ƒ°Ω√",
-        "no_infected": 100,
+        "name": "ÏÑ∏Ï¢ÖÌäπÎ≥ÑÏûêÏπòÏãú",
+        "no_infected": 102,
         "no_deceased": 0,
-        "no_offisolated": 84,
-        "updated_time": "2020-12-01T05:05:44.815"
+        "no_offisolated": 85,
+        "updated_time": "2020-12-01T13:42:07.420",
+        "prev_no_infected": 102,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 85
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 10,
     "fields": {
-        "name": "∞Ê±‚µµ",
-        "no_infected": 7277,
+        "name": "Í≤ΩÍ∏∞ÎèÑ",
+        "no_infected": 7373,
         "no_deceased": 116,
-        "no_offisolated": 5858,
-        "updated_time": "2020-12-01T05:05:44.839"
+        "no_offisolated": 5933,
+        "updated_time": "2020-12-01T13:42:07.428",
+        "prev_no_infected": 7373,
+        "prev_no_deceased": 116,
+        "prev_no_offisolated": 5933
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 11,
     "fields": {
-        "name": "∞≠ø¯µµ",
-        "no_infected": 652,
+        "name": "Í∞ïÏõêÎèÑ",
+        "no_infected": 661,
         "no_deceased": 6,
-        "no_offisolated": 400,
-        "updated_time": "2020-12-01T05:05:44.856"
+        "no_offisolated": 423,
+        "updated_time": "2020-12-01T13:42:07.435",
+        "prev_no_infected": 661,
+        "prev_no_deceased": 6,
+        "prev_no_offisolated": 423
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 12,
     "fields": {
-        "name": "√Ê√ª∫œµµ",
-        "no_infected": 327,
+        "name": "Ï∂©Ï≤≠Î∂ÅÎèÑ",
+        "no_infected": 359,
         "no_deceased": 3,
-        "no_offisolated": 207,
-        "updated_time": "2020-12-01T05:05:44.874"
+        "no_offisolated": 209,
+        "updated_time": "2020-12-01T13:42:07.443",
+        "prev_no_infected": 359,
+        "prev_no_deceased": 3,
+        "prev_no_offisolated": 209
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 13,
     "fields": {
-        "name": "√Ê√ª≥≤µµ",
-        "no_infected": 899,
+        "name": "Ï∂©Ï≤≠ÎÇ®ÎèÑ",
+        "no_infected": 915,
         "no_deceased": 9,
-        "no_offisolated": 667,
-        "updated_time": "2020-12-01T05:05:44.893"
+        "no_offisolated": 686,
+        "updated_time": "2020-12-01T13:42:07.451",
+        "prev_no_infected": 915,
+        "prev_no_deceased": 9,
+        "prev_no_offisolated": 686
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 14,
     "fields": {
-        "name": "¿¸∂Û∫œµµ",
-        "no_infected": 334,
+        "name": "Ï†ÑÎùºÎ∂ÅÎèÑ",
+        "no_infected": 343,
         "no_deceased": 2,
         "no_offisolated": 173,
-        "updated_time": "2020-12-01T05:05:44.912"
+        "updated_time": "2020-12-01T13:42:07.459",
+        "prev_no_infected": 343,
+        "prev_no_deceased": 2,
+        "prev_no_offisolated": 173
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 15,
     "fields": {
-        "name": "¿¸∂Û≥≤µµ",
-        "no_infected": 424,
+        "name": "Ï†ÑÎùºÎÇ®ÎèÑ",
+        "no_infected": 426,
         "no_deceased": 2,
-        "no_offisolated": 214,
-        "updated_time": "2020-12-01T05:05:44.929"
+        "no_offisolated": 216,
+        "updated_time": "2020-12-01T13:42:07.466",
+        "prev_no_infected": 426,
+        "prev_no_deceased": 2,
+        "prev_no_offisolated": 216
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 16,
     "fields": {
-        "name": "∞ÊªÛ∫œµµ",
-        "no_infected": 1704,
+        "name": "Í≤ΩÏÉÅÎ∂ÅÎèÑ",
+        "no_infected": 1715,
         "no_deceased": 57,
-        "no_offisolated": 1560,
-        "updated_time": "2020-12-01T05:05:44.944"
+        "no_offisolated": 1575,
+        "updated_time": "2020-12-01T13:42:07.473",
+        "prev_no_infected": 1715,
+        "prev_no_deceased": 57,
+        "prev_no_offisolated": 1575
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 17,
     "fields": {
-        "name": "∞ÊªÛ≥≤µµ",
-        "no_infected": 625,
+        "name": "Í≤ΩÏÉÅÎÇ®ÎèÑ",
+        "no_infected": 636,
         "no_deceased": 1,
-        "no_offisolated": 388,
-        "updated_time": "2020-12-01T05:05:44.958"
+        "no_offisolated": 400,
+        "updated_time": "2020-12-01T13:42:07.480",
+        "prev_no_infected": 636,
+        "prev_no_deceased": 1,
+        "prev_no_offisolated": 400
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 18,
     "fields": {
-        "name": "¡¶¡÷∆Ø∫∞¿⁄ƒ°µµ",
-        "no_infected": 80,
+        "name": "Ï†úÏ£ºÌäπÎ≥ÑÏûêÏπòÎèÑ",
+        "no_infected": 81,
         "no_deceased": 0,
-        "no_offisolated": 60,
-        "updated_time": "2020-12-01T05:05:44.977"
+        "no_offisolated": 63,
+        "updated_time": "2020-12-01T13:42:07.488",
+        "prev_no_infected": 81,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 63
     }
 },
 {
     "model": "mainpage.regionlarge",
     "pk": 19,
     "fields": {
-        "name": "«ÿø‹∞Àø™",
-        "no_infected": 2130,
+        "name": "Ìï¥Ïô∏Í≤ÄÏó≠",
+        "no_infected": 2144,
         "no_deceased": 0,
-        "no_offisolated": 1618,
-        "updated_time": "2020-12-01T05:05:44.994"
+        "no_offisolated": 1623,
+        "updated_time": "2020-12-01T13:42:07.497",
+        "prev_no_infected": 2144,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 1623
     }
 },
 {
     "model": "mainpage.regionmedium",
     "pk": 1,
     "fields": {
-        "name": "¡æ∑Œ±∏",
+        "name": "Ï¢ÖÎ°úÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -330,11 +390,14 @@
     "model": "mainpage.regionmedium",
     "pk": 2,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -342,11 +405,14 @@
     "model": "mainpage.regionmedium",
     "pk": 3,
     "fields": {
-        "name": "øÎªÍ±∏",
+        "name": "Ïö©ÏÇ∞Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -354,11 +420,14 @@
     "model": "mainpage.regionmedium",
     "pk": 4,
     "fields": {
-        "name": "º∫µø±∏",
+        "name": "ÏÑ±ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -366,11 +435,14 @@
     "model": "mainpage.regionmedium",
     "pk": 5,
     "fields": {
-        "name": "±§¡¯±∏",
+        "name": "Í¥ëÏßÑÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -378,11 +450,14 @@
     "model": "mainpage.regionmedium",
     "pk": 6,
     "fields": {
-        "name": "µø¥ÎπÆ±∏",
+        "name": "ÎèôÎåÄÎ¨∏Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -390,11 +465,14 @@
     "model": "mainpage.regionmedium",
     "pk": 7,
     "fields": {
-        "name": "¡ﬂ∂˚±∏",
+        "name": "Ï§ëÎûëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -402,11 +480,14 @@
     "model": "mainpage.regionmedium",
     "pk": 8,
     "fields": {
-        "name": "º∫∫œ±∏",
+        "name": "ÏÑ±Î∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -414,11 +495,14 @@
     "model": "mainpage.regionmedium",
     "pk": 9,
     "fields": {
-        "name": "∞≠∫œ±∏",
+        "name": "Í∞ïÎ∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -426,11 +510,14 @@
     "model": "mainpage.regionmedium",
     "pk": 10,
     "fields": {
-        "name": "µµ∫¿±∏",
+        "name": "ÎèÑÎ¥âÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -438,11 +525,14 @@
     "model": "mainpage.regionmedium",
     "pk": 11,
     "fields": {
-        "name": "≥Îø¯±∏",
+        "name": "ÎÖ∏ÏõêÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -450,11 +540,14 @@
     "model": "mainpage.regionmedium",
     "pk": 12,
     "fields": {
-        "name": "¿∫∆Ú±∏",
+        "name": "ÏùÄÌèâÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -462,11 +555,14 @@
     "model": "mainpage.regionmedium",
     "pk": 13,
     "fields": {
-        "name": "º≠¥ÎπÆ±∏",
+        "name": "ÏÑúÎåÄÎ¨∏Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -474,11 +570,14 @@
     "model": "mainpage.regionmedium",
     "pk": 14,
     "fields": {
-        "name": "∏∂∆˜±∏",
+        "name": "ÎßàÌè¨Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -486,11 +585,14 @@
     "model": "mainpage.regionmedium",
     "pk": 15,
     "fields": {
-        "name": "æÁ√µ±∏",
+        "name": "ÏñëÏ≤úÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -498,11 +600,14 @@
     "model": "mainpage.regionmedium",
     "pk": 16,
     "fields": {
-        "name": "∞≠º≠±∏",
+        "name": "Í∞ïÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -510,11 +615,14 @@
     "model": "mainpage.regionmedium",
     "pk": 17,
     "fields": {
-        "name": "±∏∑Œ±∏",
+        "name": "Íµ¨Î°úÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -522,11 +630,14 @@
     "model": "mainpage.regionmedium",
     "pk": 18,
     "fields": {
-        "name": "±›√µ±∏",
+        "name": "Í∏àÏ≤úÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -534,11 +645,14 @@
     "model": "mainpage.regionmedium",
     "pk": 19,
     "fields": {
-        "name": "øµµÓ∆˜±∏",
+        "name": "ÏòÅÎì±Ìè¨Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -546,11 +660,14 @@
     "model": "mainpage.regionmedium",
     "pk": 20,
     "fields": {
-        "name": "µø¿€±∏",
+        "name": "ÎèôÏûëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -558,11 +675,14 @@
     "model": "mainpage.regionmedium",
     "pk": 21,
     "fields": {
-        "name": "∞¸æ«±∏",
+        "name": "Í¥ÄÏïÖÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -570,11 +690,14 @@
     "model": "mainpage.regionmedium",
     "pk": 22,
     "fields": {
-        "name": "º≠√ ±∏",
+        "name": "ÏÑúÏ¥àÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -582,11 +705,14 @@
     "model": "mainpage.regionmedium",
     "pk": 23,
     "fields": {
-        "name": "∞≠≥≤±∏",
+        "name": "Í∞ïÎÇ®Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -594,11 +720,14 @@
     "model": "mainpage.regionmedium",
     "pk": 24,
     "fields": {
-        "name": "º€∆ƒ±∏",
+        "name": "ÏÜ°ÌååÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -606,11 +735,14 @@
     "model": "mainpage.regionmedium",
     "pk": 25,
     "fields": {
-        "name": "∞≠µø±∏",
+        "name": "Í∞ïÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 2
     }
 },
@@ -618,11 +750,14 @@
     "model": "mainpage.regionmedium",
     "pk": 26,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -630,11 +765,14 @@
     "model": "mainpage.regionmedium",
     "pk": 27,
     "fields": {
-        "name": "º≠±∏",
+        "name": "ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -642,11 +780,14 @@
     "model": "mainpage.regionmedium",
     "pk": 28,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -654,11 +795,14 @@
     "model": "mainpage.regionmedium",
     "pk": 29,
     "fields": {
-        "name": "øµµµ±∏",
+        "name": "ÏòÅÎèÑÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -666,11 +810,14 @@
     "model": "mainpage.regionmedium",
     "pk": 30,
     "fields": {
-        "name": "∫ŒªÍ¡¯±∏",
+        "name": "Î∂ÄÏÇ∞ÏßÑÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -678,11 +825,14 @@
     "model": "mainpage.regionmedium",
     "pk": 31,
     "fields": {
-        "name": "µø∑°±∏",
+        "name": "ÎèôÎûòÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -690,11 +840,14 @@
     "model": "mainpage.regionmedium",
     "pk": 32,
     "fields": {
-        "name": "≥≤±∏",
+        "name": "ÎÇ®Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -702,11 +855,14 @@
     "model": "mainpage.regionmedium",
     "pk": 33,
     "fields": {
-        "name": "∫œ±∏",
+        "name": "Î∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -714,11 +870,14 @@
     "model": "mainpage.regionmedium",
     "pk": 34,
     "fields": {
-        "name": "∞≠º≠±∏",
+        "name": "Í∞ïÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -726,11 +885,14 @@
     "model": "mainpage.regionmedium",
     "pk": 35,
     "fields": {
-        "name": "«ÿøÓ¥Î±∏",
+        "name": "Ìï¥Ïö¥ÎåÄÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -738,11 +900,14 @@
     "model": "mainpage.regionmedium",
     "pk": 36,
     "fields": {
-        "name": "ªÁ«œ±∏",
+        "name": "ÏÇ¨ÌïòÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -750,11 +915,14 @@
     "model": "mainpage.regionmedium",
     "pk": 37,
     "fields": {
-        "name": "±›¡§±∏",
+        "name": "Í∏àÏ†ïÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -762,11 +930,14 @@
     "model": "mainpage.regionmedium",
     "pk": 38,
     "fields": {
-        "name": "ø¨¡¶±∏",
+        "name": "Ïó∞Ï†úÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -774,11 +945,14 @@
     "model": "mainpage.regionmedium",
     "pk": 39,
     "fields": {
-        "name": "ºˆøµ±∏",
+        "name": "ÏàòÏòÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -786,11 +960,14 @@
     "model": "mainpage.regionmedium",
     "pk": 40,
     "fields": {
-        "name": "ªÁªÛ±∏",
+        "name": "ÏÇ¨ÏÉÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -798,11 +975,14 @@
     "model": "mainpage.regionmedium",
     "pk": 41,
     "fields": {
-        "name": "±‚¿Â±∫",
+        "name": "Í∏∞Ïû•Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 3
     }
 },
@@ -810,11 +990,14 @@
     "model": "mainpage.regionmedium",
     "pk": 42,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -822,11 +1005,14 @@
     "model": "mainpage.regionmedium",
     "pk": 43,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -834,11 +1020,14 @@
     "model": "mainpage.regionmedium",
     "pk": 44,
     "fields": {
-        "name": "º≠±∏",
+        "name": "ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -846,11 +1035,14 @@
     "model": "mainpage.regionmedium",
     "pk": 45,
     "fields": {
-        "name": "≥≤±∏",
+        "name": "ÎÇ®Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -858,11 +1050,14 @@
     "model": "mainpage.regionmedium",
     "pk": 46,
     "fields": {
-        "name": "∫œ±∏",
+        "name": "Î∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -870,11 +1065,14 @@
     "model": "mainpage.regionmedium",
     "pk": 47,
     "fields": {
-        "name": "ºˆº∫±∏",
+        "name": "ÏàòÏÑ±Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -882,11 +1080,14 @@
     "model": "mainpage.regionmedium",
     "pk": 48,
     "fields": {
-        "name": "¥ﬁº≠±∏",
+        "name": "Îã¨ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -894,11 +1095,14 @@
     "model": "mainpage.regionmedium",
     "pk": 49,
     "fields": {
-        "name": "¥ﬁº∫±∫",
+        "name": "Îã¨ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 4
     }
 },
@@ -906,11 +1110,14 @@
     "model": "mainpage.regionmedium",
     "pk": 50,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 5
     }
 },
@@ -918,11 +1125,14 @@
     "model": "mainpage.regionmedium",
     "pk": 51,
     "fields": {
-        "name": "º≠±∏",
+        "name": "ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 5
     }
 },
@@ -930,11 +1140,14 @@
     "model": "mainpage.regionmedium",
     "pk": 52,
     "fields": {
-        "name": "≥≤±∏",
+        "name": "ÎÇ®Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 5
     }
 },
@@ -942,11 +1155,14 @@
     "model": "mainpage.regionmedium",
     "pk": 53,
     "fields": {
-        "name": "∫œ±∏",
+        "name": "Î∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 5
     }
 },
@@ -954,11 +1170,14 @@
     "model": "mainpage.regionmedium",
     "pk": 54,
     "fields": {
-        "name": "±§ªÍ±∏",
+        "name": "Í¥ëÏÇ∞Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 5
     }
 },
@@ -966,11 +1185,14 @@
     "model": "mainpage.regionmedium",
     "pk": 55,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -978,11 +1200,14 @@
     "model": "mainpage.regionmedium",
     "pk": 56,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -990,11 +1215,14 @@
     "model": "mainpage.regionmedium",
     "pk": 57,
     "fields": {
-        "name": "πÃ√ﬂ»¶±∏",
+        "name": "ÎØ∏Ï∂îÌôÄÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1002,11 +1230,14 @@
     "model": "mainpage.regionmedium",
     "pk": 58,
     "fields": {
-        "name": "ø¨ºˆ±∏",
+        "name": "Ïó∞ÏàòÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1014,11 +1245,14 @@
     "model": "mainpage.regionmedium",
     "pk": 59,
     "fields": {
-        "name": "≥≤µø±∏",
+        "name": "ÎÇ®ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1026,11 +1260,14 @@
     "model": "mainpage.regionmedium",
     "pk": 60,
     "fields": {
-        "name": "∫Œ∆Ú±∏",
+        "name": "Î∂ÄÌèâÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1038,11 +1275,14 @@
     "model": "mainpage.regionmedium",
     "pk": 61,
     "fields": {
-        "name": "∞ËæÁ±∏",
+        "name": "Í≥ÑÏñëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1050,11 +1290,14 @@
     "model": "mainpage.regionmedium",
     "pk": 62,
     "fields": {
-        "name": "º≠±∏",
+        "name": "ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1062,11 +1305,14 @@
     "model": "mainpage.regionmedium",
     "pk": 63,
     "fields": {
-        "name": "∞≠»≠±∫",
+        "name": "Í∞ïÌôîÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1074,11 +1320,14 @@
     "model": "mainpage.regionmedium",
     "pk": 64,
     "fields": {
-        "name": "øÀ¡¯±∫",
+        "name": "ÏòπÏßÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 6
     }
 },
@@ -1086,11 +1335,14 @@
     "model": "mainpage.regionmedium",
     "pk": 65,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 7
     }
 },
@@ -1098,11 +1350,14 @@
     "model": "mainpage.regionmedium",
     "pk": 66,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 7
     }
 },
@@ -1110,11 +1365,14 @@
     "model": "mainpage.regionmedium",
     "pk": 67,
     "fields": {
-        "name": "º≠±∏",
+        "name": "ÏÑúÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 7
     }
 },
@@ -1122,11 +1380,14 @@
     "model": "mainpage.regionmedium",
     "pk": 68,
     "fields": {
-        "name": "¿Øº∫±∏",
+        "name": "Ïú†ÏÑ±Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 7
     }
 },
@@ -1134,11 +1395,14 @@
     "model": "mainpage.regionmedium",
     "pk": 69,
     "fields": {
-        "name": "¥Î¥ˆ±∏",
+        "name": "ÎåÄÎçïÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 7
     }
 },
@@ -1146,11 +1410,14 @@
     "model": "mainpage.regionmedium",
     "pk": 70,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1158,11 +1425,14 @@
     "model": "mainpage.regionmedium",
     "pk": 71,
     "fields": {
-        "name": "≥≤±∏",
+        "name": "ÎÇ®Íµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1170,11 +1440,14 @@
     "model": "mainpage.regionmedium",
     "pk": 72,
     "fields": {
-        "name": "µø±∏",
+        "name": "ÎèôÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1182,11 +1455,14 @@
     "model": "mainpage.regionmedium",
     "pk": 73,
     "fields": {
-        "name": "∫œ±∏",
+        "name": "Î∂ÅÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1194,11 +1470,14 @@
     "model": "mainpage.regionmedium",
     "pk": 74,
     "fields": {
-        "name": "øÔ¡÷±∫",
+        "name": "Ïö∏Ï£ºÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1206,11 +1485,14 @@
     "model": "mainpage.regionmedium",
     "pk": 75,
     "fields": {
-        "name": "¡ﬂ±∏",
+        "name": "Ï§ëÍµ¨",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 8
     }
 },
@@ -1218,11 +1500,14 @@
     "model": "mainpage.regionmedium",
     "pk": 76,
     "fields": {
-        "name": "¡∂ƒ°ø¯¿æ",
+        "name": "Ï°∞ÏπòÏõêÏùç",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1230,11 +1515,14 @@
     "model": "mainpage.regionmedium",
     "pk": 77,
     "fields": {
-        "name": "±›≥≤∏È",
+        "name": "Í∏àÎÇ®Î©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1242,11 +1530,14 @@
     "model": "mainpage.regionmedium",
     "pk": 78,
     "fields": {
-        "name": "∫Œ∞≠∏È",
+        "name": "Î∂ÄÍ∞ïÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1254,11 +1545,14 @@
     "model": "mainpage.regionmedium",
     "pk": 79,
     "fields": {
-        "name": "º“¡§∏È",
+        "name": "ÏÜåÏ†ïÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1266,11 +1560,14 @@
     "model": "mainpage.regionmedium",
     "pk": 80,
     "fields": {
-        "name": "ø¨±‚∏È",
+        "name": "Ïó∞Í∏∞Î©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1278,11 +1575,14 @@
     "model": "mainpage.regionmedium",
     "pk": 81,
     "fields": {
-        "name": "ø¨µø∏È",
+        "name": "Ïó∞ÎèôÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1290,11 +1590,14 @@
     "model": "mainpage.regionmedium",
     "pk": 82,
     "fields": {
-        "name": "ø¨º≠∏È",
+        "name": "Ïó∞ÏÑúÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1302,11 +1605,14 @@
     "model": "mainpage.regionmedium",
     "pk": 83,
     "fields": {
-        "name": "¿Â±∫∏È",
+        "name": "Ïû•Íµ∞Î©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1314,11 +1620,14 @@
     "model": "mainpage.regionmedium",
     "pk": 84,
     "fields": {
-        "name": "¿¸µø∏È",
+        "name": "Ï†ÑÎèôÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1326,11 +1635,14 @@
     "model": "mainpage.regionmedium",
     "pk": 85,
     "fields": {
-        "name": "¿¸¿«∏È",
+        "name": "Ï†ÑÏùòÎ©¥",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1338,11 +1650,14 @@
     "model": "mainpage.regionmedium",
     "pk": 86,
     "fields": {
-        "name": "∞ÌøÓµø",
+        "name": "Í≥†Ïö¥Îèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1350,11 +1665,14 @@
     "model": "mainpage.regionmedium",
     "pk": 87,
     "fields": {
-        "name": "¥Ÿ¡§µø",
+        "name": "Îã§Ï†ïÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1362,11 +1680,14 @@
     "model": "mainpage.regionmedium",
     "pk": 88,
     "fields": {
-        "name": "¥Î∆Úµø",
+        "name": "ÎåÄÌèâÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1374,11 +1695,14 @@
     "model": "mainpage.regionmedium",
     "pk": 89,
     "fields": {
-        "name": "µµ¥„µø",
+        "name": "ÎèÑÎã¥Îèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1386,11 +1710,14 @@
     "model": "mainpage.regionmedium",
     "pk": 90,
     "fields": {
-        "name": "∫∏∂˜µø",
+        "name": "Î≥¥ÎûåÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1398,11 +1725,14 @@
     "model": "mainpage.regionmedium",
     "pk": 91,
     "fields": {
-        "name": "º“¥„µø",
+        "name": "ÏÜåÎã¥Îèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1410,11 +1740,14 @@
     "model": "mainpage.regionmedium",
     "pk": 92,
     "fields": {
-        "name": "ªı∑“µø",
+        "name": "ÏÉàÎ°¨Îèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1422,11 +1755,14 @@
     "model": "mainpage.regionmedium",
     "pk": 93,
     "fields": {
-        "name": "æ∆∏ßµø",
+        "name": "ÏïÑÎ¶ÑÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1434,11 +1770,14 @@
     "model": "mainpage.regionmedium",
     "pk": 94,
     "fields": {
-        "name": "¡æ√Ãµø",
+        "name": "Ï¢ÖÏ¥åÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1446,11 +1785,14 @@
     "model": "mainpage.regionmedium",
     "pk": 95,
     "fields": {
-        "name": "«—º÷µø",
+        "name": "ÌïúÏÜîÎèô",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 9
     }
 },
@@ -1458,11 +1800,14 @@
     "model": "mainpage.regionmedium",
     "pk": 96,
     "fields": {
-        "name": "ºˆø¯Ω√",
+        "name": "ÏàòÏõêÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1470,11 +1815,14 @@
     "model": "mainpage.regionmedium",
     "pk": 97,
     "fields": {
-        "name": "º∫≥≤Ω√",
+        "name": "ÏÑ±ÎÇ®Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1482,11 +1830,14 @@
     "model": "mainpage.regionmedium",
     "pk": 98,
     "fields": {
-        "name": "æ»æÁΩ√",
+        "name": "ÏïàÏñëÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1494,11 +1845,14 @@
     "model": "mainpage.regionmedium",
     "pk": 99,
     "fields": {
-        "name": "æ»ªÍΩ√",
+        "name": "ÏïàÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1506,11 +1860,14 @@
     "model": "mainpage.regionmedium",
     "pk": 100,
     "fields": {
-        "name": "øÎ¿ŒΩ√",
+        "name": "Ïö©Ïù∏Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1518,11 +1875,14 @@
     "model": "mainpage.regionmedium",
     "pk": 101,
     "fields": {
-        "name": "∫Œ√µΩ√",
+        "name": "Î∂ÄÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1530,11 +1890,14 @@
     "model": "mainpage.regionmedium",
     "pk": 102,
     "fields": {
-        "name": "±§∏ÌΩ√",
+        "name": "Í¥ëÎ™ÖÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1542,11 +1905,14 @@
     "model": "mainpage.regionmedium",
     "pk": 103,
     "fields": {
-        "name": "∆Ú≈√Ω√",
+        "name": "ÌèâÌÉùÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1554,11 +1920,14 @@
     "model": "mainpage.regionmedium",
     "pk": 104,
     "fields": {
-        "name": "∞˙√µΩ√",
+        "name": "Í≥ºÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1566,11 +1935,14 @@
     "model": "mainpage.regionmedium",
     "pk": 105,
     "fields": {
-        "name": "ø¿ªÍΩ√",
+        "name": "Ïò§ÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1578,11 +1950,14 @@
     "model": "mainpage.regionmedium",
     "pk": 106,
     "fields": {
-        "name": "Ω√»ÔΩ√",
+        "name": "ÏãúÌù•Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1590,11 +1965,14 @@
     "model": "mainpage.regionmedium",
     "pk": 107,
     "fields": {
-        "name": "±∫∆˜Ω√",
+        "name": "Íµ∞Ìè¨Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1602,11 +1980,14 @@
     "model": "mainpage.regionmedium",
     "pk": 108,
     "fields": {
-        "name": "¿«ø’Ω√",
+        "name": "ÏùòÏôïÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1614,11 +1995,14 @@
     "model": "mainpage.regionmedium",
     "pk": 109,
     "fields": {
-        "name": "«œ≥≤Ω√",
+        "name": "ÌïòÎÇ®Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1626,11 +2010,14 @@
     "model": "mainpage.regionmedium",
     "pk": 110,
     "fields": {
-        "name": "¿Ã√µΩ√",
+        "name": "Ïù¥Ï≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1638,11 +2025,14 @@
     "model": "mainpage.regionmedium",
     "pk": 111,
     "fields": {
-        "name": "»≠º∫Ω√",
+        "name": "ÌôîÏÑ±Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1650,11 +2040,14 @@
     "model": "mainpage.regionmedium",
     "pk": 112,
     "fields": {
-        "name": "±§¡÷Ω√",
+        "name": "Í¥ëÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1662,11 +2055,14 @@
     "model": "mainpage.regionmedium",
     "pk": 113,
     "fields": {
-        "name": "ø©¡÷Ω√",
+        "name": "Ïó¨Ï£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1674,11 +2070,14 @@
     "model": "mainpage.regionmedium",
     "pk": 114,
     "fields": {
-        "name": "æÁ∆Ú±∫",
+        "name": "ÏñëÌèâÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1686,11 +2085,14 @@
     "model": "mainpage.regionmedium",
     "pk": 115,
     "fields": {
-        "name": "∞ÌæÁΩ√",
+        "name": "Í≥†ÏñëÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1698,11 +2100,14 @@
     "model": "mainpage.regionmedium",
     "pk": 116,
     "fields": {
-        "name": "¿«¡§∫ŒΩ√",
+        "name": "ÏùòÏ†ïÎ∂ÄÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1710,11 +2115,14 @@
     "model": "mainpage.regionmedium",
     "pk": 117,
     "fields": {
-        "name": "µøµŒ√µΩ√",
+        "name": "ÎèôÎëêÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1722,11 +2130,14 @@
     "model": "mainpage.regionmedium",
     "pk": 118,
     "fields": {
-        "name": "±∏∏ÆΩ√",
+        "name": "Íµ¨Î¶¨Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1734,11 +2145,14 @@
     "model": "mainpage.regionmedium",
     "pk": 119,
     "fields": {
-        "name": "≥≤æÁ¡÷Ω√",
+        "name": "ÎÇ®ÏñëÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1746,11 +2160,14 @@
     "model": "mainpage.regionmedium",
     "pk": 120,
     "fields": {
-        "name": "∆ƒ¡÷Ω√",
+        "name": "ÌååÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1758,11 +2175,14 @@
     "model": "mainpage.regionmedium",
     "pk": 121,
     "fields": {
-        "name": "æÁ¡÷Ω√",
+        "name": "ÏñëÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1770,11 +2190,14 @@
     "model": "mainpage.regionmedium",
     "pk": 122,
     "fields": {
-        "name": "∆˜√µΩ√",
+        "name": "Ìè¨Ï≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1782,11 +2205,14 @@
     "model": "mainpage.regionmedium",
     "pk": 123,
     "fields": {
-        "name": "ø¨√µ±∫",
+        "name": "Ïó∞Ï≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1794,11 +2220,14 @@
     "model": "mainpage.regionmedium",
     "pk": 124,
     "fields": {
-        "name": "∞°∆Ú±∫",
+        "name": "Í∞ÄÌèâÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 10
     }
 },
@@ -1806,11 +2235,14 @@
     "model": "mainpage.regionmedium",
     "pk": 125,
     "fields": {
-        "name": "√·√µΩ√",
+        "name": "Ï∂òÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1818,11 +2250,14 @@
     "model": "mainpage.regionmedium",
     "pk": 126,
     "fields": {
-        "name": "ø¯¡÷Ω√",
+        "name": "ÏõêÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1830,11 +2265,14 @@
     "model": "mainpage.regionmedium",
     "pk": 127,
     "fields": {
-        "name": "∞≠∏™Ω√",
+        "name": "Í∞ïÎ¶âÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1842,11 +2280,14 @@
     "model": "mainpage.regionmedium",
     "pk": 128,
     "fields": {
-        "name": "µø«ÿΩ√",
+        "name": "ÎèôÌï¥Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1854,11 +2295,14 @@
     "model": "mainpage.regionmedium",
     "pk": 129,
     "fields": {
-        "name": "≈¬πÈΩ√",
+        "name": "ÌÉúÎ∞±Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1866,11 +2310,14 @@
     "model": "mainpage.regionmedium",
     "pk": 130,
     "fields": {
-        "name": "º”√ Ω√",
+        "name": "ÏÜçÏ¥àÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1878,11 +2325,14 @@
     "model": "mainpage.regionmedium",
     "pk": 131,
     "fields": {
-        "name": "ªÔ√¥Ω√",
+        "name": "ÏÇºÏ≤ôÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1890,11 +2340,14 @@
     "model": "mainpage.regionmedium",
     "pk": 132,
     "fields": {
-        "name": "»´√ª±∫",
+        "name": "ÌôçÏ≤≠Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1902,11 +2355,14 @@
     "model": "mainpage.regionmedium",
     "pk": 133,
     "fields": {
-        "name": "»æº∫±∫",
+        "name": "Ìö°ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1914,11 +2370,14 @@
     "model": "mainpage.regionmedium",
     "pk": 134,
     "fields": {
-        "name": "øµø˘±∫",
+        "name": "ÏòÅÏõîÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1926,11 +2385,14 @@
     "model": "mainpage.regionmedium",
     "pk": 135,
     "fields": {
-        "name": "∆Ú√¢±∫",
+        "name": "ÌèâÏ∞ΩÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1938,11 +2400,14 @@
     "model": "mainpage.regionmedium",
     "pk": 136,
     "fields": {
-        "name": "¡§º±±∫",
+        "name": "Ï†ïÏÑ†Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1950,11 +2415,14 @@
     "model": "mainpage.regionmedium",
     "pk": 137,
     "fields": {
-        "name": "√∂ø¯±∫",
+        "name": "Ï≤†ÏõêÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1962,11 +2430,14 @@
     "model": "mainpage.regionmedium",
     "pk": 138,
     "fields": {
-        "name": "»≠√µ±∫",
+        "name": "ÌôîÏ≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1974,11 +2445,14 @@
     "model": "mainpage.regionmedium",
     "pk": 139,
     "fields": {
-        "name": "æÁ±∏±∫",
+        "name": "ÏñëÍµ¨Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1986,11 +2460,14 @@
     "model": "mainpage.regionmedium",
     "pk": 140,
     "fields": {
-        "name": "∞Ìº∫±∫",
+        "name": "Í≥†ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -1998,11 +2475,14 @@
     "model": "mainpage.regionmedium",
     "pk": 141,
     "fields": {
-        "name": "æÁæÁ±∫",
+        "name": "ÏñëÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 11
     }
 },
@@ -2010,11 +2490,14 @@
     "model": "mainpage.regionmedium",
     "pk": 142,
     "fields": {
-        "name": "√ª¡÷Ω√",
+        "name": "Ï≤≠Ï£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2022,11 +2505,14 @@
     "model": "mainpage.regionmedium",
     "pk": 143,
     "fields": {
-        "name": "√Ê¡÷Ω√",
+        "name": "Ï∂©Ï£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2034,11 +2520,14 @@
     "model": "mainpage.regionmedium",
     "pk": 144,
     "fields": {
-        "name": "¡¶√µΩ√",
+        "name": "Ï†úÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2046,11 +2535,14 @@
     "model": "mainpage.regionmedium",
     "pk": 145,
     "fields": {
-        "name": "∫∏¿∫±∫",
+        "name": "Î≥¥ÏùÄÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2058,11 +2550,14 @@
     "model": "mainpage.regionmedium",
     "pk": 146,
     "fields": {
-        "name": "ø¡√µ±∫",
+        "name": "Ïò•Ï≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2070,11 +2565,14 @@
     "model": "mainpage.regionmedium",
     "pk": 147,
     "fields": {
-        "name": "øµµø±∫",
+        "name": "ÏòÅÎèôÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2082,11 +2580,14 @@
     "model": "mainpage.regionmedium",
     "pk": 148,
     "fields": {
-        "name": "¡ı∆Ú±∫",
+        "name": "Ï¶ùÌèâÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2094,11 +2595,14 @@
     "model": "mainpage.regionmedium",
     "pk": 149,
     "fields": {
-        "name": "¡¯√µ±∫",
+        "name": "ÏßÑÏ≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2106,11 +2610,14 @@
     "model": "mainpage.regionmedium",
     "pk": 150,
     "fields": {
-        "name": "±´ªÍ±∫",
+        "name": "Í¥¥ÏÇ∞Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2118,11 +2625,14 @@
     "model": "mainpage.regionmedium",
     "pk": 151,
     "fields": {
-        "name": "¿Ωº∫±∫",
+        "name": "ÏùåÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2130,11 +2640,14 @@
     "model": "mainpage.regionmedium",
     "pk": 152,
     "fields": {
-        "name": "¥‹æÁ±∫",
+        "name": "Îã®ÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 12
     }
 },
@@ -2142,11 +2655,14 @@
     "model": "mainpage.regionmedium",
     "pk": 153,
     "fields": {
-        "name": "√µæ»Ω√",
+        "name": "Ï≤úÏïàÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2154,11 +2670,14 @@
     "model": "mainpage.regionmedium",
     "pk": 154,
     "fields": {
-        "name": "∞¯¡÷Ω√",
+        "name": "Í≥µÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2166,11 +2685,14 @@
     "model": "mainpage.regionmedium",
     "pk": 155,
     "fields": {
-        "name": "∫∏∑…Ω√",
+        "name": "Î≥¥Î†πÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2178,11 +2700,14 @@
     "model": "mainpage.regionmedium",
     "pk": 156,
     "fields": {
-        "name": "æ∆ªÍΩ√",
+        "name": "ÏïÑÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2190,11 +2715,14 @@
     "model": "mainpage.regionmedium",
     "pk": 157,
     "fields": {
-        "name": "º≠ªÍΩ√",
+        "name": "ÏÑúÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2202,11 +2730,14 @@
     "model": "mainpage.regionmedium",
     "pk": 158,
     "fields": {
-        "name": "≥ÌªÍΩ√",
+        "name": "ÎÖºÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2214,11 +2745,14 @@
     "model": "mainpage.regionmedium",
     "pk": 159,
     "fields": {
-        "name": "∞Ë∑ÊΩ√",
+        "name": "Í≥ÑÎ£°Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2226,11 +2760,14 @@
     "model": "mainpage.regionmedium",
     "pk": 160,
     "fields": {
-        "name": "¥Á¡¯Ω√",
+        "name": "ÎãπÏßÑÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2238,11 +2775,14 @@
     "model": "mainpage.regionmedium",
     "pk": 161,
     "fields": {
-        "name": "±›ªÍ±∫",
+        "name": "Í∏àÏÇ∞Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2250,11 +2790,14 @@
     "model": "mainpage.regionmedium",
     "pk": 162,
     "fields": {
-        "name": "∫Œø©±∫",
+        "name": "Î∂ÄÏó¨Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2262,11 +2805,14 @@
     "model": "mainpage.regionmedium",
     "pk": 163,
     "fields": {
-        "name": "º≠√µ±∫",
+        "name": "ÏÑúÏ≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2274,11 +2820,14 @@
     "model": "mainpage.regionmedium",
     "pk": 164,
     "fields": {
-        "name": "√ªæÁ±∫",
+        "name": "Ï≤≠ÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2286,11 +2835,14 @@
     "model": "mainpage.regionmedium",
     "pk": 165,
     "fields": {
-        "name": "»´º∫±∫",
+        "name": "ÌôçÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2298,11 +2850,14 @@
     "model": "mainpage.regionmedium",
     "pk": 166,
     "fields": {
-        "name": "ø°ªÍ±∫",
+        "name": "ÏóêÏÇ∞Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2310,11 +2865,14 @@
     "model": "mainpage.regionmedium",
     "pk": 167,
     "fields": {
-        "name": "≈¬æ»±∫",
+        "name": "ÌÉúÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 13
     }
 },
@@ -2322,11 +2880,14 @@
     "model": "mainpage.regionmedium",
     "pk": 168,
     "fields": {
-        "name": "¿¸¡÷Ω√",
+        "name": "Ï†ÑÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2334,11 +2895,14 @@
     "model": "mainpage.regionmedium",
     "pk": 169,
     "fields": {
-        "name": "±∫ªÍΩ√",
+        "name": "Íµ∞ÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2346,11 +2910,14 @@
     "model": "mainpage.regionmedium",
     "pk": 170,
     "fields": {
-        "name": "¿ÕªÍΩ√",
+        "name": "ÏùµÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2358,11 +2925,14 @@
     "model": "mainpage.regionmedium",
     "pk": 171,
     "fields": {
-        "name": "¡§¿æΩ√",
+        "name": "Ï†ïÏùçÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2370,11 +2940,14 @@
     "model": "mainpage.regionmedium",
     "pk": 172,
     "fields": {
-        "name": "≥≤ø¯Ω√",
+        "name": "ÎÇ®ÏõêÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2382,11 +2955,14 @@
     "model": "mainpage.regionmedium",
     "pk": 173,
     "fields": {
-        "name": "±Ë¡¶Ω√",
+        "name": "ÍπÄÏ†úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2394,11 +2970,14 @@
     "model": "mainpage.regionmedium",
     "pk": 174,
     "fields": {
-        "name": "øœ¡÷±∫",
+        "name": "ÏôÑÏ£ºÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2406,11 +2985,14 @@
     "model": "mainpage.regionmedium",
     "pk": 175,
     "fields": {
-        "name": "¡¯æ»±∫",
+        "name": "ÏßÑÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2418,11 +3000,14 @@
     "model": "mainpage.regionmedium",
     "pk": 176,
     "fields": {
-        "name": "π´¡÷±∫",
+        "name": "Î¨¥Ï£ºÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2430,11 +3015,14 @@
     "model": "mainpage.regionmedium",
     "pk": 177,
     "fields": {
-        "name": "¿Âºˆ±∫",
+        "name": "Ïû•ÏàòÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2442,11 +3030,14 @@
     "model": "mainpage.regionmedium",
     "pk": 178,
     "fields": {
-        "name": "¿”Ω«±∫",
+        "name": "ÏûÑÏã§Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2454,11 +3045,14 @@
     "model": "mainpage.regionmedium",
     "pk": 179,
     "fields": {
-        "name": "º¯√¢±∫",
+        "name": "ÏàúÏ∞ΩÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2466,11 +3060,14 @@
     "model": "mainpage.regionmedium",
     "pk": 180,
     "fields": {
-        "name": "∞Ì√¢±∫",
+        "name": "Í≥†Ï∞ΩÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2478,11 +3075,14 @@
     "model": "mainpage.regionmedium",
     "pk": 181,
     "fields": {
-        "name": "∫Œæ»±∫",
+        "name": "Î∂ÄÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 14
     }
 },
@@ -2490,11 +3090,14 @@
     "model": "mainpage.regionmedium",
     "pk": 182,
     "fields": {
-        "name": "∏Ò∆˜Ω√",
+        "name": "Î™©Ìè¨Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2502,11 +3105,14 @@
     "model": "mainpage.regionmedium",
     "pk": 183,
     "fields": {
-        "name": "ø©ºˆΩ√",
+        "name": "Ïó¨ÏàòÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2514,11 +3120,14 @@
     "model": "mainpage.regionmedium",
     "pk": 184,
     "fields": {
-        "name": "º¯√µΩ√",
+        "name": "ÏàúÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2526,11 +3135,14 @@
     "model": "mainpage.regionmedium",
     "pk": 185,
     "fields": {
-        "name": "≥™¡÷Ω√",
+        "name": "ÎÇòÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2538,11 +3150,14 @@
     "model": "mainpage.regionmedium",
     "pk": 186,
     "fields": {
-        "name": "±§æÁΩ√",
+        "name": "Í¥ëÏñëÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2550,11 +3165,14 @@
     "model": "mainpage.regionmedium",
     "pk": 187,
     "fields": {
-        "name": "¥„æÁ±∫",
+        "name": "Îã¥ÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2562,11 +3180,14 @@
     "model": "mainpage.regionmedium",
     "pk": 188,
     "fields": {
-        "name": "∞Óº∫±∫",
+        "name": "Í≥°ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2574,11 +3195,14 @@
     "model": "mainpage.regionmedium",
     "pk": 189,
     "fields": {
-        "name": "±∏∑ ±∫",
+        "name": "Íµ¨Î°ÄÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2586,11 +3210,14 @@
     "model": "mainpage.regionmedium",
     "pk": 190,
     "fields": {
-        "name": "∞Ì»Ô±∫",
+        "name": "Í≥†Ìù•Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2598,11 +3225,14 @@
     "model": "mainpage.regionmedium",
     "pk": 191,
     "fields": {
-        "name": "∫∏º∫±∫",
+        "name": "Î≥¥ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2610,11 +3240,14 @@
     "model": "mainpage.regionmedium",
     "pk": 192,
     "fields": {
-        "name": "»≠º¯±∫",
+        "name": "ÌôîÏàúÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2622,11 +3255,14 @@
     "model": "mainpage.regionmedium",
     "pk": 193,
     "fields": {
-        "name": "¿Â»Ô±∫",
+        "name": "Ïû•Ìù•Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2634,11 +3270,14 @@
     "model": "mainpage.regionmedium",
     "pk": 194,
     "fields": {
-        "name": "∞≠¡¯±∫",
+        "name": "Í∞ïÏßÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2646,11 +3285,14 @@
     "model": "mainpage.regionmedium",
     "pk": 195,
     "fields": {
-        "name": "«ÿ≥≤±∫",
+        "name": "Ìï¥ÎÇ®Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2658,11 +3300,14 @@
     "model": "mainpage.regionmedium",
     "pk": 196,
     "fields": {
-        "name": "øµæœ±∫",
+        "name": "ÏòÅÏïîÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2670,11 +3315,14 @@
     "model": "mainpage.regionmedium",
     "pk": 197,
     "fields": {
-        "name": "π´æ»±∫",
+        "name": "Î¨¥ÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2682,11 +3330,14 @@
     "model": "mainpage.regionmedium",
     "pk": 198,
     "fields": {
-        "name": "«‘∆Ú±∫",
+        "name": "Ìï®ÌèâÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2694,11 +3345,14 @@
     "model": "mainpage.regionmedium",
     "pk": 199,
     "fields": {
-        "name": "øµ∞¸±∫",
+        "name": "ÏòÅÍ¥ÄÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2706,11 +3360,14 @@
     "model": "mainpage.regionmedium",
     "pk": 200,
     "fields": {
-        "name": "¿Âº∫±∫",
+        "name": "Ïû•ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2718,11 +3375,14 @@
     "model": "mainpage.regionmedium",
     "pk": 201,
     "fields": {
-        "name": "øœµµ±∫",
+        "name": "ÏôÑÎèÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2730,11 +3390,14 @@
     "model": "mainpage.regionmedium",
     "pk": 202,
     "fields": {
-        "name": "¡¯µµ±∫",
+        "name": "ÏßÑÎèÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2742,11 +3405,14 @@
     "model": "mainpage.regionmedium",
     "pk": 203,
     "fields": {
-        "name": "Ω≈æ»±∫",
+        "name": "Ïã†ÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 15
     }
 },
@@ -2754,11 +3420,14 @@
     "model": "mainpage.regionmedium",
     "pk": 204,
     "fields": {
-        "name": "∆˜«◊Ω√",
+        "name": "Ìè¨Ìï≠Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2766,11 +3435,14 @@
     "model": "mainpage.regionmedium",
     "pk": 205,
     "fields": {
-        "name": "∞Ê¡÷Ω√",
+        "name": "Í≤ΩÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2778,11 +3450,14 @@
     "model": "mainpage.regionmedium",
     "pk": 206,
     "fields": {
-        "name": "±Ë√µΩ√",
+        "name": "ÍπÄÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2790,11 +3465,14 @@
     "model": "mainpage.regionmedium",
     "pk": 207,
     "fields": {
-        "name": "æ»µøΩ√",
+        "name": "ÏïàÎèôÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2802,11 +3480,14 @@
     "model": "mainpage.regionmedium",
     "pk": 208,
     "fields": {
-        "name": "±∏πÃΩ√",
+        "name": "Íµ¨ÎØ∏Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2814,11 +3495,14 @@
     "model": "mainpage.regionmedium",
     "pk": 209,
     "fields": {
-        "name": "øµ¡÷Ω√",
+        "name": "ÏòÅÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2826,11 +3510,14 @@
     "model": "mainpage.regionmedium",
     "pk": 210,
     "fields": {
-        "name": "øµ√µΩ√",
+        "name": "ÏòÅÏ≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2838,11 +3525,14 @@
     "model": "mainpage.regionmedium",
     "pk": 211,
     "fields": {
-        "name": "ªÛ¡÷Ω√",
+        "name": "ÏÉÅÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2850,11 +3540,14 @@
     "model": "mainpage.regionmedium",
     "pk": 212,
     "fields": {
-        "name": "πÆ∞ÊΩ√",
+        "name": "Î¨∏Í≤ΩÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2862,11 +3555,14 @@
     "model": "mainpage.regionmedium",
     "pk": 213,
     "fields": {
-        "name": "∞ÊªÍΩ√",
+        "name": "Í≤ΩÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2874,11 +3570,14 @@
     "model": "mainpage.regionmedium",
     "pk": 214,
     "fields": {
-        "name": "±∫¿ß±∫",
+        "name": "Íµ∞ÏúÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2886,11 +3585,14 @@
     "model": "mainpage.regionmedium",
     "pk": 215,
     "fields": {
-        "name": "¿«º∫±∫",
+        "name": "ÏùòÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2898,11 +3600,14 @@
     "model": "mainpage.regionmedium",
     "pk": 216,
     "fields": {
-        "name": "√ªº€±∫",
+        "name": "Ï≤≠ÏÜ°Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2910,11 +3615,14 @@
     "model": "mainpage.regionmedium",
     "pk": 217,
     "fields": {
-        "name": "øµæÁ±∫",
+        "name": "ÏòÅÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2922,11 +3630,14 @@
     "model": "mainpage.regionmedium",
     "pk": 218,
     "fields": {
-        "name": "øµ¥ˆ±∫",
+        "name": "ÏòÅÎçïÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2934,11 +3645,14 @@
     "model": "mainpage.regionmedium",
     "pk": 219,
     "fields": {
-        "name": "√ªµµ±∫",
+        "name": "Ï≤≠ÎèÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2946,11 +3660,14 @@
     "model": "mainpage.regionmedium",
     "pk": 220,
     "fields": {
-        "name": "∞Ì∑…±∫",
+        "name": "Í≥†Î†πÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2958,11 +3675,14 @@
     "model": "mainpage.regionmedium",
     "pk": 221,
     "fields": {
-        "name": "º∫¡÷±∫",
+        "name": "ÏÑ±Ï£ºÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2970,11 +3690,14 @@
     "model": "mainpage.regionmedium",
     "pk": 222,
     "fields": {
-        "name": "ƒ•∞Ó±∫",
+        "name": "Ïπ†Í≥°Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2982,11 +3705,14 @@
     "model": "mainpage.regionmedium",
     "pk": 223,
     "fields": {
-        "name": "ø°√µ±∫",
+        "name": "ÏóêÏ≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -2994,11 +3720,14 @@
     "model": "mainpage.regionmedium",
     "pk": 224,
     "fields": {
-        "name": "∫¿»≠±∫",
+        "name": "Î¥âÌôîÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -3006,11 +3735,14 @@
     "model": "mainpage.regionmedium",
     "pk": 225,
     "fields": {
-        "name": "øÔ¡¯±∫",
+        "name": "Ïö∏ÏßÑÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -3018,11 +3750,14 @@
     "model": "mainpage.regionmedium",
     "pk": 226,
     "fields": {
-        "name": "øÔ∏™±∫",
+        "name": "Ïö∏Î¶âÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 16
     }
 },
@@ -3030,11 +3765,14 @@
     "model": "mainpage.regionmedium",
     "pk": 227,
     "fields": {
-        "name": "√¢ø¯Ω√",
+        "name": "Ï∞ΩÏõêÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3042,11 +3780,14 @@
     "model": "mainpage.regionmedium",
     "pk": 228,
     "fields": {
-        "name": "¡¯¡÷Ω√",
+        "name": "ÏßÑÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3054,11 +3795,14 @@
     "model": "mainpage.regionmedium",
     "pk": 229,
     "fields": {
-        "name": "≈ÎøµΩ√",
+        "name": "ÌÜµÏòÅÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3066,11 +3810,14 @@
     "model": "mainpage.regionmedium",
     "pk": 230,
     "fields": {
-        "name": "ªÁ√µΩ√",
+        "name": "ÏÇ¨Ï≤úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3078,11 +3825,14 @@
     "model": "mainpage.regionmedium",
     "pk": 231,
     "fields": {
-        "name": "±Ë«ÿΩ√",
+        "name": "ÍπÄÌï¥Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3090,11 +3840,14 @@
     "model": "mainpage.regionmedium",
     "pk": 232,
     "fields": {
-        "name": "π–æÁΩ√",
+        "name": "Î∞ÄÏñëÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3102,11 +3855,14 @@
     "model": "mainpage.regionmedium",
     "pk": 233,
     "fields": {
-        "name": "∞≈¡¶Ω√",
+        "name": "Í±∞Ï†úÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3114,11 +3870,14 @@
     "model": "mainpage.regionmedium",
     "pk": 234,
     "fields": {
-        "name": "æÁªÍΩ√",
+        "name": "ÏñëÏÇ∞Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3126,11 +3885,14 @@
     "model": "mainpage.regionmedium",
     "pk": 235,
     "fields": {
-        "name": "¿«∑…±∫",
+        "name": "ÏùòÎ†πÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3138,11 +3900,14 @@
     "model": "mainpage.regionmedium",
     "pk": 236,
     "fields": {
-        "name": "«‘æ»±∫",
+        "name": "Ìï®ÏïàÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3150,11 +3915,14 @@
     "model": "mainpage.regionmedium",
     "pk": 237,
     "fields": {
-        "name": "√¢≥Á±∫",
+        "name": "Ï∞ΩÎÖïÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3162,11 +3930,14 @@
     "model": "mainpage.regionmedium",
     "pk": 238,
     "fields": {
-        "name": "∞Ìº∫±∫",
+        "name": "Í≥†ÏÑ±Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3174,11 +3945,14 @@
     "model": "mainpage.regionmedium",
     "pk": 239,
     "fields": {
-        "name": "≥≤«ÿ±∫",
+        "name": "ÎÇ®Ìï¥Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3186,11 +3960,14 @@
     "model": "mainpage.regionmedium",
     "pk": 240,
     "fields": {
-        "name": "«œµø±∫",
+        "name": "ÌïòÎèôÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3198,11 +3975,14 @@
     "model": "mainpage.regionmedium",
     "pk": 241,
     "fields": {
-        "name": "ªÍ√ª±∫",
+        "name": "ÏÇ∞Ï≤≠Íµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3210,11 +3990,14 @@
     "model": "mainpage.regionmedium",
     "pk": 242,
     "fields": {
-        "name": "«‘æÁ±∫",
+        "name": "Ìï®ÏñëÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3222,11 +4005,14 @@
     "model": "mainpage.regionmedium",
     "pk": 243,
     "fields": {
-        "name": "∞≈√¢±∫",
+        "name": "Í±∞Ï∞ΩÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3234,11 +4020,14 @@
     "model": "mainpage.regionmedium",
     "pk": 244,
     "fields": {
-        "name": "«’√µ±∫",
+        "name": "Ìï©Ï≤úÍµ∞",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 17
     }
 },
@@ -3246,11 +4035,14 @@
     "model": "mainpage.regionmedium",
     "pk": 245,
     "fields": {
-        "name": "¡¶¡÷Ω√",
+        "name": "Ï†úÏ£ºÏãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 18
     }
 },
@@ -3258,11 +4050,14 @@
     "model": "mainpage.regionmedium",
     "pk": 246,
     "fields": {
-        "name": "º≠±Õ∆˜Ω√",
+        "name": "ÏÑúÍ∑ÄÌè¨Ïãú",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-12T15:12:43",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 18
     }
 },
@@ -3270,11 +4065,14 @@
     "model": "mainpage.regionmedium",
     "pk": 247,
     "fields": {
-        "name": "¿¸√ºº±≈√",
+        "name": "Ï†ÑÏ≤¥ÏÑ†ÌÉù",
         "no_infected": 0,
         "no_deceased": 0,
         "no_offisolated": 0,
         "updated_time": "2020-11-29T04:10:18",
+        "prev_no_infected": 0,
+        "prev_no_deceased": 0,
+        "prev_no_offisolated": 0,
         "parent_region": 1
     }
 },
@@ -3390,6 +4188,19 @@
         "TotalChecking": "3,061,172",
         "TodayCase": "438",
         "TodayRecovered": "83"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": "2020.12.1.",
+    "fields": {
+        "TotalCase": "34,652",
+        "TotalDeath": "526",
+        "TotalRecovered": "27,885",
+        "NowCase": "6,241",
+        "TotalChecking": "3,083,997",
+        "TodayCase": "451",
+        "TodayRecovered": "260"
     }
 },
 {
@@ -3659,50 +4470,6 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "add_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "change_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "delete_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "view_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
         "name": "Can add region large",
         "content_type": [
             "mainpage",
@@ -3791,45 +4558,133 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add region small",
+        "name": "Can add subscriber",
         "content_type": [
             "mainpage",
-            "regionsmall"
+            "subscriber"
         ],
-        "codename": "add_regionsmall"
+        "codename": "add_subscriber"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change region small",
+        "name": "Can change subscriber",
         "content_type": [
             "mainpage",
-            "regionsmall"
+            "subscriber"
         ],
-        "codename": "change_regionsmall"
+        "codename": "change_subscriber"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete region small",
+        "name": "Can delete subscriber",
         "content_type": [
             "mainpage",
-            "regionsmall"
+            "subscriber"
         ],
-        "codename": "delete_regionsmall"
+        "codename": "delete_subscriber"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view region small",
+        "name": "Can view subscriber",
         "content_type": [
             "mainpage",
-            "regionsmall"
+            "subscriber"
         ],
-        "codename": "view_regionsmall"
+        "codename": "view_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "add_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "change_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "delete_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "view_infectedmovement"
     }
 },
 {
@@ -3879,89 +4734,45 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add subscriber",
+        "name": "Can add region small",
         "content_type": [
             "mainpage",
-            "subscriber"
+            "regionsmall"
         ],
-        "codename": "add_subscriber"
+        "codename": "add_regionsmall"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change subscriber",
+        "name": "Can change region small",
         "content_type": [
             "mainpage",
-            "subscriber"
+            "regionsmall"
         ],
-        "codename": "change_subscriber"
+        "codename": "change_regionsmall"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete subscriber",
+        "name": "Can delete region small",
         "content_type": [
             "mainpage",
-            "subscriber"
+            "regionsmall"
         ],
-        "codename": "delete_subscriber"
+        "codename": "delete_regionsmall"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view subscriber",
+        "name": "Can view region small",
         "content_type": [
             "mainpage",
-            "subscriber"
+            "regionsmall"
         ],
-        "codename": "view_subscriber"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "add_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "change_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "delete_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "view_infectedmovement"
+        "codename": "view_regionsmall"
     }
 },
 {
