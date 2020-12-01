@@ -14,21 +14,25 @@
     <div class="text-center">
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-primary active">
-                <input type="radio" name="options" id="opt-all" autocomplete="off" checked> 전체
+                <input type="radio" name="options-period" value="opt-all" autocomplete="off" onclick="radioHandler()"
+                    checked> 전체
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" id="opt-recent-7days" autocomplete="off"> 최근7일
+                <input type="radio" name="options-period" value="opt-compare-yesterday" autocomplete="off"
+                    onclick="radioHandler()"> 전일대비
             </label>
-        </div> 
+        </div>
         <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-left: 10px;">
             <label class="btn btn-primary active">
-                <input type="radio" name="options" id="infected" autocomplete="off" checked> 확진자
+                <input type="radio" name="options-type" value="infected" autocomplete="off" onclick="radioHandler()"
+                    checked> 확진자
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" id="deceased" autocomplete="off"> 사망자
+                <input type="radio" name="options-type" value="deceased" autocomplete="off" onclick="radioHandler()">
+                사망자
             </label>
             <label class="btn btn-primary">
-                <input type="radio" name="options" id="off-isolated" autocomplete="off"> 격리해제
+                <input type="radio" name="options-type" value="cured"" autocomplete=" off" onclick="radioHandler()"> 완치자
             </label>
         </div>
     </div>
@@ -38,33 +42,34 @@
 <script src="/static/js/Plugin.Subtitle.min.js"></script>
 <script src="/static/js/statistics.js"></script>
 <script>
+    // --------------------------------------------- 첫 번째 차트 ------------------------------------------------------
     var ctx = document.getElementById('daily-histogram').getContext('2d');
-    
-    var coronaAPIData = {{ result | safe }}; 
-    var statisticDBData={{statisticDBValues | safe}};
-    
-    var sizeOfData=statisticDBData.length; // DB 데이터 길이
-    
+
+    var coronaAPIData = {{ result | safe }};
+    var statisticDBData = {{ statisticDBValues | safe}};
+
+    var sizeOfData = statisticDBData.length; // DB 데이터 길이
+
     // labels => updateTime: 2020.11.23[5:끝]형식으로, 데이터 끝에서부터 7개 list 해당.
-    var weekDate=new Array();   
-    for(var wd=6;wd>=0;wd--){
-        weekDate[6-wd]=statisticDBData[sizeOfData-1-wd]['updateTime'].substring(5,);
+    var weekDate = new Array();
+    for (var wd = 6; wd >= 0; wd--) {
+        weekDate[6 - wd] = statisticDBData[sizeOfData - 1 - wd]['updateTime'].substring(5,);
     }
 
     // 7일간 확진/ 사망/ 완치 데이터 list로 
-    var diseased7=new Array(); // 7일간 확진자
-    for(var dis=6;dis>=0;dis--){      
-        diseased7[6-dis]=statisticDBData[sizeOfData-1-dis]['TodayCase'].replace(/[^0-9]/g,'');
+    var diseased7 = new Array(); // 7일간 확진자
+    for (var dis = 6; dis >= 0; dis--) {
+        diseased7[6 - dis] = statisticDBData[sizeOfData - 1 - dis]['TodayCase'].replace(/[^0-9]/g, '');
     }
-    var death7=new Array(); // 7일간 사망자
-    var dead=0;
-    for(var de=0;de<7;de++){        
-        dead = statisticDBData[sizeOfData-1-(6-de)]['TotalDeath'].replace(/[^0-9]/g,'')- statisticDBData[sizeOfData-2-(6-de)]['TotalDeath'].replace(/[^0-9]/g,'');
-        death7[de]=dead;
+    var death7 = new Array(); // 7일간 사망자
+    var dead = 0;
+    for (var de = 0; de < 7; de++) {
+        dead = statisticDBData[sizeOfData - 1 - (6 - de)]['TotalDeath'].replace(/[^0-9]/g, '') - statisticDBData[sizeOfData - 2 - (6 - de)]['TotalDeath'].replace(/[^0-9]/g, '');
+        death7[de] = dead;
     }
-    var cured7=new Array(); // 7일간 완치자
-    for(var c=6;c>=0;c--){
-        cured7[6-c]=statisticDBData[sizeOfData-1-c]['TodayRecovered'].replace(/[^0-9]/g,'');
+    var cured7 = new Array(); // 7일간 완치자
+    for (var c = 6; c >= 0; c--) {
+        cured7[6 - c] = statisticDBData[sizeOfData - 1 - c]['TodayRecovered'].replace(/[^0-9]/g, '');
     }
 
     var hdata = new HistogramData(weekDate, diseased7, death7, cured7);
@@ -79,7 +84,7 @@
             title: { // 차트 제목
                 display: true,
                 fontSize: 15,
-                text: ['대한민국 코로나19(COVID-19) 추이','총 확진자 '+ coronaAPIData['TotalCase']+'명  사망: '+coronaAPIData['TotalDeath']+ '명  완치자: '+coronaAPIData['TotalRecovered']+'명']
+                text: ['대한민국 코로나19(COVID-19) 추이', '총 확진자 ' + coronaAPIData['TotalCase'] + '명  사망: ' + coronaAPIData['TotalDeath'] + '명  완치자: ' + coronaAPIData['TotalRecovered'] + '명']
             },
             tooltips: { // 툴팁
                 mode: 'index',
@@ -99,32 +104,102 @@
         }
     });
 
+    // --------------------------------------------- 두 번째 차트 ------------------------------------------------------
+    var largeRegionData = {{ largeRegions | safe}};
+    var horizon_labels = [];
+    var horizon_data;
+
+    // largeRegion 반복하며 large_labels에 지역 이름 삽입
+    for (var i = 1; i < largeRegionData.length; i++) {
+        horizon_labels.push(largeRegionData[i].fields.name);
+    }
+    console.log(horizon_labels);
+
+    // 초기값
+    var period_selected = "opt-all";
+    var type_selected = "infected";
+    var type_name = "확진";
+    var chart_color = "red";
+    horizon_data = MakeHorizonData(period_selected, type_selected, largeRegionData);
+
     ctx = document.getElementById('regional-statistics').getContext('2d');
-    var hb_data = new HorizonBarData();
-    var regional_chart = new Chart(ctx, {
-        type: 'horizontalBar',
-        data: hb_data,
-        options: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                fontSize: 15,
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+coronaAPIData['TotalCase']+'명',] //CoronaAPI데이터에서 TotalCase를 가져와서 씀.
-            },
-            plugins: {
-                chartJsPluginSubtitle: {
+    var hb_data = new HorizonBarData(horizon_labels, horizon_data, type_name, chart_color);
+    var regional_chart = MakeHorizonChart();
+
+    function MakeHorizonChart() {
+        var chart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: hb_data,
+            options: {
+                responsive: true,
+                sort: true,
+                legend: {
+                    display: false
+                },
+                title: {
                     display: true,
-                    fontSize: 12,
-                    text: [coronaAPIData['updateTime']]
+                    fontSize: 15,
+                    text: ['대한민국 지역별 확진자 현황', '총 확진자: ' + coronaAPIData['TotalCase'] + '명']
+                },
+                plugins: {
+                    chartJsPluginSubtitle: {
+                        display: true,
+                        fontSize: 12,
+                        text: [coronaAPIData['updateTime']]
+                    }
+                },
+                layout: {
+                    padding: {
+                        right: 50
+                    }
                 }
             }
+        });
+        return chart;
+    }
+
+    function setChartNameAndColor() {
+        switch (type_selected) {
+            case "infected":
+                type_name = "확진";
+                chart_color = "red";
+                break;
+            case "deceased":
+                type_name = "사망";
+                chart_color = "black";
+                break;
+
+            case "cured":
+                type_name = "완치";
+                chart_color = "green";
+                break;
         }
-    });
-</script>
-<script src="/mainpage/keyword.py"></script>
-<script>
-    var coronaAPIData=new statisticsView();
-    document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>");
+    }
+
+    function radioHandler() {
+        var changed = false;
+        var new_selected = document.querySelector('input[name="options-period"]:checked').value;
+        var new_type = document.querySelector('input[name="options-type"]:checked').value;
+
+        if (period_selected != new_selected) {
+            changed = true;
+            period_selected = new_selected;
+        }
+        if (type_selected != new_type) {
+            changed = true;
+            type_selected = new_type;
+        }
+
+        // 새 차트 생성
+        if (changed) {
+            ctx = document.getElementById('regional-statistics').getContext('2d');
+            horizon_data = MakeHorizonData(period_selected, type_selected, largeRegionData);
+            setChartNameAndColor();
+
+            hb_data = new HorizonBarData(horizon_labels, horizon_data, type_name, chart_color);
+
+            if (regional_chart) regional_chart.destroy();
+            regional_chart = MakeHorizonChart();
+        }
+    }
 </script>
