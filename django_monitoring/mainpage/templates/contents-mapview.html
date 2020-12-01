@@ -123,6 +123,7 @@
 
         /* ---------------------------- 시설물 선택 카테고리 ---------------------------- */
         #category {
+            visibility: hidden;
             position: absolute;
             margin: 0px auto;
             top: 10px;
@@ -272,7 +273,7 @@
         <ul id="toggle">
             <li id="infected-overlay" data-order="0">
                 <!-- span onclick="setMapType('roadmap')"-->
-                <span onclick ="info_overlay_onoff(this)"> 
+                <span onclick ="info_overlay_onoff()"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-alert-circle">
@@ -285,7 +286,7 @@
             </li>
             <li id="facility-overlay" data-order="1">
                 <!-- span onclick="setMapType('roadmap')"-->
-                <span onclick ="facility_overlay_onoff(this)">
+                <span onclick ="facility_overlay_onoff()">
                     <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Building_M" overflow="hidden">
                         <g id="Icons">
@@ -315,7 +316,7 @@
                 시설물 정보
             </li>
             <li id="movement-overlay" data-order="2">
-                <span onclick="movement_overlay_onoff(this)">
+                <span onclick="movement_overlay_onoff()">
                 <!-- span onclick="setMapType('roadmap')"-->
                     <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_DanceSteps" overflow="hidden">
@@ -408,7 +409,7 @@
 
         // 각 카테고리에 클릭 이벤트를 등록합니다
         addCategoryClickEvent();
-
+        addtoggleClickEvent();
         // DrawPolygon();
 
         // 엘리먼트에 이벤트 핸들러를 등록하는 함수입니다
@@ -567,44 +568,26 @@
             }
         }
 
-        // 토글 이벤트 핸들러 적용
-        // function addCategoryClickEvent() {
-        //     var category = document.getElementById('toggle'),
-        //         children = category.children;
+        //토글 이벤트 핸들러 적용
+        function addtoggleClickEvent() {
+            var category = document.getElementById('toggle'),
+                children = category.children;
 
-        //     for (var i = 0; i < children.length; i++) {
-        //         children[i].onclick = onClickToggle;
-        //     }
-        // }
+            for (var i = 0; i < children.length; i++) {
+                children[i].onclick = onClickToggle;
+            }
+        }
 
-        // 토글을 클릭했을 때 호출되는 함수입니다
-        // function onClickToggle() {
-        //     this.classList.toggle("on");
-        //     if (this.classList.contains("on")) {
-        //         setFlags(this.id, true);
-        //     } else {
-        //         setFlags(this.id, false);
-        //     }
-        // }
+        //토글을 클릭했을 때 호출되는 함수입니다
+        function onClickToggle() {
+            this.classList.toggle("on");
+            if (this.classList.contains("on")) {
+                setFlags(this.id, true);
+            } else {
+                setFlags(this.id, false);
+            }
+        }
       
-    //   function setFlags(id, bool) {
-    //         switch(id) {
-    //             case "infected-overlay":
-    //                 overlay_info_flag = bool;
-    //                 console.log("info toggled to " + bool);
-    //                 info_overlay_onoff();
-    //                 break;
-    //             case "facility-overlay":
-    //                 overlay_facility_flag = bool;
-    //                 console.log("facility toggled to " + bool);
-    //                 //facility_overlay_onoff();
-    //                 break;
-    //             case "movement-overlay":
-    //                 overlay_movement_flag = bool;
-    //                 console.log("movement toggled to " + bool);
-    //                 break;
-    //         }
-    //     }
       
         function DrawPolygon() { 
             $.getJSON("/static/json/SIG2.geojson", function(geojson) 
@@ -866,12 +849,11 @@
             });
         }
         var overlay_info_flag = true; // 확진자 정보 오버레이
-        var overlay_facility_flag = true; // 시설물 정보 오버레이
-        var overlay_movement_flag = true; // 확진자 동선 오버레이
+        var overlay_facility_flag = false; // 시설물 정보 오버레이
+        var overlay_movement_flag = false; // 확진자 동선 오버레이
         
 
-        function info_overlay_onoff(element) {
-            element.parentNode.classList.toggle("on");
+        function info_overlay_onoff() {
             console.log("info onoff");
             var nameList = document.getElementsByClassName("name");
             var numList = document.getElementsByClassName("totalNum");
@@ -984,22 +966,20 @@
                 console.log(overlay_info_flag);
             }
         }
-        function facility_overlay_onoff(element){
-            element.parentNode.classList.toggle("on");
+        function facility_overlay_onoff(){
             console.log("facility onoff");
-
             if(overlay_facility_flag){
+                document.getElementById
                 category = document.getElementById("category");
-                category.style.display = "block";
+                category.style.visibility = "hidden";
                 overlay_facility_flag = false;
             }else{
                 category = document.getElementById("category");
-                category.style.display = "none";
+                category.style.visibility = "visible";
                 overlay_facility_flag = true;
             }
         }
-        function movement_overlay_onoff(element){
-            element.parentNode.classList.toggle("on");
+        function movement_overlay_onoff(){
             console.log("movement onoff");
             var i;
             if(overlay_movement_flag){
