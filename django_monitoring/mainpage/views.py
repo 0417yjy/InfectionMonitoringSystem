@@ -6,6 +6,7 @@ from . import keyword
 from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
 from .forms import SubscirberForm
 from datetime import datetime
+from . import LocationInfo
 import json
 
 def index(request):
@@ -69,13 +70,20 @@ def index(request):
     mediumRegions = RegionMedium.objects.all()
     mediumRegionsValues = serializers.serialize('json', mediumRegions)
     #============================================= End of 'contents-subscribe.html' =====================================================
+    #============================================= Start of 'content-mapview.html' ======================================================
+    locationset = LocationInfo.get_location(result)
+    seoul_gu_results = LocationInfo.scraping_data()
+    #============================================= End of 'content-mapview.html' =============================== #=======================
     context = {
         # contents-home
         'result' : result,
         'statisticDBValues': statisticDBValues,
         # contents-subscribe
         'largeRegions': largeRegionsValues,
-        'mediumRegions': mediumRegionsValues
+        'mediumRegions': mediumRegionsValues,
+        # contents-mapview
+        'locationset' : locationset,
+        'seoul_gu_result' : seoul_gu_results,
     }
     return render(request, 'index.html', context)
 
@@ -160,6 +168,4 @@ def mapview(request):
     except :
         Subscribedatas  = None
     return render(request, 'contents-subscribe.html', context) # render는 view에서 템플릿에 전달할 데이타를 Dictionary로 전달한다
-
 '''
-

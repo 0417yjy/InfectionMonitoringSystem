@@ -86,7 +86,7 @@
             title: {
                 display: true,
                 fontSize: 15,
-                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+ coronaAPIData['TotalCase']+ '명']
+                text: ['대한민국 지역별 확진자 현황', '총 확진자: '+coronaAPIData['TotalCase']+'명',] //CoronaAPI데이터에서 TotalCase를 가져와서 씀.
             },
             plugins: {
                 chartJsPluginSubtitle: {
@@ -98,4 +98,8 @@
         }
     });
 </script>
-
+<script src="/mainpage/keyword.py"></script>
+<script>
+    var coronaAPIData=new statisticsView();
+    document.write("TotalCase : " +corornaAPIData.context["TotalCase"]+"<br>");
+</script>
