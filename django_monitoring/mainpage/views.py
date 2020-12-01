@@ -13,9 +13,9 @@ def index(request):
     #통계 받아오는 API로 가져옴
     result = keyword.keywordFindAPI()
     #print(result)
-     #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
-     #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
-     #index.html에서 result, result2, result3 변수를 html 태그나 javascript코드 등에서 사용 가능하다.
+    #context는 html에 data로 넘겨주는 parameter들을 담는것. 각각의 값을 전달한다
+    #예를 들어 context에 result, result2, result3 이렇게 넣어서 전달하면
+    #index.html에서 result, result2, result3 변수를 html 태그나 javascript코드 등에서 사용 가능하다.
     
     '''
     statisticDB = StatisticValues.objects.all() # 테이블 데이타를 전부 가져오기 위한 메소드
