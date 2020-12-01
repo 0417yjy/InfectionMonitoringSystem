@@ -62,28 +62,35 @@ def index(request):
     #print(statisticDBValues)
     #print(statisticValue)
     #=============================================== End of 'contents-home.html' ========================================================
-
-
-    #============================================ Start of 'contents-subscribe.html' ====================================================
+    #============================================ Start of 'contents-statistics.html' ===================================================
     largeRegions = RegionLarge.objects.all()
     largeRegionsValues = serializers.serialize('json', largeRegions)
+    #============================================= End of 'contents-statistics.html' ====================================================
+        #============================================= Start of 'content-mapview.html' ======================================================
+    locationset = LocationInfo.get_location(result)
+    seoul_gu_results = LocationInfo.scraping_data()
+    #============================================= End of 'content-mapview.html' ========================================================
+    #============================================ Start of 'contents-subscribe.html' ====================================================
+    # duplicate
+    '''
+    largeRegions = RegionLarge.objects.all()
+    largeRegionsValues = serializers.serialize('json', largeRegions)
+    '''
     mediumRegions = RegionMedium.objects.all()
     mediumRegionsValues = serializers.serialize('json', mediumRegions)
     #============================================= End of 'contents-subscribe.html' =====================================================
-    #============================================= Start of 'content-mapview.html' ======================================================
-    locationset = LocationInfo.get_location(result)
-    seoul_gu_results = LocationInfo.scraping_data()
-    #============================================= End of 'content-mapview.html' =============================== #=======================
     context = {
         # contents-home
         'result' : result,
         'statisticDBValues': statisticDBValues,
-        # contents-subscribe
+        # contents-statistics
         'largeRegions': largeRegionsValues,
-        'mediumRegions': mediumRegionsValues,
         # contents-mapview
         'locationset' : locationset,
         'seoul_gu_result' : seoul_gu_results,
+        # contents-subscribe
+        # 'largeRegions': largeRegionsValues, # duplicate
+        'mediumRegions': mediumRegionsValues
     }
     return render(request, 'index.html', context)
 
