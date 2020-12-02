@@ -45,31 +45,31 @@
     // --------------------------------------------- 첫 번째 차트 ------------------------------------------------------
     var ctx = document.getElementById('daily-histogram').getContext('2d');
 
-    var coronaAPIData = {{ result | safe }};
-    var statisticDBData = {{ statisticDBValues | safe}};
-
-    var sizeOfData = statisticDBData.length; // DB 데이터 길이
-
+    var coronaAPIData = {{ result | safe }}; 
+    var statisticDBData={{statisticDBValues | safe}};
+    
+    var sizeOfData=statisticDBData.length; // DB 데이터 길이
+    
     // labels => updateTime: 2020.11.23[5:끝]형식으로, 데이터 끝에서부터 7개 list 해당.
-    var weekDate = new Array();
-    for (var wd = 6; wd >= 0; wd--) {
-        weekDate[6 - wd] = statisticDBData[sizeOfData - 1 - wd]['updateTime'].substring(5,);
+    var weekDate=new Array();   
+    for(var wd=6;wd>=0;wd--){
+        weekDate[6-wd]=statisticDBData[sizeOfData-1-wd]['updateTime'].substring(5,);
     }
 
     // 7일간 확진/ 사망/ 완치 데이터 list로 
-    var diseased7 = new Array(); // 7일간 확진자
-    for (var dis = 6; dis >= 0; dis--) {
-        diseased7[6 - dis] = statisticDBData[sizeOfData - 1 - dis]['TodayCase'].replace(/[^0-9]/g, '');
+    var diseased7=new Array(); // 7일간 확진자
+    for(var dis=6;dis>=0;dis--){      
+        diseased7[6-dis]=statisticDBData[sizeOfData-1-dis]['TodayCase'].replace(/[^0-9]/g,'');
     }
-    var death7 = new Array(); // 7일간 사망자
-    var dead = 0;
-    for (var de = 0; de < 7; de++) {
-        dead = statisticDBData[sizeOfData - 1 - (6 - de)]['TotalDeath'].replace(/[^0-9]/g, '') - statisticDBData[sizeOfData - 2 - (6 - de)]['TotalDeath'].replace(/[^0-9]/g, '');
-        death7[de] = dead;
+    var death7=new Array(); // 7일간 사망자
+    var dead=0;
+    for(var de=0;de<7;de++){        
+        dead = statisticDBData[sizeOfData-1-(6-de)]['TotalDeath'].replace(/[^0-9]/g,'')- statisticDBData[sizeOfData-2-(6-de)]['TotalDeath'].replace(/[^0-9]/g,'');
+        death7[de]=dead;
     }
-    var cured7 = new Array(); // 7일간 완치자
-    for (var c = 6; c >= 0; c--) {
-        cured7[6 - c] = statisticDBData[sizeOfData - 1 - c]['TodayRecovered'].replace(/[^0-9]/g, '');
+    var cured7=new Array(); // 7일간 완치자
+    for(var c=6;c>=0;c--){
+        cured7[6-c]=statisticDBData[sizeOfData-1-c]['TodayRecovered'].replace(/[^0-9]/g,'');
     }
 
     var hdata = new HistogramData(weekDate, diseased7, death7, cured7);

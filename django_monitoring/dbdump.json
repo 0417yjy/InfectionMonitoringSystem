@@ -3980,8 +3980,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 241,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "산청군",
         "no_infected": 0,
@@ -3992,11 +3991,11 @@
         "prev_no_deceased": 0,
         "prev_no_offisolated": 0,
         "parent_region": 17
+
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 242,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "함양군",
         "no_infected": 0,
@@ -4010,8 +4009,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 243,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "거창군",
         "no_infected": 0,
@@ -4025,8 +4023,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 244,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "합천군",
         "no_infected": 0,
@@ -4040,8 +4037,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 245,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "제주시",
         "no_infected": 0,
@@ -4055,8 +4051,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 246,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "서귀포시",
         "no_infected": 0,
@@ -4070,8 +4065,7 @@
     }
 },
 {
-    "model": "mainpage.regionmedium",
-    "pk": 247,
+    "model": "contenttypes.contenttype",
     "fields": {
         "name": "전체선택",
         "no_infected": 0,
@@ -4552,50 +4546,6 @@
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can add infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "add_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "change_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "delete_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "view_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
         "name": "Can add region large",
         "content_type": [
             "mainpage",
@@ -4687,50 +4637,6 @@
         "name": "Can add statistic values",
         "content_type": [
             "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "add_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "change_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "delete_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "view_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add subscriber",
-        "content_type": [
-            "mainpage",
             "subscriber"
         ],
         "codename": "add_subscriber"
@@ -4772,45 +4678,100 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "add_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "change_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "delete_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view facility",
+        "content_type": [
+            "mainpage",
+            "facility"
+        ],
+        "codename": "view_facility"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add infected movement",
         "content_type": [
             "mainpage",
             "infectedmovement"
         ],
         "codename": "add_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "change_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "delete_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "view_infectedmovement"
     }
 },
 {
@@ -4863,46 +4824,46 @@
         "name": "Can add facility",
         "content_type": [
             "mainpage",
-            "facility"
+            "infectedmovement"
         ],
-        "codename": "add_facility"
+        "codename": "change_infectedmovement"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can change facility",
+        "name": "Can delete infected movement",
         "content_type": [
             "mainpage",
-            "facility"
+            "infectedmovement"
         ],
-        "codename": "change_facility"
+        "codename": "delete_infectedmovement"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can delete facility",
+        "name": "Can view infected movement",
         "content_type": [
             "mainpage",
-            "facility"
+            "infectedmovement"
         ],
-        "codename": "delete_facility"
+        "codename": "view_infectedmovement"
     }
 },
 {
     "model": "auth.permission",
     "fields": {
-        "name": "Can view facility",
+        "name": "Can add statistic values",
         "content_type": [
             "mainpage",
-            "facility"
+            "statisticvalues"
         ],
-        "codename": "view_facility"
+        "codename": "add_statisticvalues"
     }
 },
 {
-    "model": "auth.user",
+    "model": "auth.permission",
     "fields": {
         "password": "pbkdf2_sha256$216000$UVGwTt5PeqU5$aT0P9dBIBMBIf4qSjVqZG4vLE5NO1U331uLA22iphZ8=",
         "last_login": "2020-11-27T13:29:26.166",
@@ -4936,13 +4897,19 @@
     }
 },
 {
-    "model": "admin.logentry",
-    "pk": 1,
+    "model": "auth.permission",
     "fields": {
         "action_time": "2020-12-01T18:03:01.479",
         "user": [
             "su001"
         ],
+        "codename": "delete_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view statistic values",
         "content_type": [
             "mainpage",
             "infected"

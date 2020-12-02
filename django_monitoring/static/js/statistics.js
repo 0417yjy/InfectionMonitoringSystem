@@ -20,6 +20,7 @@ Chart.plugins.register({
 });
 
 function HistogramData(weekDate, diseased7, death7, cured7) {
+
     this.labels = weekDate;
     this.datasets = [
         {
