@@ -141,6 +141,7 @@
   function Kakaologin(){
     Kakao.Auth.login({
       persistAccessToken: true,
+      scope: 'talk_message',
       success: function(auth){
         token = auth.access_token;
         Kakao.API.request({
