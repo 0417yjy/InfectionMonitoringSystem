@@ -6,7 +6,7 @@ from . import keyword
 from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
 from .forms import SubscirberForm
 from datetime import datetime
-from . import LocationInfo
+from . import LocationInfo, kakaosender
 import json
 
 def index(request):
@@ -144,6 +144,9 @@ def subscribe_kakao(request):
                 med_pk = request.POST.get('med_' + str(i))
                 #print(str(i) + ': ' + large_pk + ', ' + med_pk)
                 
+
+                lr = str(RegionLarge.objects.get(pk=large_pk).name)
+                mr = str(RegionMedium.objects.get(pk=med_pk).name)
                 # 데이터베이스에 저장
                 new_subscription = Subscriber(
                     address=kakao_id,
@@ -152,7 +155,7 @@ def subscribe_kakao(request):
                     medium_region=RegionMedium.objects.get(pk=med_pk)
                 )
                 new_subscription.save()
-
+                kakaosender.send_to_kakao(kakao_id,lr,mr)
                 i += 1
 
             # 성공 메시지 전달    

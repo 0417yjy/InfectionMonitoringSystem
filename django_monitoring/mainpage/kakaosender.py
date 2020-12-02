@@ -6,19 +6,26 @@ import json
 import requests
 #from models import Subscriber
 
-def send_to_kakao():
-    access_token = "" # 인증키 받아옴
+def send_to_kakao(address,lr, mr):
+    access_token = address # 인증키 받아옴
     send_lists = []
     url = "https://kapi.kakao.com/v2/api/talk/memo/default/send"
 # 사용자 토큰
     headers = {
         "Authorization": "Bearer " + access_token
         }
-
+    if lr == "전체선택" and mr == "전체선택":
+        text = "안녕하세요, Team Lumos 입니다. 새 확진자가 발생했습니다."
+    elif mr == "전체선택":
+        my_region = lr
+        text = "안녕하세요, Team Lumos 입니다. "+my_region + "에서 확진자가 발생했습니다."
+    else:
+        my_region = lr + " " + mr
+        text = "안녕하세요, Team Lumos 입니다. "+my_region + "에서 확진자가 발생했습니다."
 
     data = {
         "template_object" : json.dumps({ "object_type" : "text",
-                                     "text" : "안녕하세요, Team Lumos 입니다.   관심 지역에서 확진자가 발생하였습니다.",
+                                     "text" : text,
                                      "link" : {
                                                  "web_url" : "http://127.0.0.1:8000/mainpage/"
                                               }
@@ -32,4 +39,3 @@ def send_to_kakao():
     else:
         print('메시지를 성공적으로 보내지 못했습니다. 오류메시지 : ' + str(response.json()))
 
-send_to_kakao()
