@@ -23,8 +23,8 @@
 
     // 카카오톡 구독을 클릭하면 제목, 아이디 입력란, 구독버튼이 변경됨
     document.getElementById('subscribe_modal_label').innerHTML = '카카오톡으로 구독하기';
-    document.getElementById('insert_address').innerHTML = 
-    '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>' + 
+    document.getElementById('insert_address').innerHTML =
+    '<a class="nav-link active" href="javascript:Kakaologin()"><img src="/static/assets/img/kakao_login_large_wide.png" style="width: 100%;"></a>' +
     '<input id="subscribe_address" name="address">' +
     '<input id="subscribe_nickname" name="nickname">';
     document.getElementById('subscribe_footer').innerHTML = '<button type="button" class="btn btn-outline-secondary" data-dismiss="modal" style="width: 100%;">Close</button>';
@@ -128,6 +128,9 @@
 
   });
 </script>
+<!--<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" />
+  </a> 나에게 메세지 보내기 버튼 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type='text/javascript'>
   //<![CDATA[
@@ -138,6 +141,7 @@
   function Kakaologin(){
     Kakao.Auth.login({
       persistAccessToken: true,
+      scope: 'talk_message',
       success: function(auth){
         token = auth.access_token;
         Kakao.API.request({
@@ -147,7 +151,7 @@
             userID = res.id;						//유저의 카카오톡 고유 id
             var userNickName = res.properties.nickname;	//유저가 등록한 별명
 
-            document.getElementById('subscribe-form').address.value = userID;
+            document.getElementById('subscribe-form').address.value = token;
             document.getElementById('subscribe-form').nickname.value = userNickName;
             document.getElementById('subscribe-form').submit();
             $('#subscribeModal').modal('hide')
@@ -156,12 +160,13 @@
             alert(JSON.stringify(error));
           }
         });
-      }, 
-      fail: function(err){ 
-        console.error(err) 
-      } 
+      },
+      fail: function(err){
+        console.error(err)
+      }
     });
   };
+  
 </script>
 
 <body>
