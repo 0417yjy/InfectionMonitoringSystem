@@ -70,7 +70,7 @@ def index(request):
     locationset = LocationInfo.get_location(result)
     seoul_gu_results = LocationInfo.scraping_data()
     patient_pathes = LocationInfo.get_patient_path()
-    print(patient_pathes)
+    # print(patient_pathes)
     #============================================= End of 'content-mapview.html' ========================================================
     #============================================ Start of 'contents-subscribe.html' ====================================================
     # duplicate
@@ -109,7 +109,7 @@ def subscribe_email(request):
             while request.POST.get('large_' + str(i)):
                 large_pk = request.POST.get('large_' + str(i))
                 med_pk = request.POST.get('med_' + str(i))
-                print(str(i) + ': ' + large_pk + ', ' + med_pk)
+                #print(str(i) + ': ' + large_pk + ', ' + med_pk)
                 
                 # 데이터베이스에 저장
                 new_subscription = Subscriber(

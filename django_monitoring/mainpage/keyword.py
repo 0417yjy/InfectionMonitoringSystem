@@ -38,7 +38,7 @@ def keywordFindAPI():
 
     data.update(data2)
     data.update(dataNew)
-    print(dataNew)
+    # print(dataNew)
     return data 
 
 def getKoreaData():
