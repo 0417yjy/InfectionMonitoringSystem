@@ -128,11 +128,14 @@
 
   });
 </script>
+<!--<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" />
+  </a> 나에게 메세지 보내기 버튼 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type='text/javascript'>
   //<![CDATA[
   // 사용할 앱의 JavaScript 키를 설정해 주세요.
-  Kakao.init('b851943dab872358471f9d88909d8d61');
+  Kakao.init('09e74e4091015b732b377f235443730a');
   var token;
   var userID;
   function Kakaologin(){
@@ -162,6 +165,20 @@
       }
     });
   };
+ // 나에게 메세지 보내기
+     //function sendLink() {
+      //Kakao.Link.sendTalkLink({
+      //  label: '안녕하세요, Team Lumos 입니다',
+
+      //  webLink: {
+
+        //    text:'관심 지역에서 확진자가 발생하였습니다.',
+
+          //  url:'http://127.0.0.1:8000'
+
+      //  }
+    //  });
+  //  }
 </script>
 
 <body>

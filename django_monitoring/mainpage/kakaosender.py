@@ -4,10 +4,10 @@
 
 import json
 import requests
-#from .models import Subscriber
+#from models import Subscriber
 
 def send_to_kakao():
-    access_token = "7k-JpebHFVgxYZu57sfNmWmslPcAvIZ39KZ_Pgo9c-sAAAF2IGX48Q" # 인증키 받아옴
+    access_token = "" # 인증키 받아옴
     send_lists = []
     url = "https://kapi.kakao.com/v2/api/talk/memo/default/send"
 # 사용자 토큰
@@ -20,7 +20,7 @@ def send_to_kakao():
         "template_object" : json.dumps({ "object_type" : "text",
                                      "text" : "안녕하세요, Team Lumos 입니다.   관심 지역에서 확진자가 발생하였습니다.",
                                      "link" : {
-                                                 "web_url" : "http://ncov.mohw.go.kr/"
+                                                 "web_url" : "http://127.0.0.1:8000/mainpage/"
                                               }
                                               })
                                               }
