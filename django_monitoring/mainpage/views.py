@@ -155,7 +155,6 @@ def subscribe_kakao(request):
                     medium_region=RegionMedium.objects.get(pk=med_pk)
                 )
                 new_subscription.save()
-                kakaosender.send_to_kakao(kakao_id,lr,mr)
                 i += 1
 
             # 성공 메시지 전달    

@@ -5,6 +5,7 @@ from .models import StatisticValues, RegionLarge, RegionMedium, Subscriber
 from . import keyword
 from datetime import datetime
 from .mailsender import send_safe_mail
+from .kakaosender import send_to_kakao
 
 def convert_to_int_with_comma(str_num):
     return int(str_num.replace(',', ''))
@@ -17,9 +18,17 @@ def send_messages(large_obj, increased):
     subscribers = Subscriber.objects.filter(large_region=large_obj).filter(medium_region=medium_all_select_obj)
     
     # 이메일 구독자들
+    print("Sending emails for " + region_name)
     email_subs = subscribers.filter(sub_type='Email')
     emails = email_subs.values_list('address', flat=True)
     send_safe_mail(emails, region_name, increased)
+
+    # 카카오 구독자들
+    print("Sending kakao messages for " + region_name)
+    kakao_subs = subscribers.filter(sub_type='Kakao')
+    kakao_users = kakao_subs.values_list('address', flat=True)
+    for i in kakao_users:
+        send_to_kakao(i, region_name, "전체선택", increased)
 
 @receiver(post_save, sender=StatisticValues)
 def StatisticValues_post_save(sender, **kwargs):
