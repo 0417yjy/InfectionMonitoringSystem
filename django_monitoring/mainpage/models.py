@@ -50,7 +50,7 @@ class RegionMedium(AbstractRegion):
 class Subscriber(models.Model):
     SUBSCRIBE_TYPE_CHOICES = models.TextChoices('SubscribeType','Email Kakao')
 
-    address = models.CharField(max_length=40)  # kakaotalk id or email address
+    address = models.CharField(max_length=100)  # kakaotalk id or email address
     sub_type = models.CharField(max_length=5, choices=SUBSCRIBE_TYPE_CHOICES.choices)
 
     # Has each region's id
