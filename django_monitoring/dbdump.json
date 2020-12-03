@@ -66,6 +66,13 @@
     "model": "contenttypes.contenttype",
     "fields": {
         "app_label": "mainpage",
+        "model": "regionsmall"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "mainpage",
         "model": "statisticvalues"
     }
 },
@@ -81,13 +88,6 @@
     "fields": {
         "app_label": "mainpage",
         "model": "infectedmovement"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "fields": {
-        "app_label": "mainpage",
-        "model": "regionsmall"
     }
 },
 {
@@ -118,13 +118,13 @@
     "pk": 1,
     "fields": {
         "name": "전체선택",
-        "no_infected": 34652,
+        "no_infected": 35163,
         "no_deceased": 526,
-        "no_offisolated": 27885,
-        "updated_time": "2020-12-01T13:42:07.305",
-        "prev_no_infected": 34652,
+        "no_offisolated": 28065,
+        "updated_time": "2020-12-03T04:42:14.773",
+        "prev_no_infected": 35163,
         "prev_no_deceased": 526,
-        "prev_no_offisolated": 27885
+        "prev_no_offisolated": 28065
     }
 },
 {
@@ -132,13 +132,13 @@
     "pk": 2,
     "fields": {
         "name": "서울특별시",
-        "no_infected": 8966,
+        "no_infected": 9159,
         "no_deceased": 93,
-        "no_offisolated": 6620,
-        "updated_time": "2020-12-01T13:42:07.329",
-        "prev_no_infected": 8966,
+        "no_offisolated": 6625,
+        "updated_time": "2020-12-03T04:42:14.783",
+        "prev_no_infected": 9158,
         "prev_no_deceased": 93,
-        "prev_no_offisolated": 6620
+        "prev_no_offisolated": 6625
     }
 },
 {
@@ -146,11 +146,11 @@
     "pk": 3,
     "fields": {
         "name": "부산광역시",
-        "no_infected": 840,
+        "no_infected": 872,
         "no_deceased": 16,
         "no_offisolated": 602,
-        "updated_time": "2020-12-01T13:42:07.350",
-        "prev_no_infected": 840,
+        "updated_time": "2020-12-03T04:42:19.491",
+        "prev_no_infected": 871,
         "prev_no_deceased": 16,
         "prev_no_offisolated": 602
     }
@@ -160,13 +160,13 @@
     "pk": 4,
     "fields": {
         "name": "대구광역시",
-        "no_infected": 7243,
+        "no_infected": 7247,
         "no_deceased": 199,
-        "no_offisolated": 6999,
-        "updated_time": "2020-12-01T13:42:07.367",
-        "prev_no_infected": 7243,
+        "no_offisolated": 7002,
+        "updated_time": "2020-12-03T04:42:22.841",
+        "prev_no_infected": 7246,
         "prev_no_deceased": 199,
-        "prev_no_offisolated": 6999
+        "prev_no_offisolated": 7002
     }
 },
 {
@@ -174,13 +174,13 @@
     "pk": 5,
     "fields": {
         "name": "광주광역시",
-        "no_infected": 718,
+        "no_infected": 728,
         "no_deceased": 3,
-        "no_offisolated": 576,
-        "updated_time": "2020-12-01T13:42:07.393",
-        "prev_no_infected": 718,
+        "no_offisolated": 586,
+        "updated_time": "2020-12-03T04:42:22.933",
+        "prev_no_infected": 728,
         "prev_no_deceased": 3,
-        "prev_no_offisolated": 576
+        "prev_no_offisolated": 586
     }
 },
 {
@@ -188,13 +188,13 @@
     "pk": 6,
     "fields": {
         "name": "인천광역시",
-        "no_infected": 1425,
+        "no_infected": 1448,
         "no_deceased": 11,
-        "no_offisolated": 1090,
-        "updated_time": "2020-12-01T13:42:07.380",
-        "prev_no_infected": 1425,
+        "no_offisolated": 1103,
+        "updated_time": "2020-12-03T04:42:22.927",
+        "prev_no_infected": 1448,
         "prev_no_deceased": 11,
-        "prev_no_offisolated": 1090
+        "prev_no_offisolated": 1103
     }
 },
 {
@@ -202,11 +202,11 @@
     "pk": 7,
     "fields": {
         "name": "대전광역시",
-        "no_infected": 504,
+        "no_infected": 509,
         "no_deceased": 6,
         "no_offisolated": 446,
-        "updated_time": "2020-12-01T13:42:07.403",
-        "prev_no_infected": 504,
+        "updated_time": "2020-12-03T04:42:22.941",
+        "prev_no_infected": 509,
         "prev_no_deceased": 6,
         "prev_no_offisolated": 446
     }
@@ -216,11 +216,11 @@
     "pk": 8,
     "fields": {
         "name": "울산광역시",
-        "no_infected": 201,
+        "no_infected": 211,
         "no_deceased": 2,
         "no_offisolated": 166,
-        "updated_time": "2020-12-01T13:42:07.412",
-        "prev_no_infected": 201,
+        "updated_time": "2020-12-03T04:42:22.951",
+        "prev_no_infected": 211,
         "prev_no_deceased": 2,
         "prev_no_offisolated": 166
     }
@@ -230,11 +230,11 @@
     "pk": 9,
     "fields": {
         "name": "세종특별자치시",
-        "no_infected": 102,
+        "no_infected": 109,
         "no_deceased": 0,
         "no_offisolated": 85,
-        "updated_time": "2020-12-01T13:42:07.420",
-        "prev_no_infected": 102,
+        "updated_time": "2020-12-03T04:42:22.962",
+        "prev_no_infected": 109,
         "prev_no_deceased": 0,
         "prev_no_offisolated": 85
     }
@@ -244,13 +244,13 @@
     "pk": 10,
     "fields": {
         "name": "경기도",
-        "no_infected": 7373,
+        "no_infected": 7517,
         "no_deceased": 116,
-        "no_offisolated": 5933,
-        "updated_time": "2020-12-01T13:42:07.428",
-        "prev_no_infected": 7373,
+        "no_offisolated": 6003,
+        "updated_time": "2020-12-03T04:42:22.970",
+        "prev_no_infected": 7517,
         "prev_no_deceased": 116,
-        "prev_no_offisolated": 5933
+        "prev_no_offisolated": 6003
     }
 },
 {
@@ -258,13 +258,13 @@
     "pk": 11,
     "fields": {
         "name": "강원도",
-        "no_infected": 661,
+        "no_infected": 673,
         "no_deceased": 6,
-        "no_offisolated": 423,
-        "updated_time": "2020-12-01T13:42:07.435",
-        "prev_no_infected": 661,
+        "no_offisolated": 428,
+        "updated_time": "2020-12-03T04:42:22.982",
+        "prev_no_infected": 673,
         "prev_no_deceased": 6,
-        "prev_no_offisolated": 423
+        "prev_no_offisolated": 428
     }
 },
 {
@@ -272,13 +272,13 @@
     "pk": 12,
     "fields": {
         "name": "충청북도",
-        "no_infected": 359,
+        "no_infected": 375,
         "no_deceased": 3,
-        "no_offisolated": 209,
-        "updated_time": "2020-12-01T13:42:07.443",
-        "prev_no_infected": 359,
+        "no_offisolated": 214,
+        "updated_time": "2020-12-03T04:42:22.989",
+        "prev_no_infected": 375,
         "prev_no_deceased": 3,
-        "prev_no_offisolated": 209
+        "prev_no_offisolated": 214
     }
 },
 {
@@ -286,13 +286,13 @@
     "pk": 13,
     "fields": {
         "name": "충청남도",
-        "no_infected": 915,
+        "no_infected": 923,
         "no_deceased": 9,
-        "no_offisolated": 686,
-        "updated_time": "2020-12-01T13:42:07.451",
-        "prev_no_infected": 915,
+        "no_offisolated": 700,
+        "updated_time": "2020-12-03T04:42:22.995",
+        "prev_no_infected": 923,
         "prev_no_deceased": 9,
-        "prev_no_offisolated": 686
+        "prev_no_offisolated": 700
     }
 },
 {
@@ -300,13 +300,13 @@
     "pk": 14,
     "fields": {
         "name": "전라북도",
-        "no_infected": 343,
+        "no_infected": 369,
         "no_deceased": 2,
-        "no_offisolated": 173,
-        "updated_time": "2020-12-01T13:42:07.459",
-        "prev_no_infected": 343,
+        "no_offisolated": 177,
+        "updated_time": "2020-12-03T04:42:23.004",
+        "prev_no_infected": 369,
         "prev_no_deceased": 2,
-        "prev_no_offisolated": 173
+        "prev_no_offisolated": 177
     }
 },
 {
@@ -314,13 +314,13 @@
     "pk": 15,
     "fields": {
         "name": "전라남도",
-        "no_infected": 426,
+        "no_infected": 427,
         "no_deceased": 2,
-        "no_offisolated": 216,
-        "updated_time": "2020-12-01T13:42:07.466",
-        "prev_no_infected": 426,
+        "no_offisolated": 235,
+        "updated_time": "2020-12-03T04:42:23.014",
+        "prev_no_infected": 427,
         "prev_no_deceased": 2,
-        "prev_no_offisolated": 216
+        "prev_no_offisolated": 235
     }
 },
 {
@@ -328,13 +328,13 @@
     "pk": 16,
     "fields": {
         "name": "경상북도",
-        "no_infected": 1715,
+        "no_infected": 1720,
         "no_deceased": 57,
-        "no_offisolated": 1575,
-        "updated_time": "2020-12-01T13:42:07.473",
-        "prev_no_infected": 1715,
+        "no_offisolated": 1582,
+        "updated_time": "2020-12-03T04:42:23.022",
+        "prev_no_infected": 1720,
         "prev_no_deceased": 57,
-        "prev_no_offisolated": 1575
+        "prev_no_offisolated": 1582
     }
 },
 {
@@ -342,13 +342,13 @@
     "pk": 17,
     "fields": {
         "name": "경상남도",
-        "no_infected": 636,
+        "no_infected": 643,
         "no_deceased": 1,
-        "no_offisolated": 400,
-        "updated_time": "2020-12-01T13:42:07.480",
-        "prev_no_infected": 636,
+        "no_offisolated": 421,
+        "updated_time": "2020-12-03T04:42:23.028",
+        "prev_no_infected": 643,
         "prev_no_deceased": 1,
-        "prev_no_offisolated": 400
+        "prev_no_offisolated": 421
     }
 },
 {
@@ -356,11 +356,11 @@
     "pk": 18,
     "fields": {
         "name": "제주특별자치도",
-        "no_infected": 81,
+        "no_infected": 83,
         "no_deceased": 0,
         "no_offisolated": 63,
-        "updated_time": "2020-12-01T13:42:07.488",
-        "prev_no_infected": 81,
+        "updated_time": "2020-12-03T04:42:23.035",
+        "prev_no_infected": 83,
         "prev_no_deceased": 0,
         "prev_no_offisolated": 63
     }
@@ -370,13 +370,13 @@
     "pk": 19,
     "fields": {
         "name": "해외검역",
-        "no_infected": 2144,
+        "no_infected": 2150,
         "no_deceased": 0,
-        "no_offisolated": 1623,
-        "updated_time": "2020-12-01T13:42:07.497",
-        "prev_no_infected": 2144,
+        "no_offisolated": 1627,
+        "updated_time": "2020-12-03T04:42:23.048",
+        "prev_no_infected": 2150,
         "prev_no_deceased": 0,
-        "prev_no_offisolated": 1623
+        "prev_no_offisolated": 1627
     }
 },
 {
@@ -3980,7 +3980,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 241,
     "fields": {
         "name": "산청군",
         "no_infected": 0,
@@ -3991,11 +3992,11 @@
         "prev_no_deceased": 0,
         "prev_no_offisolated": 0,
         "parent_region": 17
-
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 242,
     "fields": {
         "name": "함양군",
         "no_infected": 0,
@@ -4009,7 +4010,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 243,
     "fields": {
         "name": "거창군",
         "no_infected": 0,
@@ -4023,7 +4025,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 244,
     "fields": {
         "name": "합천군",
         "no_infected": 0,
@@ -4037,7 +4040,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 245,
     "fields": {
         "name": "제주시",
         "no_infected": 0,
@@ -4051,7 +4055,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 246,
     "fields": {
         "name": "서귀포시",
         "no_infected": 0,
@@ -4065,7 +4070,8 @@
     }
 },
 {
-    "model": "contenttypes.contenttype",
+    "model": "mainpage.regionmedium",
+    "pk": 247,
     "fields": {
         "name": "전체선택",
         "no_infected": 0,
@@ -4080,11 +4086,51 @@
 },
 {
     "model": "mainpage.subscriber",
-    "pk": 9,
+    "pk": 21,
+    "fields": {
+        "address": "SFkDQKo4BqezSWzKyeYPDlAq0BbLpzHeYhBjyAopb7kAAAF2JIxKYA",
+        "sub_type": "Kakao",
+        "large_region": 2,
+        "medium_region": 247
+    }
+},
+{
+    "model": "mainpage.subscriber",
+    "pk": 25,
     "fields": {
         "address": "0417yjy@naver.com",
         "sub_type": "Email",
         "large_region": 2,
+        "medium_region": 247
+    }
+},
+{
+    "model": "mainpage.subscriber",
+    "pk": 26,
+    "fields": {
+        "address": "0417yjy@naver.com",
+        "sub_type": "Email",
+        "large_region": 3,
+        "medium_region": 247
+    }
+},
+{
+    "model": "mainpage.subscriber",
+    "pk": 27,
+    "fields": {
+        "address": "-4fHQK9VQP2fFnn4CciE7tuBYTxofuqK6JQJ7worDKcAAAF2JlGAtQ",
+        "sub_type": "Kakao",
+        "large_region": 2,
+        "medium_region": 247
+    }
+},
+{
+    "model": "mainpage.subscriber",
+    "pk": 28,
+    "fields": {
+        "address": "-4fHQK9VQP2fFnn4CciE7tuBYTxofuqK6JQJ7worDKcAAAF2JlGAtQ",
+        "sub_type": "Kakao",
+        "large_region": 4,
         "medium_region": 247
     }
 },
@@ -4277,6 +4323,19 @@
         "TotalChecking": "3,083,997",
         "TodayCase": "451",
         "TodayRecovered": "260"
+    }
+},
+{
+    "model": "mainpage.statisticvalues",
+    "pk": "2020.12.2.",
+    "fields": {
+        "TotalCase": "35,163",
+        "TotalDeath": "526",
+        "TotalRecovered": "28,065",
+        "NowCase": "6,572",
+        "TotalChecking": "3,106,970",
+        "TodayCase": "511",
+        "TodayRecovered": "180"
     }
 },
 {
@@ -4546,6 +4605,50 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "add_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "change_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "delete_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected",
+        "content_type": [
+            "mainpage",
+            "infected"
+        ],
+        "codename": "view_infected"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add region large",
         "content_type": [
             "mainpage",
@@ -4634,7 +4737,95 @@
 {
     "model": "auth.permission",
     "fields": {
+        "name": "Can add region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "add_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "change_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "delete_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region small",
+        "content_type": [
+            "mainpage",
+            "regionsmall"
+        ],
+        "codename": "view_regionsmall"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
         "name": "Can add statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "add_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "change_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "delete_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view statistic values",
+        "content_type": [
+            "mainpage",
+            "statisticvalues"
+        ],
+        "codename": "view_statisticvalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add subscriber",
         "content_type": [
             "mainpage",
             "subscriber"
@@ -4673,6 +4864,50 @@
             "subscriber"
         ],
         "codename": "view_subscriber"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "add_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "change_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "delete_infectedmovement"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view infected movement",
+        "content_type": [
+            "mainpage",
+            "infectedmovement"
+        ],
+        "codename": "view_infectedmovement"
     }
 },
 {
@@ -4720,150 +4955,7 @@
     }
 },
 {
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "add_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "change_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "delete_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected",
-        "content_type": [
-            "mainpage",
-            "infected"
-        ],
-        "codename": "view_infected"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "add_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "add_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can change region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "change_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "delete_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view region small",
-        "content_type": [
-            "mainpage",
-            "regionsmall"
-        ],
-        "codename": "view_regionsmall"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add facility",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "change_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can delete infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "delete_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view infected movement",
-        "content_type": [
-            "mainpage",
-            "infectedmovement"
-        ],
-        "codename": "view_infectedmovement"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can add statistic values",
-        "content_type": [
-            "mainpage",
-            "statisticvalues"
-        ],
-        "codename": "add_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
+    "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$216000$UVGwTt5PeqU5$aT0P9dBIBMBIf4qSjVqZG4vLE5NO1U331uLA22iphZ8=",
         "last_login": "2020-11-27T13:29:26.166",
@@ -4897,19 +4989,13 @@
     }
 },
 {
-    "model": "auth.permission",
+    "model": "admin.logentry",
+    "pk": 1,
     "fields": {
         "action_time": "2020-12-01T18:03:01.479",
         "user": [
             "su001"
         ],
-        "codename": "delete_statisticvalues"
-    }
-},
-{
-    "model": "auth.permission",
-    "fields": {
-        "name": "Can view statistic values",
         "content_type": [
             "mainpage",
             "infected"
