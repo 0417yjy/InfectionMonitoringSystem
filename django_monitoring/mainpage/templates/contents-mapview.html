@@ -588,60 +588,7 @@
             }
         }
       
-      
-        function DrawPolygon() { 
-            $.getJSON("/static/json/SIG2.geojson", function(geojson) 
-            { 
-                var data = geojson.features; 
-                var name = ''; //행정구 명 
-                var code = '';
-                $.each(data, function (index, val) {
-                    name = val.properties.SIG_KOR_NM;
-                    code = val.properties.SIG_CD;
-                    if (val.geometry.type == "MultiPolygon") {
-                        displayArea(name, code, val.geometry.coordinates, true);
-                    }
-                    else {
-                        displayArea(name, code, val.geometry.coordinates, false);
-                    }
-                });
-            });
-        }
-        function makePolygon(coordinates) {
-            var polygonPath = [];
-            $.each(coordinates[0], function (index, coordinate) {
-                polygonPath.push(new kakao.maps.LatLng(coordinate[1], coordinate[0]));
-            });
-            return new kakao.maps.Polygon({
-                path: polygonPath,
-                strokeWeight: 1,
-                strokeColor: '#004c80',
-                strokeOpacity: 0.8,
-                strokeStyle: 'longdash',
-                fillColor: '#fff',
-                fillOpacity: 0.2,
-                zIndex: i,
-            });
-        }
-        function makeMultiPolygon(coordinates) {
-            var polygonPath = [];
-            $.each(coordinates, function (index, val2) {
-                var coordinates2 = [];
-                $.each(val2[0], function (index2, coordinate) {
-                    coordinates2.push(new kakao.maps.LatLng(coordinate[1], coordinate[0]));
-                });
-                polygonPath.push(coordinates2);
-            });
-            return new kakao.maps.Polygon({
-                path: polygonPath,
-                strokeWeight: 1,
-                strokeColor: '#004c80',
-                strokeOpacity: 0.8,
-                strokeStyle: 'longdash',
-                fillColor: '#fff',
-                fillOpacity: 0.2
-            });
-        } // params : 행정구 명, 도로명 코드, 좌표, 멀티폴리곤 유무 
+    
 
         function displayArea(name, code, coordinates, multi) {
             var polygon;
